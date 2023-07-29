@@ -46,22 +46,22 @@ import { RouterView } from 'vue-router'
               <div class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1" id="navbar-language">
                   <ul class="flex flex-col font-medium p-4 lg:p-0 mt-4 border border-gray-100 rounded-lg lg:flex-row lg:space-x-8 lg:mt-0 lg:border-0 lg:bg-white dark:bg-gray-800 lg:dark:bg-gray-900 dark:border-gray-700">
                       <li>
-                          <a href="#" class="block py-2 pl-3 pr-4 text-black rounded bg-indigo-500 hover:text-white hover:bg-gray-50" aria-current="page">Accueil</a>
+                          <a href="#" class="block py-2 pl-3 pr-4 text-black rounded hover:text-white hover:bg-indigo-500" aria-current="page">Accueil</a>
                       </li>
                       <li>
-                          <a href="#" class="block py-2 pl-3 pr-4 text-black rounded bg-indigo-500 hover:text-white hover:bg-gray-50" aria-current="page">Mes réalisations</a>
+                          <a href="#" class="block py-2 pl-3 pr-4 text-black rounded hover:text-white hover:bg-indigo-500" aria-current="page">Mes réalisations</a>
                       </li>
                       <li>
-                          <a href="#" class="block py-2 pl-3 pr-4 text-black rounded bg-indigo-500 hover:text-white hover:bg-gray-50" aria-current="page">Qui suis-je ?</a>
+                          <a href="#" class="block py-2 pl-3 pr-4 text-black rounded hover:text-white hover:bg-indigo-500" aria-current="page">Qui suis-je ?</a>
                       </li>
                       <li>
-                          <a href="#" class="block py-2 pl-3 pr-4 text-black rounded bg-indigo-500 hover:text-white hover:bg-gray-50" aria-current="page">Mes compétences</a>
+                          <a href="#" class="block py-2 pl-3 pr-4 text-black rounded hover:text-white hover:bg-indigo-500" aria-current="page">Mes compétences</a>
                       </li>
                       <li>
-                          <a href="#" class="block py-2 pl-3 pr-4 text-black rounded bg-indigo-500 hover:text-white hover:bg-gray-50" aria-current="page">Mes tarifs</a>
+                          <a href="#" class="block py-2 pl-3 pr-4 text-black rounded hover:text-white hover:bg-indigo-500" aria-current="page">Mes tarifs</a>
                       </li>
                       <li>
-                          <a href="#" class="block py-2 pl-3 pr-4 text-black rounded bg-indigo-500 hover:text-white hover:bg-gray-50" aria-current="page">Contact</a>
+                          <a href="#" class="block py-2 pl-3 pr-4 text-black rounded hover:text-white hover:bg-indigo-500" aria-current="page">Contact</a>
                       </li>
                   </ul>
               </div>
