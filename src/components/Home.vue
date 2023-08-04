@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <section id="accueil" class="h-full pt-[8vh] lg:!pt-0 lg:!h-[91vh]">
+    <section id="home" class="h-full pt-[8vh] lg:!pt-0 lg:!h-[91vh]">
         <div class="h-full w-full flex flex-col justify-center pl-[10%] pb-[5%] z-20">
             <h3 class="z-20 text-xl sm:!text-3xl lg:!text-4xl font-medium text-my-black mb-1 lg:mb-3">Salut ! Moi c'est</h3>
             <h1 class="z-20 text-4xl sm:!text-7xl lg:!text-9xl font-bold text-my-purple mb-1 lg:mb-3">Mathieu Le Puil</h1>
@@ -39,8 +39,8 @@
     }
 
     .background {
-        position: fixed;
-        width: 100vw;
+        position: absolute;
+        width: 99vw;
         height: 90vh;
         top: 0;
         left: 0;

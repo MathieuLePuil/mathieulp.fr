@@ -7,12 +7,12 @@
       <nav class="border-gray-200 z-20">
           <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 z-20">
               <a href="https://flowbite.com/" class="flex items-center z-20">
-                  <img src="../src/assets/img/LOGO.png" class="h-8 mr-3" alt="Flowbite Logo" />
+                  <img src="./assets/img/LOGO.png" class="h-8 mr-3" alt="Flowbite Logo" />
                   <span class="self-center text-2xl font-semibold whitespace-nowrap">Mathieu</span>
               </a>
               <div class="flex items-center lg:order-2 z-20">
                   <button type="button" data-dropdown-toggle="language-dropdown-menu" class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-gray-900 rounded-lg cursor-pointer hover:bg-gray-200 z-20">
-                          <img src="../src/assets/img/pays/fr.png" aria-hidden="true" class="h-3.5 w-3.5 rounded-full mr-2" alt="Test">
+                          <img src="./assets/img/pays/fr.png" aria-hidden="true" class="h-3.5 w-3.5 rounded-full mr-2" alt="Test">
                           Français
                   </button>
                   <!-- Dropdown -->
@@ -21,7 +21,7 @@
                           <li>
                               <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200" role="menuitem">
                                   <div class="inline-flex items-center">
-                                      <img src="../src/assets/img/pays/fr.png" aria-hidden="true" class="h-3.5 w-3.5 rounded-full mr-2" alt="Test">
+                                      <img src="assets/img/pays/fr.png" aria-hidden="true" class="h-3.5 w-3.5 rounded-full mr-2" alt="Test">
                                       Français
                                   </div>
                               </a>
@@ -46,10 +46,10 @@
               <div class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1 z-20" id="navbar-language">
                   <ul class="flex flex-col font-medium p-4 lg:p-0 mt-4 border border-gray-100 rounded-lg lg:flex-row lg:space-x-8 lg:mt-0 lg:border-0 z-20">
                       <li>
-                          <a href="#accueil" class="block py-2 pl-3 pr-4 text-black rounded hover:text-white hover:bg-indigo-500 z-20" aria-current="page">Accueil</a>
+                          <a href="#home" class="block py-2 pl-3 pr-4 text-black rounded hover:text-white hover:bg-indigo-500 z-20" aria-current="page">Accueil</a>
                       </li>
                       <li>
-                          <a href="#" class="block py-2 pl-3 pr-4 text-black rounded hover:text-white hover:bg-indigo-500 z-20" aria-current="page">Mes réalisations</a>
+                          <a href="#projects" class="block py-2 pl-3 pr-4 text-black rounded hover:text-white hover:bg-indigo-500 z-20" aria-current="page">Mes réalisations</a>
                       </li>
                       <li>
                           <a href="#" class="block py-2 pl-3 pr-4 text-black rounded hover:text-white hover:bg-indigo-500 z-20" aria-current="page">Qui suis-je ?</a>
