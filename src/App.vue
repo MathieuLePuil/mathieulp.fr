@@ -21,7 +21,7 @@
                           <li>
                               <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200" role="menuitem">
                                   <div class="inline-flex items-center">
-                                      <img src="assets/img/pays/fr.png" aria-hidden="true" class="h-3.5 w-3.5 rounded-full mr-2" alt="Test">
+                                      <img src="./assets/img/pays/fr.png" aria-hidden="true" class="h-3.5 w-3.5 rounded-full mr-2" alt="Test">
                                       Français
                                   </div>
                               </a>
@@ -52,10 +52,10 @@
                           <a href="#projects" class="block py-2 pl-3 pr-4 text-black rounded hover:text-white hover:bg-indigo-500 z-20" aria-current="page">Mes réalisations</a>
                       </li>
                       <li>
-                          <a href="#" class="block py-2 pl-3 pr-4 text-black rounded hover:text-white hover:bg-indigo-500 z-20" aria-current="page">Qui suis-je ?</a>
+                          <a href="#aboutme" class="block py-2 pl-3 pr-4 text-black rounded hover:text-white hover:bg-indigo-500 z-20" aria-current="page">Qui suis-je ?</a>
                       </li>
                       <li>
-                          <a href="#" class="block py-2 pl-3 pr-4 text-black rounded hover:text-white hover:bg-indigo-500 z-20" aria-current="page">Mes compétences</a>
+                          <a href="#skills" class="block py-2 pl-3 pr-4 text-black rounded hover:text-white hover:bg-indigo-500 z-20" aria-current="page">Mes compétences</a>
                       </li>
                       <li>
                           <a href="#" class="block py-2 pl-3 pr-4 text-black rounded hover:text-white hover:bg-indigo-500 z-20" aria-current="page">Mes tarifs</a>

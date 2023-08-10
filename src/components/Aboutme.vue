@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <section id="projects" class="h-m-screen sm:!h-screen pt-[8vh] lg:!pt-0 pb-20 flex flex-col justify-around z-20">
+    <section id="aboutme" class="h-m-screen sm:!h-screen pt-[8vh] lg:!pt-0 pb-20 flex flex-col justify-around z-20">
         <div class="w-full flex justify-end">
             <h4 class="mt-10 text-2xl sm:!text-3xl lg:!text-6xl mr-[10%] text-my-purple font-medium z-20">Qui suis-je ?</h4>
         </div>

@@ -630,6 +630,26 @@ video {
   margin-top: 1.5rem;
 }
 
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
+}
+
+.mt-16 {
+  margin-top: 4rem;
+}
+
 .block {
   display: block;
 }
@@ -670,6 +690,30 @@ video {
   height: 100%;
 }
 
+.h-\[80px\] {
+  height: 80px;
+}
+
+.h-\[60px\] {
+  height: 60px;
+}
+
+.h-\[50px\] {
+  height: 50px;
+}
+
+.h-\[80\%\] {
+  height: 80%;
+}
+
+.h-\[100\%\] {
+  height: 100%;
+}
+
+.h-\[70vh\] {
+  height: 70vh;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -704,6 +748,18 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[70px\] {
+  width: 70px;
+}
+
+.w-\[50px\] {
+  width: 50px;
+}
+
+.w-\[80px\] {
+  width: 80px;
 }
 
 .max-w-\[50\%\] {
@@ -853,6 +909,16 @@ video {
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .pb-20 {
@@ -1044,12 +1110,40 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:mr-\[10\%\] {
+    margin-right: 10%;
+  }
+
+  .sm\:\!mr-\[10\%\] {
+    margin-right: 10% !important;
+  }
+
   .sm\:\!h-screen {
     height: 100vh !important;
   }
 
+  .sm\:\!w-full {
+    width: 100% !important;
+  }
+
+  .sm\:\!w-\[50\%\] {
+    width: 50% !important;
+  }
+
   .sm\:\!max-w-\[60\%\] {
     max-width: 60% !important;
+  }
+
+  .sm\:\!max-w-\[50\%\] {
+    max-width: 50% !important;
+  }
+
+  .sm\:\!max-w-\[30\%\] {
+    max-width: 30% !important;
+  }
+
+  .sm\:\!flex-row {
+    flex-direction: row !important;
   }
 
   .sm\:\!text-3xl {
@@ -1080,6 +1174,11 @@ video {
   .lg\:\!my-0 {
     margin-top: 0px !important;
     margin-bottom: 0px !important;
+  }
+
+  .lg\:\!mx-\[10\%\] {
+    margin-left: 10% !important;
+    margin-right: 10% !important;
   }
 
   .lg\:\!ml-\[10\%\] {
@@ -1118,6 +1217,10 @@ video {
     height: 92vh !important;
   }
 
+  .lg\:\!h-screen {
+    height: 100vh !important;
+  }
+
   .lg\:\!w-\[30\%\] {
     width: 30% !important;
   }
@@ -1138,6 +1241,14 @@ video {
     width: 100%;
   }
 
+  .lg\:\!w-full {
+    width: 100% !important;
+  }
+
+  .lg\:\!max-w-\[30\%\] {
+    max-width: 30% !important;
+  }
+
   .lg\:\!flex-row {
     flex-direction: row !important;
   }
@@ -1148,6 +1259,10 @@ video {
 
   .lg\:\!justify-start {
     justify-content: flex-start !important;
+  }
+
+  .lg\:\!justify-end {
+    justify-content: flex-end !important;
   }
 
   .lg\:space-x-8 > :not([hidden]) ~ :not([hidden]) {
