@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <section id="projects" class="min-h-screen pt-[10vh] lg:!pt-0 pb-20 flex flex-col justify-around z-20">
+    <section id="projects" class="min-h-screen pt-[8vh] lg:!pt-0 pb-20 flex flex-col justify-around z-20">
         <h4 class="mt-10 text-2xl sm:!text-3xl lg:!text-6xl ml-[10%] text-my-purple font-medium z-20">Mes réalisations</h4>
         <div class="flex flex-wrap mx-[10%] z-20">
             <div class="w-80 mt-14 m-auto lg:mt-16 max-w-full">
@@ -31,7 +31,7 @@
                 <div class="bg-white shadow-2xl rounded-b-3xl pb-8">
                     <h2 class="text-center text-gray-800 text-2xl font-bold pt-6">3Event</h2>
                     <div class="w-5/6 m-auto">
-                        <p class="text-sm sm:!text-base text-center text-gray-500 pt-5"><br>Site développé lors de mon cursus scolaire. L'objectif était de réalisé une billeterie pour les évènements (fictifs) de notre ville.<br><br></p>
+                        <p class="text-sm sm:!text-base text-center text-gray-500 pt-5"><br>Site développé lors de mon cursus scolaire. L'objectif était de réalisé une billetterie pour les évènements (fictifs) de notre ville.<br><br></p>
                     </div>
                     <div class="flex justify-around text-2xl mt-5">
                         <i class="fa-brands fa-html5"></i>
