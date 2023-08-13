@@ -58,7 +58,7 @@
                           <a href="#skills" class="block py-2 pl-3 pr-4 text-black rounded hover:text-white hover:bg-indigo-500 z-20" aria-current="page">Mes compétences</a>
                       </li>
                       <li>
-                          <a href="#" class="block py-2 pl-3 pr-4 text-black rounded hover:text-white hover:bg-indigo-500 z-20" aria-current="page">Mes tarifs</a>
+                          <a href="#price" class="block py-2 pl-3 pr-4 text-black rounded hover:text-white hover:bg-indigo-500 z-20" aria-current="page">Mes tarifs</a>
                       </li>
                       <li>
                           <a href="#" class="block py-2 pl-3 pr-4 text-black rounded hover:text-white hover:bg-indigo-500 z-20" aria-current="page">Contact</a>
