@@ -4,6 +4,7 @@
     import Aboutme from '../components/Aboutme.vue'
     import MySkills from '../components/MySkills.vue'
     import Pricing from '../components/Pricing.vue'
+    import Contact from '../components/Contact.vue'
 </script>
 
 <template>
@@ -13,5 +14,6 @@
         <Aboutme />
         <MySkills />
         <Pricing />
+        <Contact />
     </main>
 </template>
