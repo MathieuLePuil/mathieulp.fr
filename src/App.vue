@@ -61,7 +61,7 @@
                           <a href="#price" class="block py-2 pl-3 pr-4 text-black rounded hover:text-white hover:bg-indigo-500 z-20" aria-current="page">Mes tarifs</a>
                       </li>
                       <li>
-                          <a href="#" class="block py-2 pl-3 pr-4 text-black rounded hover:text-white hover:bg-indigo-500 z-20" aria-current="page">Contact</a>
+                          <a href="#contact" class="block py-2 pl-3 pr-4 text-black rounded hover:text-white hover:bg-indigo-500 z-20" aria-current="page">Contact</a>
                       </li>
                   </ul>
               </div>
