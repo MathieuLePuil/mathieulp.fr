@@ -8,7 +8,7 @@
             <h4 class="mt-10 text-2xl sm:!text-3xl lg:!text-6xl ml-[10%] text-my-purple font-medium z-20">Contact</h4>
         </div>
         <div class="z-20 h-full">
-            <form action="#" method="POST" class="mx-auto mt-10 max-w-xl sm:mt-20">
+            <form action="#" method="POST" class="mx-auto mt-12 max-w-xl sm:mt-20">
                 <div class="w-full">
                     <div class="w-full flex flex-col justify-center">
                         <label for="prenom" class="block text-sm font-semibold leading-6 text-gray-900 px-4 lg:!px-0 ml-[8%] lg:ml-0">Prénom / Nom</label>
