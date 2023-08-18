@@ -6,8 +6,8 @@
   <header>
       <nav class="border-gray-200 z-20">
           <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 z-20">
-              <a href="https://flowbite.com/" class="flex items-center z-20">
-                  <img src="./assets/img/LOGO.png" class="h-8 mr-3" alt="Flowbite Logo" />
+              <a href="https://www.mathieulp.fr/" class="flex items-center z-20">
+                  <img src="./assets/img/LOGO.png" class="h-8 mr-3" alt="Logo" />
                   <span class="self-center text-2xl font-semibold whitespace-nowrap">Mathieu</span>
               </a>
               <div class="flex items-center lg:order-2 z-20">
