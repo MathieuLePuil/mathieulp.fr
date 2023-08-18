@@ -48,32 +48,8 @@
                         </svg>
                         <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">...</span>
                     </li>
-<!--                    <li class="flex space-x-3 items-center">-->
-<!--                        <svg class="flex-shrink-0 w-4 h-4 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">-->
-<!--                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>-->
-<!--                        </svg>-->
-<!--                        <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">Formulaire de contact</span>-->
-<!--                    </li>-->
-<!--                    <li class="flex space-x-3 items-center">-->
-<!--                        <svg class="flex-shrink-0 w-4 h-4 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">-->
-<!--                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>-->
-<!--                        </svg>-->
-<!--                        <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">Optimisation pour le référencement</span>-->
-<!--                    </li>-->
-<!--                    <li class="flex space-x-3 items-center">-->
-<!--                        <svg class="flex-shrink-0 w-4 h-4 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">-->
-<!--                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>-->
-<!--                        </svg>-->
-<!--                        <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">Mise en ligne du site</span>-->
-<!--                    </li>-->
-<!--                    <li class="flex space-x-3 items-center">-->
-<!--                        <svg class="flex-shrink-0 w-4 h-4 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">-->
-<!--                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>-->
-<!--                        </svg>-->
-<!--                        <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">Formation d'utilisation du site</span>-->
-<!--                    </li>-->
                 </ul>
-                <button type="button" class="text-white !bg-my-purple hover:!bg-indigo-600 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center mt-3">Obtenir un devis</button>
+                <button type="button" class="text-white !bg-my-purple hover:!bg-indigo-600 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center mt-3">En savoir plus</button>
             </div>
             <!--            FIN TARIF 1             -->
 
@@ -116,44 +92,8 @@
                         </svg>
                         <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">...</span>
                     </li>
-<!--                    <li class="flex space-x-3 items-center">-->
-<!--                        <svg class="flex-shrink-0 w-4 h-4 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">-->
-<!--                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>-->
-<!--                        </svg>-->
-<!--                        <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">Site responsive (adapaté à toute taille d'écran)</span>-->
-<!--                    </li>-->
-<!--                    <li class="flex space-x-3 items-center">-->
-<!--                        <svg class="flex-shrink-0 w-4 h-4 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">-->
-<!--                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>-->
-<!--                        </svg>-->
-<!--                        <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">Formulaire de contact</span>-->
-<!--                    </li>-->
-<!--                    <li class="flex space-x-3 items-center">-->
-<!--                        <svg class="flex-shrink-0 w-4 h-4 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">-->
-<!--                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>-->
-<!--                        </svg>-->
-<!--                        <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">Optimisation pour le référencement et les performances</span>-->
-<!--                    </li>-->
-<!--                    <li class="flex space-x-3 items-center">-->
-<!--                        <svg class="flex-shrink-0 w-4 h-4 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">-->
-<!--                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>-->
-<!--                        </svg>-->
-<!--                        <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">Statistiques du site</span>-->
-<!--                    </li>-->
-<!--                    <li class="flex space-x-3 items-center">-->
-<!--                        <svg class="flex-shrink-0 w-4 h-4 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">-->
-<!--                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>-->
-<!--                        </svg>-->
-<!--                        <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">Mise en ligne du site</span>-->
-<!--                    </li>-->
-<!--                    <li class="flex space-x-3 items-center">-->
-<!--                        <svg class="flex-shrink-0 w-4 h-4 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">-->
-<!--                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>-->
-<!--                        </svg>-->
-<!--                        <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">Formation d'utilisation du site</span>-->
-<!--                    </li>-->
                 </ul>
-                <button type="button" class="text-white !bg-my-purple hover:!bg-indigo-600 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Obtenir un devis</button>
+                <button type="button" class="text-white !bg-my-purple hover:!bg-indigo-600 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">En savoir plus</button>
             </div>
             <!--            FIN TARIF 2             -->
 
@@ -196,48 +136,13 @@
                         </svg>
                         <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">...</span>
                     </li>
-<!--                    <li class="flex space-x-3 items-center">-->
-<!--                        <svg class="flex-shrink-0 w-4 h-4 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">-->
-<!--                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>-->
-<!--                        </svg>-->
-<!--                        <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">Site responsive (adapaté à toute taille d'écran)</span>-->
-<!--                    </li>-->
-<!--                    <li class="flex space-x-3 items-center">-->
-<!--                        <svg class="flex-shrink-0 w-4 h-4 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">-->
-<!--                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>-->
-<!--                        </svg>-->
-<!--                        <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">Formulaire de contact</span>-->
-<!--                    </li>-->
-<!--                    <li class="flex space-x-3 items-center">-->
-<!--                        <svg class="flex-shrink-0 w-4 h-4 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">-->
-<!--                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>-->
-<!--                        </svg>-->
-<!--                        <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">Optimisation pour le référencement et les performances</span>-->
-<!--                    </li>-->
-<!--                    <li class="flex space-x-3 items-center">-->
-<!--                        <svg class="flex-shrink-0 w-4 h-4 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">-->
-<!--                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>-->
-<!--                        </svg>-->
-<!--                        <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">Statistiques du site</span>-->
-<!--                    </li>-->
-<!--                    <li class="flex space-x-3 items-center">-->
-<!--                        <svg class="flex-shrink-0 w-4 h-4 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">-->
-<!--                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>-->
-<!--                        </svg>-->
-<!--                        <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">Mise en ligne du site</span>-->
-<!--                    </li>-->
-<!--                    <li class="flex space-x-3 items-center">-->
-<!--                        <svg class="flex-shrink-0 w-4 h-4 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">-->
-<!--                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>-->
-<!--                        </svg>-->
-<!--                        <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">Formation d'utilisation du site</span>-->
-<!--                    </li>-->
                 </ul>
-                <button type="button" class="text-white !bg-my-purple hover:!bg-indigo-600 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Obtenir un devis</button>
+                <button type="button" class="text-white !bg-my-purple hover:!bg-indigo-600 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">En savoir plus</button>
             </div>
             <!--            FIN TARIF 3             -->
 
             <div class="flex flex-col justify-between lg:!ml-10">
+
                 <!--            TARIF 4             -->
                 <div class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-5 dark:bg-gray-800 dark:border-gray-700 mb-8 h-full lg:h-[33vh] xl:!h-full">
                     <h5 class="mb-3 text-sm font-medium text-gray-500 dark:text-gray-400">Maintenance</h5>
@@ -247,7 +152,7 @@
                         <span class="ml-1 text-xl font-normal text-gray-500 dark:text-gray-400">/heure</span>
                     </div>
                     <div class="space-y-5 mt-12">
-                        <button type="button" class="text-white !bg-my-purple hover:!bg-indigo-600 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Obtenir un devis</button>
+                        <button type="button" class="text-white !bg-my-purple hover:!bg-indigo-600 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">En savoir plus</button>
                     </div>
                 </div>
                 <!--            FIN TARIF 4             -->
@@ -261,14 +166,12 @@
                         <span class="ml-1 text-xl font-normal text-gray-500 dark:text-gray-400">/jour</span>
                     </div>
                     <div class="space-y-5 mt-9">
-                        <button type="button" class="text-white !bg-my-purple hover:!bg-indigo-600 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Obtenir un devis</button>
+                        <button type="button" class="text-white !bg-my-purple hover:!bg-indigo-600 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">En savoir plus</button>
                     </div>
                 </div>
                 <!--            FIN TARIF 5             -->
 
-
             </div>
-
         </div>
     </section>
 </template>
