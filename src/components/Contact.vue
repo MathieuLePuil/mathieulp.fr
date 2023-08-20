@@ -12,7 +12,6 @@ const submitForm = () => {
     const serviceID = 'service_tafcc6f';
     const templateID = 'template_obzu7bz';
 
-
     if (contactForm.value) {
         emailjs.sendForm(serviceID, templateID, contactForm.value)
             .then(() => {
