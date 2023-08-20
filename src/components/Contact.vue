@@ -1,6 +1,5 @@
 <script setup>
 import { ref } from 'vue';
-import { templateID, serviceID } from '../../config.js';
 
 const name = ref('');
 const email = ref('');
@@ -10,6 +9,8 @@ const message = ref('');
 const contactForm = ref(null);
 
 const submitForm = () => {
+    const serviceID = 'service_tafcc6f';
+    const templateID = 'template_obzu7bz';
 
     if (contactForm.value) {
         emailjs.sendForm(serviceID, templateID, contactForm.value)
