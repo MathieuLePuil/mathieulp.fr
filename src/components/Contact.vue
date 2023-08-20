@@ -1,5 +1,34 @@
 <script setup>
+import { ref } from 'vue';
 
+const name = ref('');
+const email = ref('');
+const phone = ref('');
+const message = ref('');
+
+const contactForm = ref(null);
+
+const submitForm = () => {
+    const serviceID = 'service_tafcc6f';
+    const templateID = 'template_obzu7bz';
+
+    const formData = {
+        name: name.value,
+        email: email.value,
+        phone: phone.value,
+        message: message.value
+    };
+
+    if (contactForm.value) {
+        emailjs.sendForm(serviceID, templateID, contactForm.value)
+            .then(() => {
+                alert('Le mail a bien été envoyé !');
+            })
+            .catch(err => {
+                alert(JSON.stringify(err));
+            });
+    }
+};
 </script>
 
 <template>
@@ -8,30 +37,30 @@
             <h4 class="mt-10 text-2xl sm:!text-3xl lg:!text-6xl ml-[10%] text-my-purple font-medium z-20">Contact</h4>
         </div>
         <div class="z-20 h-full">
-            <form action="#" method="POST" class="mx-auto mt-10 max-w-xl sm:mt-20">
+            <form @submit.prevent="submitForm" ref="contactForm" id="form" method="POST" class="mx-auto mt-10 max-w-xl sm:mt-20">
                 <div class="w-full">
                     <div class="w-full flex flex-col justify-center">
                         <label for="prenom" class="block text-sm font-semibold leading-6 text-gray-900 px-4 lg:!px-0 ml-[8%] lg:ml-0">Prénom / Nom</label>
                         <div class="mt-1 w-full flex justify-center">
-                            <input type="text" name="name" id="name" autocomplete="name" class="block w-[80%] lg:!w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 mx-4 lg:!mx-0">
+                            <input v-model="name" type="text" name="name" id="name" autocomplete="name" class="block w-[80%] lg:!w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 mx-4 lg:!mx-0">
                         </div>
                     </div>
                     <div class="mt-2 w-full flex flex-col justify-center">
                         <label for="email" class="block text-sm font-semibold leading-6 text-gray-900 px-4 lg:!px-0 ml-[8%] lg:ml-0 mt-1">Email</label>
                         <div class="mt-1 w-full flex justify-center">
-                            <input type="email" name="email" id="email" autocomplete="email" class="block w-[80%] lg:!w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 mx-4 lg:!mx-0">
+                            <input v-model="email" type="email" name="email" id="email" autocomplete="email" class="block w-[80%] lg:!w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 mx-4 lg:!mx-0">
                         </div>
                     </div>
                     <div class="mt-2 w-full flex flex-col justify-center">
                         <label for="telephone" class="block text-sm font-semibold leading-6 text-gray-900 px-4 lg:!px-0 ml-[8%] lg:ml-0 mt-1">Téléphone</label>
                         <div class="mt-1 w-full flex justify-center">
-                            <input type="tel" name="telephone" id="telephone" autocomplete="tel" class="block w-[80%] lg:!w-full rounded-md border-0 px-3.5 py-2 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 mx-4 lg:!mx-0">
+                            <input v-model="phone" type="tel" name="phone" id="phone" autocomplete="tel" class="block w-[80%] lg:!w-full rounded-md border-0 px-3.5 py-2 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 mx-4 lg:!mx-0">
                         </div>
                     </div>
                     <div class="w-full flex flex-col justify-center">
                         <label for="message" class="block text-sm font-semibold leading-6 text-gray-900 px-4 lg:!px-0 ml-[8%] lg:ml-0 mt-2">Message</label>
                         <div class="mt-1 w-full flex justify-center">
-                            <textarea name="message" id="message" rows="4" class="block w-[80%] lg:!w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 mx-4 lg:!mx-0"></textarea>
+                            <textarea v-model="message" name="message" id="message" rows="4" class="block w-[80%] lg:!w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 mx-4 lg:!mx-0"></textarea>
                         </div>
                     </div>
                 </div>
