@@ -40,7 +40,7 @@
                         <i class="fa-brands fa-symfony"></i>
                         <i class="fa-solid fa-database"></i>
                     </div>
-                    <a href="https://3event.mathieulp.fr/" target="_blank" class="cursor-pointer">
+                    <a href="https://mmi21b12.sae301dev.ovh/" target="_blank" class="cursor-pointer">
                         <div class="bg-my-purple w-[80%] lg:w-5/6 m-auto mt-6 p-2 hover:bg-indigo-600 rounded-lg text-white text-center shadow-xl shadow-bg-blue-700">
                             <button class="lg:text-sm text-lg font-medium">Lien du site</button>
                         </div>
