@@ -67,7 +67,3 @@ const submitForm = () => {
         </div>
     </section>
 </template>
-
-<style scoped>
-
-</style>

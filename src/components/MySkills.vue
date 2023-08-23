@@ -1,7 +1,3 @@
-<script setup>
-
-</script>
-
 <template>
     <section id="skills" class="h-m-screen lg:!h-screen pt-[8vh] lg:!pt-0 pb-20 flex flex-col justify-around z-20  lg:!w-full">
         <div class="w-full flex justify-start">
@@ -46,7 +42,3 @@
         </div>
     </section>
 </template>
-
-<style scoped>
-
-</style>

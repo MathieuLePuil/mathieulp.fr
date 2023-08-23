@@ -1,7 +1,3 @@
-<script setup>
-
-</script>
-
 <template>
     <section id="projects" class="min-h-screen pt-[8vh] lg:!pt-0 pb-20 flex flex-col justify-around z-20">
         <h4 class="mt-10 text-2xl sm:!text-3xl lg:!text-6xl ml-[10%] text-my-purple font-medium z-20">Mes réalisations</h4>
@@ -71,7 +67,3 @@
         </div>
     </section>
 </template>
-
-<style scoped>
-
-</style>

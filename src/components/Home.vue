@@ -1,7 +1,3 @@
-<script setup>
-
-</script>
-
 <template>
     <section id="home" class="h-full pt-[8vh] lg:!pt-0 lg:!h-[92vh]">
         <div class="h-full w-full flex flex-col justify-center pl-[10%] pb-[5%] z-20">

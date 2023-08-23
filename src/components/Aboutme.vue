@@ -1,7 +1,3 @@
-<script setup>
-
-</script>
-
 <template>
     <section id="aboutme" class="h-m-screen sm:!h-screen pt-[8vh] lg:!pt-0 pb-20 flex flex-col justify-around z-20">
         <div class="w-full flex justify-end">
@@ -19,7 +15,3 @@
         </div>
     </section>
 </template>
-
-<style scoped>
-
-</style>
