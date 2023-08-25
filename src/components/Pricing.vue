@@ -6,134 +6,140 @@
         <div class="flex w-full flex-col justify-between lg:px-[10%] items-center lg:!flex-row z-20 mt-10">
 
             <!--            TARIF 1             -->
-            <div class="w-[80%] lg:!w-full h-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700 mb-8 lg:mb-0">
-                <h5 class="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">Site vitrine standard</h5>
-                <div class="flex items-baseline text-gray-900 dark:text-white">
-                    <span class="ml-1 text-xs font-normal text-gray-500 dark:text-gray-400 mr-3">À partir de</span>
-                    <span class="text-5xl font-bold tracking-tight">499</span>
-                    <span class="text-3xl font-semibold">€</span>
+            <div class="w-[80%] lg:!w-full h-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700 mb-8 lg:mb-0 flex flex-col justify-between">
+                <div>
+                    <h5 class="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">Site vitrine standard</h5>
+                    <div class="flex items-baseline text-gray-900 dark:text-white">
+                        <span class="ml-1 text-xs font-normal text-gray-500 dark:text-gray-400 mr-3">À partir de</span>
+                        <span class="text-5xl font-bold tracking-tight">499</span>
+                        <span class="text-3xl font-semibold">€</span>
+                    </div>
+                    <ul role="list" class="space-y-4 my-7">
+                        <li class="flex space-x-3 items-center">
+                            <svg class="flex-shrink-0 w-4 h-4 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                            </svg>
+                            <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">Wordpress</span>
+                        </li>
+                        <li class="flex space-x-3 items-center">
+                            <svg class="flex-shrink-0 w-4 h-4 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                            </svg>
+                            <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">Charte graphique fourni par le client (logo, couleurs, ...)</span>
+                        </li>
+                        <li class="flex space-x-3 items-center">
+                            <svg class="flex-shrink-0 w-4 h-4 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                            </svg>
+                            <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">Interface administrateur standard</span>
+                        </li>
+                        <li class="flex space-x-3 items-center">
+                            <svg class="flex-shrink-0 w-4 h-4 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                            </svg>
+                            <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">Site responsive (adapté à toute taille d'écran)</span>
+                        </li>
+                        <li class="flex space-x-3 items-center">
+                            <svg class="flex-shrink-0 w-4 h-4 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                            </svg>
+                            <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">...</span>
+                        </li>
+                    </ul>
                 </div>
-                <ul role="list" class="space-y-2 my-7">
-                    <li class="flex space-x-3 items-center">
-                        <svg class="flex-shrink-0 w-4 h-4 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-                        </svg>
-                        <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">Wordpress</span>
-                    </li>
-                    <li class="flex space-x-3 items-center">
-                        <svg class="flex-shrink-0 w-4 h-4 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-                        </svg>
-                        <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">Charte graphique fourni par le client (logo, couleurs, ...)</span>
-                    </li>
-                    <li class="flex space-x-3 items-center">
-                        <svg class="flex-shrink-0 w-4 h-4 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-                        </svg>
-                        <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">Interface administrateur standard</span>
-                    </li>
-                    <li class="flex space-x-3 items-center">
-                        <svg class="flex-shrink-0 w-4 h-4 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-                        </svg>
-                        <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">Site responsive (adapté à toute taille d'écran)</span>
-                    </li>
-                    <li class="flex space-x-3 items-center">
-                        <svg class="flex-shrink-0 w-4 h-4 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-                        </svg>
-                        <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">...</span>
-                    </li>
-                </ul>
-                <a href="files/Site_vitrine_standard.pdf" target="_blank" class="text-white !bg-my-purple hover:!bg-indigo-600 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center mt-3">En savoir plus</a>
+                <a href="files/Site_vitrine_standard.pdf" target="_blank" class="self-center text-white !bg-my-purple hover:!bg-indigo-600 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center mt-3">En savoir plus</a>
             </div>
             <!--            FIN TARIF 1             -->
 
             <!--            TARIF 2             -->
-            <div class="w-[80%] lg:!w-full h-full  max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700 mb-8 lg:mx-10 lg:mb-0">
-                <h5 class="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">Site vitrine avancé</h5>
-                <div class="flex items-baseline text-gray-900 dark:text-white">
-                    <span class="ml-1 text-xs font-normal text-gray-500 dark:text-gray-400 mr-3">À partir de</span>
-                    <span class="text-5xl font-bold tracking-tight">799</span>
-                    <span class="text-3xl font-semibold">€</span>
+            <div class="w-[80%] lg:!w-full h-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700 mb-8 lg:mx-10 lg:mb-0 flex flex-col justify-between">
+                <div>
+                    <h5 class="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">Site vitrine avancé</h5>
+                    <div class="flex items-baseline text-gray-900 dark:text-white">
+                        <span class="ml-1 text-xs font-normal text-gray-500 dark:text-gray-400 mr-3">À partir de</span>
+                        <span class="text-5xl font-bold tracking-tight">799</span>
+                        <span class="text-3xl font-semibold">€</span>
+                    </div>
+                    <ul role="list" class="space-y-4 my-7">
+                        <li class="flex space-x-3 items-center">
+                            <svg class="flex-shrink-0 w-4 h-4 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                            </svg>
+                            <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">Développé sur mesure</span>
+                        </li>
+                        <li class="flex space-x-3 items-center">
+                            <svg class="flex-shrink-0 w-4 h-4 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                            </svg>
+                            <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">Création d'une charte graphique personnalisée</span>
+                        </li>
+                        <li class="flex space-x-3 items-center">
+                            <svg class="flex-shrink-0 w-4 h-4 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                            </svg>
+                            <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">Nom de domaine (.fr) offert pendant 1 an</span>
+                        </li>
+                        <li class="flex space-x-3 items-center">
+                            <svg class="flex-shrink-0 w-4 h-4 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                            </svg>
+                            <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">Interface administrateur sur mesure</span>
+                        </li>
+                        <li class="flex space-x-3 items-center">
+                            <svg class="flex-shrink-0 w-4 h-4 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                            </svg>
+                            <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">...</span>
+                        </li>
+                    </ul>
                 </div>
-                <ul role="list" class="space-y-4 my-7">
-                    <li class="flex space-x-3 items-center">
-                        <svg class="flex-shrink-0 w-4 h-4 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-                        </svg>
-                        <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">Développé sur mesure</span>
-                    </li>
-                    <li class="flex space-x-3 items-center">
-                        <svg class="flex-shrink-0 w-4 h-4 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-                        </svg>
-                        <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">Création d'une charte graphique personnalisée</span>
-                    </li>
-                    <li class="flex space-x-3 items-center">
-                        <svg class="flex-shrink-0 w-4 h-4 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-                        </svg>
-                        <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">Nom de domaine (.fr) offert pendant 1 an</span>
-                    </li>
-                    <li class="flex space-x-3 items-center">
-                        <svg class="flex-shrink-0 w-4 h-4 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-                        </svg>
-                        <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">Interface administrateur sur mesure</span>
-                    </li>
-                    <li class="flex space-x-3 items-center">
-                        <svg class="flex-shrink-0 w-4 h-4 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-                        </svg>
-                        <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">...</span>
-                    </li>
-                </ul>
-                <a href="files/Site_vitrine_avance.pdf" target="_blank" class="text-white !bg-my-purple hover:!bg-indigo-600 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center mt-3">En savoir plus</a>
+                <a href="files/Site_vitrine_avance.pdf" target="_blank" class="self-center text-white !bg-my-purple hover:!bg-indigo-600 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center mt-3">En savoir plus</a>
             </div>
             <!--            FIN TARIF 2             -->
 
             <!--            TARIF 3             -->
-            <div class="w-[80%] lg:!w-full h-full  max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700 mb-8 lg:mb-0">
-                <h5 class="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">Site e-commerce</h5>
-                <div class="flex items-baseline text-gray-900 dark:text-white">
-                    <span class="ml-1 text-xs font-normal text-gray-500 dark:text-gray-400 mr-3">À partir de</span>
-                    <span class="text-5xl font-bold tracking-tight">1499</span>
-                    <span class="text-3xl font-semibold">€</span>
+            <div class="w-[80%] lg:!w-full h-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700 mb-8 lg:mb-0 flex flex-col justify-between">
+                <div>
+                    <h5 class="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">Site e-commerce</h5>
+                    <div class="flex items-baseline text-gray-900 dark:text-white">
+                        <span class="ml-1 text-xs font-normal text-gray-500 dark:text-gray-400 mr-3">À partir de</span>
+                        <span class="text-5xl font-bold tracking-tight">1499</span>
+                        <span class="text-3xl font-semibold">€</span>
+                    </div>
+                    <ul role="list" class="space-y-4 my-7">
+                        <li class="flex space-x-3 items-center">
+                            <svg class="flex-shrink-0 w-4 h-4 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                            </svg>
+                            <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">Wordpress / Prestashop</span>
+                        </li>
+                        <li class="flex space-x-3 items-center">
+                            <svg class="flex-shrink-0 w-4 h-4 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                            </svg>
+                            <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">Création d'une charte graphique personnalisée</span>
+                        </li>
+                        <li class="flex space-x-3 items-center">
+                            <svg class="flex-shrink-0 w-4 h-4 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                            </svg>
+                            <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">Nom de domaine (.fr) offert pendant 1 an</span>
+                        </li>
+                        <li class="flex space-x-3 items-center">
+                            <svg class="flex-shrink-0 w-4 h-4 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                            </svg>
+                            <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">Interface administrateur sur mesure</span>
+                        </li>
+                        <li class="flex space-x-3 items-center">
+                            <svg class="flex-shrink-0 w-4 h-4 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                            </svg>
+                            <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">...</span>
+                        </li>
+                    </ul>
                 </div>
-                <ul role="list" class="space-y-4 my-7">
-                    <li class="flex space-x-3 items-center">
-                        <svg class="flex-shrink-0 w-4 h-4 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-                        </svg>
-                        <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">Wordpress / Prestashop</span>
-                    </li>
-                    <li class="flex space-x-3 items-center">
-                        <svg class="flex-shrink-0 w-4 h-4 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-                        </svg>
-                        <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">Création d'une charte graphique personnalisée</span>
-                    </li>
-                    <li class="flex space-x-3 items-center">
-                        <svg class="flex-shrink-0 w-4 h-4 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-                        </svg>
-                        <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">Nom de domaine (.fr) offert pendant 1 an</span>
-                    </li>
-                    <li class="flex space-x-3 items-center">
-                        <svg class="flex-shrink-0 w-4 h-4 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-                        </svg>
-                        <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">Interface administrateur sur mesure</span>
-                    </li>
-                    <li class="flex space-x-3 items-center">
-                        <svg class="flex-shrink-0 w-4 h-4 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-                        </svg>
-                        <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">...</span>
-                    </li>
-                </ul>
-                <a href="files/Site_e-commerce.pdf" target="_blank" class="text-white !bg-my-purple hover:!bg-indigo-600 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center mt-3">En savoir plus</a>
+                <a href="files/Site_e-commerce.pdf" target="_blank" class="self-center text-white !bg-my-purple hover:!bg-indigo-600 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-fullÈ text-center mt-3">En savoir plus</a>
             </div>
             <!--            FIN TARIF 3             -->
 
@@ -171,3 +177,5 @@
         </div>
     </section>
 </template>
+<script setup>
+</script>
