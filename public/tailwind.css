@@ -1355,10 +1355,6 @@ video {
     max-width: 60% !important;
   }
 
-  .sm\:max-w-\[60\%\] {
-    max-width: 60%;
-  }
-
   .sm\:p-5 {
     padding: 1.25rem;
   }
