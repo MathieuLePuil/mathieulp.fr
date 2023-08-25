@@ -5,6 +5,12 @@
             <h1 class="z-20 text-4xl sm:!text-7xl lg:!text-9xl font-bold text-my-purple mb-1 lg:mb-3">Mathieu Le Puil</h1>
             <h2 class="z-20 text-sm sm:!text-3xl lg:!text-4xl font-medium text-my-purple">Développeur Full-Stack Freelance</h2>
         </div>
+        <div class="fixed bottom-0 -left-2 sm:!left-1 px-4 flex flex-col items-center z-30">
+            <a href="https://www.linkedin.com/in/mathieulepuil/" target="_blank"><img src="../assets/img/logo_linkedin.png" class="w-4 sm:!w-8 mb-2" /></a>
+            <a href="https://www.github.com/MathieuLePuil" target="_blank"><img src="../assets/img/logo_github.png" class="w-4 sm:!w-8 mb-2" /></a>
+            <a href="https://www.twitter.com/MathieuLePuil" target="_blank"><img src="../assets/img/logo_x.png" class="w-4 sm:!w-8 mb-2" /></a>
+            <div class="h-14 w-1 bg-my-black"></div>
+        </div>
         <ul class="background z-10 hidden lg:!block">
             <li></li>
             <li></li>
@@ -133,3 +139,5 @@
         border-color: #ffffff;
     }
 </style>
+<script setup>
+</script>
