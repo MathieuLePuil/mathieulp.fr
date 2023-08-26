@@ -1,6 +1,5 @@
 <script setup>
         import { RouterView, RouterLink } from 'vue-router'
-        import { ref, defineProps } from 'vue';
         import { useI18n } from 'vue-i18n';
 </script>
 
@@ -23,13 +22,13 @@
                           <ul class="py-2 font-medium flex flex-col justify-around" role="none">
                               <li>
                                   <button @click="changeLocale('fr'); closeDropdown()" type="button" class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-gray-900 rounded-lg cursor-pointer hover:bg-gray-200 z-30">
-                                      <img src="./assets/img/pays/fr.png" aria-hidden="true" class="h-3.5 w-3.5 rounded-full mr-2" alt="Test">
+                                      <img src="./assets/img/fr.png" aria-hidden="true" class="h-3.5 w-3.5 rounded-full mr-2" alt="Test">
                                       Français
                                   </button>
                               </li>
                               <li>
                                   <button @click="changeLocale('en'); closeDropdown()" type="button" class="inline-flex w-full items-center font-medium justify-center px-4 p-2 text-sm text-gray-900 rounded-lg cursor-pointer hover:bg-gray-200 z-30">
-                                      <img src="./assets/img/pays/en.png" aria-hidden="true" class="h-3.5 w-3.5 rounded-full mr-2" alt="Test">
+                                      <img src="./assets/img/en.png" aria-hidden="true" class="h-3.5 w-3.5 rounded-full mr-2" alt="Test">
                                       English
                                   </button>
                               </li>
@@ -86,7 +85,7 @@ export default {
             this.$i18n.locale = locale;
         },
         getLocaleFlagSrc() {
-            return this.$i18n.locale === 'fr' ? './assets/img/pays/fr.png' : './assets/img/pays/en.png';
+            return this.$i18n.locale === 'fr' ? './assets/img/fr.png' : './assets/img/en.png';
         },
         getLocaleLabel() {
             return this.$i18n.locale === 'fr' ? 'Français' : 'English';
