@@ -91,7 +91,7 @@ export default {
             this.$i18n.locale = locale;
         },
         getLocaleFlagSrc() {
-            return this.$i18n.locale === 'fr' ? '../src/assets/img/pays/fr.png' : '../src/assets/img/pays/en.png';
+            return this.$i18n.locale === 'fr' ? './assets/img/pays/fr.png' : './assets/img/pays/en.png';
         },
         getLocaleLabel() {
             return this.$i18n.locale === 'fr' ? 'Français' : 'English';
