@@ -5,6 +5,7 @@ import router from './router';
 
 // Créez une instance de Vue-i18n
 const i18n = createI18n({
+    legacy: false,
     locale: 'fr', // Langue par défaut
     messages: {
         en: {
