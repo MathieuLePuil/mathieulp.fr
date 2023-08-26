@@ -72,30 +72,30 @@
 </template>
 
 <script>
-import {useI18n} from "vue-i18n";
+    import {useI18n} from "vue-i18n";
 
-export default {
-    data() {
-        return {
-            isDropdownOpen: false,
-        };
-    },
-    methods: {
-        changeLocale(locale) {
-            this.$i18n.locale = locale;
+    export default {
+        data() {
+            return {
+                isDropdownOpen: false,
+            };
         },
-        getLocaleFlagSrc() {
-            return this.$i18n.locale === 'fr' ? 'https://img.freepik.com/vecteurs-libre/illustration-du-drapeau-france_53876-27099.jpg?size=626&ext=jpg&ga=GA1.1.600005458.1693078612&semt=ais' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Flag_of_the_United_States_%28Pantone%29.svg/1280px-Flag_of_the_United_States_%28Pantone%29.svg.png';
+        methods: {
+            changeLocale(locale) {
+                this.$i18n.locale = locale;
+            },
+            getLocaleFlagSrc() {
+                return this.$i18n.locale === 'fr' ? 'https://img.freepik.com/vecteurs-libre/illustration-du-drapeau-france_53876-27099.jpg?size=626&ext=jpg&ga=GA1.1.600005458.1693078612&semt=ais' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Flag_of_the_United_States_%28Pantone%29.svg/1280px-Flag_of_the_United_States_%28Pantone%29.svg.png';
+            },
+            getLocaleLabel() {
+                return this.$i18n.locale === 'fr' ? 'Français' : 'English';
+            },
+            toggleDropdown() {
+                this.isDropdownOpen = !this.isDropdownOpen;
+            },
+            closeDropdown() {
+                this.isDropdownOpen = false;
+            },
         },
-        getLocaleLabel() {
-            return this.$i18n.locale === 'fr' ? 'Français' : 'English';
-        },
-        toggleDropdown() {
-            this.isDropdownOpen = !this.isDropdownOpen; // Inverse l'état du menu déroulant
-        },
-        closeDropdown() {
-            this.isDropdownOpen = false; // Ferme le menu déroulant
-        },
-    },
-};
+    };
 </script>

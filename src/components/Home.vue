@@ -138,5 +138,3 @@
         border-color: #ffffff;
     }
 </style>
-<script setup>
-</script>
