@@ -32,6 +32,8 @@ const i18n = createI18n({
             autoecole: "in the Popeye driving schools.",
             txtprogrammation: "I first became interested in programming during the first lockdown in 2020. At that time I was developing bots for Discord servers. I then became interested in databases for storing user information. Passionate about development, I decided to make it my profession.",
             txtstudy: "Studies were just around the corner. I decided to study the MMI programme because it brought together everything I loved: graphic design, communication, video and, above all, development. So, during my course, I was able to create several websites and learn about a wide range of tools. Naturally, I decided to set up my own business so that I'd always have projects to do outside my current job.",
+
+            miscellaneous: "MISCELLANEOUS",
         },
         fr: {
             home: 'Accueil',
@@ -58,6 +60,8 @@ const i18n = createI18n({
             autoecole: "dans les auto-écoles Popeye.",
             txtprogrammation: "J’ai commencé à m’intéresser à la programmation durant le premier confinement de 2020. Je développais à ce moment-là des bots pour des serveurs Discord. Je me suis ensuite intéressé aux bases de données pour stocker les informations des utilisateurs. Passionné par le développement, j’ai décidé d’en faire mon métier.",
             txtstudy: "Les études arrivaient à grands pas. Je me suis penché sur la filière MMI car elle regroupait tout ce que j’aimais : Le graphisme, la communication, la vidéo et surtout le développement. J’ai pu donc, au cours de mon cursus, créer plusieurs sites internet et découvrir de nombreux outils. Naturellement, j’ai pris la décision de me lancer en auto-entreprise afin d’avoir toujours des projets à faire en dehors de celui de mon travail actuel.",
+
+            miscellaneous: "DIVERS",
         },
     },
 });

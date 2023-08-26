@@ -1,7 +1,7 @@
 <template>
     <section id="skills" class="h-m-screen lg:!h-screen pt-[8vh] lg:!pt-0 pb-20 flex flex-col justify-around z-20  lg:!w-full">
         <div class="w-full flex justify-start">
-            <h4 class="mt-10 text-2xl sm:!text-3xl lg:!text-6xl ml-[10%] text-my-purple font-medium z-20">Mes compétences</h4>
+            <h4 class="mt-10 text-2xl sm:!text-3xl lg:!text-6xl ml-[10%] text-my-purple font-medium z-20">{{ $t('skills') }}</h4>
         </div>
         <div class="flex w-full flex-col justify-between items-center lg:!flex-row z-20">
             <div class="left w-[80%] lg:!ml-[10%] flex flex-col justify-around h-[70vh]">
@@ -29,7 +29,7 @@
                     </div>
                 </div>
                 <div class="divers mt-8">
-                    <h5 class="font-bold mb-3">DIVERS</h5>
+                    <h5 class="font-bold mb-3">{{ $t('miscellaneous')}}</h5>
                     <div class="flex px-3">
                         <img src="../assets/img/logo_git.png" alt="Logo Git" class="h-[50px] px-3">
                         <img src="../assets/img/logo_github.png" alt="Logo Github" class="h-[50px] px-3">
