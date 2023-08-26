@@ -41,7 +41,7 @@ const i18n = createI18n({
             specific: "Specific Development",
             measure: "Developed on measure",
             chart1: "Graphic charter provided by the client (logo, colors, ...)",
-            Chart2: "Creation of a personalized graphic charter",
+            chart2: "Creation of a personalized graphic charter",
             domain: "Domain name (.fr) offered for 1 year",
             admin1: "Standard administrator interface",
             admin2: "Custom administrator interface",
@@ -51,6 +51,10 @@ const i18n = createI18n({
             day: "day",
             readmore: "Read more",
             contactme: "Contact me",
+
+            name: "First / Last name",
+            phone: "Phone",
+            footer: "All rights reserved",
         },
         fr: {
             home: 'Accueil',
@@ -96,6 +100,11 @@ const i18n = createI18n({
             day: "jour",
             readmore: "En savoir plus",
             contactme: "Me contacter",
+
+            name: "Prénom / Nom",
+            phone: "Téléphone",
+
+            footer: "Tous droits réservés",
         },
     },
 });
