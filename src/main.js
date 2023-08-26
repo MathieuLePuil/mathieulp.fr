@@ -13,6 +13,8 @@ const i18n = createI18n({
             whoami: "Who Am I ?",
             skills: "My skills",
             prices: "My prices",
+            homeh3: "Hi, I'm",
+            homeh2: "Freelance Full-Stack Developer",
         },
         fr: {
             home: 'Accueil',
@@ -20,6 +22,8 @@ const i18n = createI18n({
             whoami: "Qui suis-je ?",
             skills: "Mes compétences",
             prices: "Mes tarifs",
+            homeh3: "Salut ! Moi c'est",
+            homeh2: "Développeur Full-Stack Freelance",
         },
     },
 });
