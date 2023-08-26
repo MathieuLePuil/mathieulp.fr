@@ -76,16 +76,9 @@
 import {useI18n} from "vue-i18n";
 
 export default {
-    name: 'App',
-    setup() {
-        // Utilisation de la composition API pour accéder à l'instance de Vue-i18n
-        const { t, locale } = useI18n();
-
-        // ... le reste de votre code
-    },
     data() {
         return {
-            isDropdownOpen: false, // Variable pour gérer l'état du menu déroulant
+            isDropdownOpen: false,
         };
     },
     methods: {
