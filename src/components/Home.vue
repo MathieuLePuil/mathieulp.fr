@@ -6,9 +6,9 @@
             <h2 class="z-20 text-sm sm:!text-3xl lg:!text-4xl font-medium text-my-purple">{{ $t('homeh2') }}</h2>
         </div>
         <div class="fixed bottom-0 -left-2 sm:!left-1 px-4 flex flex-col items-center z-30">
-            <a href="https://www.linkedin.com/in/mathieulepuil/" target="_blank"><img src="../assets/img/logo_linkedin.png" class="w-4 sm:!w-8 mb-2" /></a>
-            <a href="https://www.github.com/MathieuLePuil" target="_blank"><img src="../assets/img/logo_github.png" class="w-4 sm:!w-8 mb-2" /></a>
-            <a href="https://www.twitter.com/MathieuLePuil" target="_blank"><img src="../assets/img/logo_x.png" class="w-4 sm:!w-8 mb-2" /></a>
+            <a href="https://www.linkedin.com/in/mathieulepuil/" target="_blank"><img src="../assets/img/logo_linkedin.png" class="w-4 sm:!w-8 mb-2" alt="Logo Linkedin" /></a>
+            <a href="https://www.github.com/MathieuLePuil" target="_blank"><img src="../assets/img/logo_github.png" class="w-4 sm:!w-8 mb-2" alt="Logo Github" /></a>
+            <a href="https://www.twitter.com/MathieuLePuil" target="_blank"><img src="../assets/img/logo_x.png" class="w-4 sm:!w-8 mb-2" alt="Logo TwitterX" /></a>
             <div class="h-14 w-1 bg-my-black"></div>
         </div>
         <ul class="background z-10 hidden lg:!block">
@@ -63,7 +63,6 @@
         animation: cube 12s ease-in forwards infinite;
         z-index: 10;
     }
-    undefined
     .background li:nth-child(0) {
         animation-delay: 0s;
         left: 12vw;
