@@ -15,6 +15,10 @@ const i18n = createI18n({
             prices: "My prices",
             homeh3: "Hi, I'm",
             homeh2: "Freelance Full-Stack Developer",
+            portfolio: "Portfolio built to develop my image when looking for a work-study position as a Full-Stack web developer.",
+            troyesevent: "Website developed during my school studies. The aim was to create a ticketing service for (fictitious) events in our town.",
+            popeye: "Popeye is my work-study company. I'm in charge of redesigning the website and creating tools (admin, for example) around it.",
+            websitelink: "Website Link",
         },
         fr: {
             home: 'Accueil',
@@ -24,6 +28,10 @@ const i18n = createI18n({
             prices: "Mes tarifs",
             homeh3: "Salut ! Moi c'est",
             homeh2: "Développeur Full-Stack Freelance",
+            portfolio: "Portfolio construit pour développer mon image lors de ma recherche d'alternance en tant que développeur web.",
+            troyesevent: "Site développé lors de mon cursus scolaire. L'objectif était de réalisé une billetterie pour les évènements (fictifs) de notre ville.",
+            popeye: "Popeye est l'entreprise de mon alternance. Je m'occupe de la refonte du site web ainsi que la création d'outils autour de celui-ci.",
+            websitelink: "Lien du site",
         },
     },
 });
