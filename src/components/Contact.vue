@@ -33,7 +33,7 @@ const submitForm = () => {
             <form @submit.prevent="submitForm" ref="contactForm" id="form" method="POST" class="mx-auto mt-10 max-w-xl sm:mt-20 w-full">
                 <div class="w-full">
                     <div class="w-full flex flex-col justify-center">
-                        <label for="prenom" class="block text-sm font-semibold leading-6 text-gray-900 px-4 lg:!px-0 ml-[8%] lg:ml-0">{{ $t('name') }}</label>
+                        <label for="name" class="block text-sm font-semibold leading-6 text-gray-900 px-4 lg:!px-0 ml-[8%] lg:ml-0">{{ $t('name') }}</label>
                         <div class="mt-1 w-full flex justify-center">
                             <input v-model="name" type="text" name="name" id="name" autocomplete="name" class="block w-[80%] lg:!w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 mx-4 lg:!mx-0">
                         </div>
@@ -45,7 +45,7 @@ const submitForm = () => {
                         </div>
                     </div>
                     <div class="mt-2 w-full flex flex-col justify-center">
-                        <label for="telephone" class="block text-sm font-semibold leading-6 text-gray-900 px-4 lg:!px-0 ml-[8%] lg:ml-0 mt-1">{{ $t('phone') }}</label>
+                        <label for="phone" class="block text-sm font-semibold leading-6 text-gray-900 px-4 lg:!px-0 ml-[8%] lg:ml-0 mt-1">{{ $t('phone') }}</label>
                         <div class="mt-1 w-full flex justify-center">
                             <input v-model="phone" type="tel" name="phone" id="phone" autocomplete="tel" class="block w-[80%] lg:!w-full rounded-md border-0 px-3.5 py-2 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 mx-4 lg:!mx-0">
                         </div>
