@@ -13,7 +13,7 @@
               </router-link>
               <div class="flex items-center lg:order-2 z-30">
                   <div class="relative">
-                      <button @click="toggleDropdown" type="button" data-dropdown-toggle="language-dropdown-menu" class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-gray-900 rounded-lg cursor-pointer hover:bg-gray-200 z-30">
+                      <button @click="toggleDropdown" type="button" class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-gray-900 rounded-lg cursor-pointer hover:bg-gray-200 z-30">
                           <img :src="getLocaleFlagSrc()" aria-hidden="true" class="h-3.5 w-3.5 rounded-full mr-2" alt="Flag">
                           {{ getLocaleLabel() }}
                       </button>
