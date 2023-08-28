@@ -6,6 +6,7 @@
             <h2 class="z-20 text-sm sm:!text-3xl lg:!text-4xl font-medium text-my-purple">{{ $t('homeh2') }}</h2>
         </div>
         <div class="fixed bottom-0 -left-2 sm:!left-1 px-4 flex flex-col items-center z-30">
+            <a href="mailto:contact@mathieulp.fr" target="_blank"><img src="../assets/img/email.png" class="w-4 sm:!w-8 mb-2" alt="Logo Mail" /></a>
             <a href="https://www.linkedin.com/in/mathieulepuil/" target="_blank"><img src="../assets/img/logo_linkedin.png" class="w-4 sm:!w-8 mb-2" alt="Logo Linkedin" /></a>
             <a href="https://www.github.com/MathieuLePuil" target="_blank"><img src="../assets/img/logo_github.png" class="w-4 sm:!w-8 mb-2" alt="Logo Github" /></a>
             <a href="https://www.twitter.com/MathieuLePuil" target="_blank"><img src="../assets/img/logo_x.png" class="w-4 sm:!w-8 mb-2" alt="Logo TwitterX" /></a>
@@ -138,3 +139,5 @@
         border-color: #ffffff;
     }
 </style>
+<script setup>
+</script>
