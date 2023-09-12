@@ -58,7 +58,7 @@ const submitForm = () => {
                     </div>
                 </div>
                 <div class="mt-10 flex justify-center">
-                    <button type="submit" class="block max-w-[80%] lg:!max-w-full w-full rounded-md !bg-my-purple px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:!bg-indigo-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Envoyer</button>
+                    <button type="submit" class="block max-w-[80%] lg:!max-w-full w-full rounded-md !bg-my-purple px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:!bg-indigo-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 hover:scale-105 transition-all duration-200 ease">Envoyer</button>
                 </div>
             </form>
             <div class="w-full flex justify-center mt-16">
