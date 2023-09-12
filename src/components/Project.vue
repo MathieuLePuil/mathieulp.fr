@@ -16,7 +16,7 @@
                         <i class="fa-brands fa-php"></i>
                     </div>
                     <a href="https://portfolio.mathieulp.fr" target="_blank" class="cursor-pointer">
-                        <div class="bg-my-purple w-[80%] lg:w-5/6 m-auto mt-6 p-2 hover:bg-indigo-600 rounded-lg text-white text-center shadow-xl shadow-bg-blue-700">
+                        <div class="bg-my-purple w-[80%] lg:w-5/6 m-auto mt-6 p-2 hover:bg-indigo-600 rounded-lg text-white text-center shadow-xl shadow-bg-blue-700 hover:scale-105 transition-all duration-200 ease">
                             <button class="lg:text-sm text-lg font-medium">{{ $t('websitelink') }}</button>
                         </div>
                     </a>
@@ -37,7 +37,7 @@
                         <i class="fa-solid fa-database"></i>
                     </div>
                     <a href="https://mmi21b12.sae301dev.ovh/" target="_blank" class="cursor-pointer">
-                        <div class="bg-my-purple w-[80%] lg:w-5/6 m-auto mt-6 p-2 hover:bg-indigo-600 rounded-lg text-white text-center shadow-xl shadow-bg-blue-700">
+                        <div class="bg-my-purple w-[80%] lg:w-5/6 m-auto mt-6 p-2 hover:bg-indigo-600 rounded-lg text-white text-center shadow-xl shadow-bg-blue-700 hover:scale-105 transition-all duration-200 ease">
                             <button class="lg:text-sm text-lg font-medium">{{ $t('websitelink') }}</button>
                         </div>
                     </a>
@@ -58,7 +58,7 @@
                         <i class="fa-solid fa-database"></i>
                     </div>
                     <a href="https://popeye-troyes.fr" target="_blank" class="cursor-pointer">
-                        <div class="bg-my-purple w-[80%] lg:w-5/6 m-auto mt-6 p-2 hover:bg-indigo-600 rounded-lg text-white text-center shadow-xl shadow-bg-blue-700">
+                        <div class="bg-my-purple w-[80%] lg:w-5/6 m-auto mt-6 p-2 hover:bg-indigo-600 rounded-lg text-white text-center shadow-xl shadow-bg-blue-700 hover:scale-105 transition-all duration-200 ease">
                             <button class="lg:text-sm text-lg font-medium">{{ $t('websitelink') }}</button>
                         </div>
                     </a>
