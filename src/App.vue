@@ -13,7 +13,7 @@
               </router-link>
               <div class="flex items-center lg:order-2 z-30">
                   <div class="relative">
-                      <button @click="toggleDropdown" type="button" class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-gray-900 rounded-lg cursor-pointer hover:bg-gray-200 z-30">
+                      <button @click="toggleDropdown" type="button" class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-gray-900 rounded-lg cursor-pointer hover:bg-gray-200 z-30 hover:scale-105 transition-all duration-200 ease">
                           <img :src="getLocaleFlagSrc()" aria-hidden="true" class="h-3.5 w-3.5 rounded-full mr-2" alt="Flag">
                           {{ getLocaleLabel() }}
                       </button>
@@ -45,22 +45,22 @@
               <div class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1 z-20" id="navbar-language">
                   <ul class="flex flex-col font-medium p-4 lg:p-0 mt-4 border border-gray-100 rounded-lg lg:flex-row lg:space-x-8 lg:mt-0 lg:border-0 z-20">
                       <li>
-                          <a href="#home" class="block py-2 pl-3 pr-4 text-black rounded hover:text-white hover:bg-indigo-500 z-20" aria-current="page">{{ $t('home') }}</a>
+                          <a href="#home" class="block py-2 pl-3 pr-4 text-black rounded hover:text-white hover:bg-indigo-500 z-20 hover:scale-105 transition-all duration-200 ease" aria-current="page">{{ $t('home') }}</a>
                       </li>
                       <li>
-                          <a href="#projects" class="block py-2 pl-3 pr-4 text-black rounded hover:text-white hover:bg-indigo-500 z-20" aria-current="page">{{ $t('projects') }}</a>
+                          <a href="#projects" class="block py-2 pl-3 pr-4 text-black rounded hover:text-white hover:bg-indigo-500 z-20 hover:scale-105 transition-all duration-200 ease" aria-current="page">{{ $t('projects') }}</a>
                       </li>
                       <li>
-                          <a href="#aboutme" class="block py-2 pl-3 pr-4 text-black rounded hover:text-white hover:bg-indigo-500 z-20" aria-current="page">{{ $t('whoami') }}</a>
+                          <a href="#aboutme" class="block py-2 pl-3 pr-4 text-black rounded hover:text-white hover:bg-indigo-500 z-20 hover:scale-105 transition-all duration-200 ease" aria-current="page">{{ $t('whoami') }}</a>
                       </li>
                       <li>
-                          <a href="#skills" class="block py-2 pl-3 pr-4 text-black rounded hover:text-white hover:bg-indigo-500 z-20" aria-current="page">{{ $t('skills') }}</a>
+                          <a href="#skills" class="block py-2 pl-3 pr-4 text-black rounded hover:text-white hover:bg-indigo-500 z-20 hover:scale-105 transition-all duration-200 ease" aria-current="page">{{ $t('skills') }}</a>
                       </li>
                       <li>
-                          <a href="#price" class="block py-2 pl-3 pr-4 text-black rounded hover:text-white hover:bg-indigo-500 z-20" aria-current="page">{{ $t('prices') }}</a>
+                          <a href="#price" class="block py-2 pl-3 pr-4 text-black rounded hover:text-white hover:bg-indigo-500 z-20 hover:scale-105 transition-all duration-200 ease" aria-current="page">{{ $t('prices') }}</a>
                       </li>
                       <li>
-                          <a href="#contact" class="block py-2 pl-3 pr-4 text-black rounded hover:text-white hover:bg-indigo-500 z-20" aria-current="page">Contact</a>
+                          <a href="#contact" class="block py-2 pl-3 pr-4 text-black rounded hover:text-white hover:bg-indigo-500 z-20 hover:scale-105 transition-all duration-200 ease" aria-current="page">Contact</a>
                       </li>
                   </ul>
               </div>
