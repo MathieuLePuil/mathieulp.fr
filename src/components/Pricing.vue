@@ -47,7 +47,7 @@
                         </li>
                     </ul>
                 </div>
-                <a href="files/Site_vitrine_standard.pdf" target="_blank" class="self-center text-white !bg-my-purple hover:!bg-indigo-600 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center mt-3">{{ $t('readmore') }}</a>
+                <a href="files/Site_vitrine_standard.pdf" target="_blank" class="self-center text-white !bg-my-purple hover:!bg-indigo-600 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center mt-3 hover:scale-105 transition-all duration-200 ease">{{ $t('readmore') }}</a>
             </div>
             <!--            FIN TARIF 1             -->
 
@@ -93,7 +93,7 @@
                         </li>
                     </ul>
                 </div>
-                <a href="files/Site_vitrine_avance.pdf" target="_blank" class="self-center text-white !bg-my-purple hover:!bg-indigo-600 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center mt-3">{{ $t('readmore') }}</a>
+                <a href="files/Site_vitrine_avance.pdf" target="_blank" class="self-center text-white !bg-my-purple hover:!bg-indigo-600 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center mt-3 hover:scale-105 transition-all duration-200 ease">{{ $t('readmore') }}</a>
             </div>
             <!--            FIN TARIF 2             -->
 
@@ -139,7 +139,7 @@
                         </li>
                     </ul>
                 </div>
-                <a href="files/Site_e-commerce.pdf" target="_blank" class="self-center text-white !bg-my-purple hover:!bg-indigo-600 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center mt-3">{{ $t('readmore') }}</a>
+                <a href="files/Site_e-commerce.pdf" target="_blank" class="self-center text-white !bg-my-purple hover:!bg-indigo-600 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center mt-3 hover:scale-105 transition-all duration-200 ease">{{ $t('readmore') }}</a>
             </div>
             <!--            FIN TARIF 3             -->
 
@@ -154,7 +154,7 @@
                         <span class="ml-1 text-xl font-normal text-gray-500 dark:text-gray-400">/{{ $t('hours') }}</span>
                     </div>
                     <div class="space-y-5 mt-12">
-                        <a href="#contact" class="text-white !bg-my-purple hover:!bg-indigo-600 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">{{ $t('contactme') }}</a>
+                        <a href="#contact" class="text-white !bg-my-purple hover:!bg-indigo-600 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center hover:scale-105 transition-all duration-200 ease">{{ $t('contactme') }}</a>
                     </div>
                 </div>
                 <!--            FIN TARIF 4             -->
@@ -168,7 +168,7 @@
                         <span class="ml-1 text-xl font-normal text-gray-500 dark:text-gray-400">/{{ $t('day') }}</span>
                     </div>
                     <div class="space-y-5 mt-9">
-                        <a href="#contact" class="text-white !bg-my-purple hover:!bg-indigo-600 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">{{ $t('contactme') }}</a>
+                        <a href="#contact" class="text-white !bg-my-purple hover:!bg-indigo-600 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center hover:scale-105 transition-all duration-200 ease">{{ $t('contactme') }}</a>
                     </div>
                 </div>
                 <!--            FIN TARIF 5             -->
