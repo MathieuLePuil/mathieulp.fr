@@ -75,7 +75,7 @@ const submitForm = () => {
                 </div>
             </form>
             <div class="w-full flex justify-center mt-16">
-                <p class="text-xs sm:text-sm">&copy; 2023 - {{ $t('footer') }} - Mathieu Le Puil</p>
+                <p class="text-xs sm:text-sm">&copy; 2023 - {{ $t('footer') }} - Mathieu Le Puil | <router-link to="/mentions-legales" class="text-xs sm:text-sm hover:text-my-purple">Mentions légales</router-link></p>
             </div>
         </div>
     </section>

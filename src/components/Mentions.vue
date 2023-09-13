@@ -13,8 +13,14 @@
         <p class="text-my-black mt-5 font-lg">Adresse e-mail : contact@mathieulp.fr<br>Numéro de téléphone : 07.82.91.70.75<br><br>Numéro d'identification à la TVA : FR72977990977</p>
 
         <h2 class="text-my-purple text-xl font-bold mt-16">Hébergeur :</h2>
-        <p class="text-my-black mt-5 font-lg mb-[10%]">Nom ou dénomination sociale de l'hébergeur : PulseHeberg<br>Adresse : 9, Boulevard de Strasbourg
+        <p class="text-my-black mt-5 font-lg mb-[5%]">Nom ou dénomination sociale de l'hébergeur : PulseHeberg<br>Adresse : 9, Boulevard de Strasbourg
             83000 Toulon<br>Numéro de téléphone de l'hébergeur : 04.22.14.13.60</p>
     </div>
 
+    <div class="w-full flex justify-center mb-5">
+        <p class="text-xs sm:text-sm">&copy; 2023 - {{ $t('footer') }} - Mathieu Le Puil | <router-link to="/mentions-legales" class="text-xs sm:text-sm hover:text-my-purple">Mentions légales</router-link></p>
+    </div>
+
 </template>
+<script setup>
+</script>
