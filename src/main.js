@@ -56,6 +56,22 @@ const i18n = createI18n({
             name: "First / Last name",
             phone: "Phone",
             footer: "All rights reserved",
+
+            mentions: "Legal notices",
+            mentions1: "In accordance with the provisions of law no. 2004-575 of 21 June 2004 on confidence in the digital economy, users of the mathieulp.fr website are informed of the identity of the various parties involved in its creation and monitoring.",
+            mentions2: "Publisher",
+            mentions3: "Name : Mathieu Le Puil",
+            mentions4: "Address : 53 avenue Anatole France, 10000 Troyes",
+            mentions5: "Status : Sole Proprietorship (EI)",
+            mentions6: "Registration number in the RCS: 977990977",
+            mentions7: "Contact",
+            mentions8: "E-mail address :",
+            mentions9: "Phone number :",
+            mentions10: "VAT identification number: FR72977990977",
+            mentions11: "Host",
+            mentions12: "Name or corporate name of the host: PulseHeberg",
+            mentions13: "Address : 9, Boulevard de Strasbourg 83000 Toulon",
+            mentions14: "Host's telephone number : 04.22.14.13.60"
         },
         fr: {
             home: 'Accueil',
@@ -106,6 +122,22 @@ const i18n = createI18n({
             phone: "Téléphone",
 
             footer: "Tous droits réservés",
+
+            mentions: "Mentions légales",
+            mentions1: "Conformément aux dispositions de la loi n° 2004-575 du 21 juin 2004 pour la confiance en l'économie numérique, il est précisé aux utilisateurs du site mathieulp.fr l'identité des différents intervenants dans le cadre de sa réalisation et de son suivi.",
+            mentions2: "Éditeur",
+            mentions3: "Nom : Mathieu Le Puil",
+            mentions4: "Adresse : 53 avenue Anatole France, 10000 Troyes",
+            mentions5: "Statut : Entrepreneur Individuel (EI)",
+            mentions6: "Numéro d'immatriculation au RCS : 977990977",
+            mentions7: "Contact",
+            mentions8: "Adresse e-mail : contact@mathieulp.fr",
+            mentions9: "Numéro de téléphone : 07.82.91.70.75",
+            mentions10: "Numéro d'identification à la TVA : FR72977990977",
+            mentions11: "Hébergeur",
+            mentions12: "Nom ou dénomination sociale de l'hébergeur : PulseHeberg",
+            mentions13: "Adresse : 9, Boulevard de Strasbourg 83000 Toulon",
+            mentions14: "Numéro de téléphone de l'hébergeur : 04.22.14.13.60"
         },
     },
 });
