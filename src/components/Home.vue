@@ -6,10 +6,10 @@
             <h2 class="z-20 text-sm sm:!text-3xl lg:!text-4xl font-medium text-my-purple">{{ $t('homeh2') }}</h2>
         </div>
         <div class="fixed bottom-0 -left-2 sm:!left-1 px-4 flex flex-col items-center z-30">
-            <a href="mailto:contact@mathieulp.fr" target="_blank"><img src="../assets/img/email.png" class="w-4 sm:!w-8 mb-2 hover:scale-105 transition-all duration-200 ease" alt="Logo Mail" /></a>
-            <a href="https://www.linkedin.com/in/mathieulepuil/" target="_blank"><img src="../assets/img/logo_linkedin.png" class="w-4 sm:!w-8 mb-2 hover:scale-105 transition-all duration-200 ease" alt="Logo Linkedin" /></a>
-            <a href="https://www.github.com/MathieuLePuil" target="_blank"><img src="../assets/img/logo_github.png" class="w-4 sm:!w-8 mb-2 hover:scale-105 transition-all duration-200 ease" alt="Logo Github" /></a>
-            <a href="https://www.twitter.com/MathieuLePuil" target="_blank"><img src="../assets/img/logo_x.png" class="w-4 sm:!w-8 mb-2 hover:scale-105 transition-all duration-200 ease" alt="Logo TwitterX" /></a>
+            <a href="mailto:contact@mathieulp.fr" target="_blank"><img src="../assets/img/email.webp" class="w-4 sm:!w-8 mb-2 hover:scale-105 transition-all duration-200 ease" alt="Logo Mail" /></a>
+            <a href="https://www.linkedin.com/in/mathieulepuil/" target="_blank"><img src="../assets/img/logo_linkedin.webp" class="w-4 sm:!w-8 mb-2 hover:scale-105 transition-all duration-200 ease" alt="Logo Linkedin" /></a>
+            <a href="https://www.github.com/MathieuLePuil" target="_blank"><img src="../assets/img/logo_github.webp" class="w-4 sm:!w-8 mb-2 hover:scale-105 transition-all duration-200 ease" alt="Logo Github" /></a>
+            <a href="https://www.twitter.com/MathieuLePuil" target="_blank"><img src="../assets/img/logo_x.webp" class="w-4 sm:!w-8 mb-2 hover:scale-105 transition-all duration-200 ease" alt="Logo TwitterX" /></a>
             <div class="h-14 w-1 bg-my-black"></div>
         </div>
         <ul class="background z-10 hidden lg:!block">

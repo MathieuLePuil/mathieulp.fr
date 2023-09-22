@@ -3,7 +3,7 @@
         <h4 class="mt-10 text-2xl sm:!text-3xl lg:!text-6xl ml-[10%] text-my-purple font-medium z-20">{{ $t('projects') }}</h4>
         <div class="flex flex-wrap mx-[10%] z-20">
             <div class="w-80 mt-14 m-auto lg:mt-16 max-w-full">
-                <img src="../assets/img/portfolio_b&w.png" alt="" class="rounded-t-2xl shadow-2xl lg:w-full 2xl:w-full 2xl:h-44 object-cover"/>
+                <img src="../assets/img/portfolio.webp" alt="" class="rounded-t-2xl shadow-2xl lg:w-full 2xl:w-full 2xl:h-44 object-cover"/>
                 <div class="bg-white shadow-2xl rounded-b-3xl pb-8">
                     <h2 class="text-center text-gray-800 text-2xl font-bold pt-6">Portfolio</h2>
                     <div class="w-5/6 m-auto">
@@ -23,7 +23,7 @@
                 </div>
             </div>
             <div class="w-80 mt-14 m-auto lg:mt-16 max-w-full">
-                <img src="../assets/img/3event_b&w.png" alt="" class="rounded-t-2xl shadow-2xl lg:w-full 2xl:w-full 2xl:h-44 object-cover"/>
+                <img src="../assets/img/3event.webp" alt="" class="rounded-t-2xl shadow-2xl lg:w-full 2xl:w-full 2xl:h-44 object-cover"/>
                 <div class="bg-white shadow-2xl rounded-b-3xl pb-8">
                     <h2 class="text-center text-gray-800 text-2xl font-bold pt-6">3Event</h2>
                     <div class="w-5/6 m-auto">
@@ -44,7 +44,7 @@
                 </div>
             </div>
             <div class="w-80 mt-14 m-auto lg:mt-16 max-w-full z-20">
-                <img src="../assets/img/popeye_b&w.png" alt="" class="rounded-t-2xl shadow-2xl lg:w-full 2xl:w-full 2xl:h-44 object-cover"/>
+                <img src="../assets/img/popeye.webp" alt="" class="rounded-t-2xl shadow-2xl lg:w-full 2xl:w-full 2xl:h-44 object-cover"/>
                 <div class="bg-white shadow-2xl rounded-b-3xl pb-8">
                     <h2 class="text-center text-gray-800 text-2xl font-bold pt-6">Popeye Troyes</h2>
                     <div class="w-5/6 m-auto">

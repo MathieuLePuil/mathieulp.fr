@@ -8,7 +8,7 @@
       <nav class="border-gray-200 z-30">
           <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 z-30">
               <router-link to="/" class="flex items-center z-30">
-                  <img src="./assets/img/LOGO.png" class="h-8 mr-3" alt="Logo" />
+                  <img src="./assets/img/LOGO.webp" class="h-8 mr-3" alt="Logo" />
                   <span class="self-center text-2xl font-semibold whitespace-nowrap">Mathieu</span>
               </router-link>
               <div class="flex items-center lg:order-2 z-30">
@@ -22,13 +22,13 @@
                           <ul class="py-2 font-medium flex flex-col justify-around" role="none">
                               <li>
                                   <button @click="changeLocale('fr'); closeDropdown()" type="button" class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-gray-900 rounded-lg cursor-pointer hover:bg-gray-200 z-30">
-                                      <img src="./assets/img/fr.png" aria-hidden="true" class="h-3.5 w-3.5 rounded-full mr-2" alt="Test">
+                                      <img src="./assets/img/fr.webp" aria-hidden="true" class="h-3.5 w-3.5 rounded-full mr-2" alt="Test">
                                       Français
                                   </button>
                               </li>
                               <li>
                                   <button @click="changeLocale('en'); closeDropdown()" type="button" class="inline-flex w-full items-center font-medium justify-center px-4 p-2 text-sm text-gray-900 rounded-lg cursor-pointer hover:bg-gray-200 z-30">
-                                      <img src="./assets/img/en.png" aria-hidden="true" class="h-3.5 w-3.5 rounded-full mr-2" alt="Test">
+                                      <img src="./assets/img/en.webp" aria-hidden="true" class="h-3.5 w-3.5 rounded-full mr-2" alt="Test">
                                       English
                                   </button>
                               </li>
