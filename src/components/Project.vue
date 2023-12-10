@@ -51,7 +51,7 @@
                     </div>
                     <div class="flex justify-around text-2xl mt-5">
                         <i class="fa-brands fa-symfony"></i>
-                        <img src="../assets/img/Tailwind%20CSS%20icon.svg" class="w-6 p-0" alt="">
+                        <img src="../assets/img/tailwind-icon.svg" class="w-6 p-0" alt="">
                         <i class="fa-solid fa-database"></i>
                     </div>
                     <a href="https://github.com/MathieuLePuil/MySymfonyTemplate" target="_blank" class="cursor-pointer">
