@@ -19,6 +19,8 @@ const i18n = createI18n({
             homeh2: "Freelance Full-Stack Developer",
 
             portfolio: "Portfolio built to develop my image when looking for a work-study position as a Full-Stack web developer.",
+            codeclipper: "CodeClipper is a website that allows you to share code snippets with other users. It is a project that I am developing in my spare time.",
+            mysymfonytemplate: "MySymfonyTemplate is a template for Symfony 5. It allows you to quickly start a project with the basic features already set up.",
             troyesevent: "Website developed during my school studies. The aim was to create a ticketing service for (fictitious) events in our town.",
             popeye: "Popeye is my work-study company. I'm in charge of redesigning the website and creating tools (admin, for example) around it.",
             websitelink: "Website Link",
@@ -84,6 +86,8 @@ const i18n = createI18n({
             homeh2: "Développeur Full-Stack Freelance",
 
             portfolio: "Portfolio construit pour développer mon image lors de ma recherche d'alternance en tant que développeur web.",
+            codeclipper: "CodeClipper est un site web permettant d'enregistrer et de partager des extraits de code avec d'autres utilisateurs. ",
+            mysymfonytemplate: "MySymfonyTemplate est un template pour Symfony 5. Il permet de démarrer un projet avec les fonctionnalités de base en place.",
             troyesevent: "Site développé lors de mon cursus scolaire. L'objectif était de réalisé une billetterie pour les évènements (fictifs) de notre ville.",
             popeye: "Popeye est l'entreprise de mon alternance. Je m'occupe de la refonte du site web ainsi que la création d'outils autour de celui-ci.",
             websitelink: "Lien du site",
