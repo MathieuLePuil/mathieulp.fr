@@ -9,7 +9,7 @@
           <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 z-30">
               <router-link to="/" class="flex items-center z-30">
                   <img src="./assets/img/LOGO.webp" class="h-8 mr-3" alt="Logo" />
-                  <span class="self-center text-2xl font-semibold whitespace-nowrap">Mathieu</span>
+                  <span class="self-center text-2xl font-semibold whitespace-nowrap">MathieuLP</span>
               </router-link>
               <div class="flex items-center lg:order-2 z-30">
                   <div class="relative">
@@ -17,7 +17,6 @@
                           <img :src="getLocaleFlagSrc()" aria-hidden="true" class="h-3.5 w-3.5 rounded-full mr-2" alt="Flag">
                           {{ getLocaleLabel() }}
                       </button>
-                      <!-- Dropdown -->
                       <div v-if="isDropdownOpen" class="z-50 mt-2 text-base list-none divide-gray-100 rounded-lg shadow bg-[#F6F6F6] absolute left-0 w-full">
                           <ul class="py-2 font-medium flex flex-col justify-around" role="none">
                               <li>
