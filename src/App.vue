@@ -5,7 +5,7 @@
 
 <template>
   <header class="z-30">
-      <nav class="border-gray-200 z-30">
+      <nav class="border-gray-200 z-30 fira-code text-white">
           <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 z-30">
               <router-link to="/" class="flex items-center z-30">
                   <img src="./assets/img/LOGO.webp" class="h-8 mr-3" alt="Logo" />
@@ -13,7 +13,7 @@
               </router-link>
               <div class="flex items-center lg:order-2 z-30">
                   <div class="relative">
-                      <button @click="toggleDropdown" type="button" class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-gray-900 rounded-lg cursor-pointer hover:bg-gray-200 z-30 hover:scale-105 transition-all duration-200 ease">
+                      <button @click="toggleDropdown" type="button" class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-gray-300 rounded-lg cursor-pointer hover:bg-gray-200 hover:text-gray-600 z-30 hover:scale-105 transition-all duration-200 ease">
                           <img :src="getLocaleFlagSrc()" aria-hidden="true" class="h-3.5 w-3.5 rounded-full mr-2" alt="Flag">
                           {{ getLocaleLabel() }}
                       </button>
@@ -35,32 +35,26 @@
                           </ul>
                       </div>
                   </div>
-                  <button data-collapse-toggle="navbar-language" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-language" aria-expanded="false">
+                  <button data-collapse-toggle="navbar-language" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-300 rounded-lg lg:hidden hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-language" aria-expanded="false">
                       <span class="sr-only">Menu principal</span>
                       <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
                           <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
                       </svg>
                   </button>
               </div>
-              <div class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1 z-20" id="navbar-language">
-                  <ul class="flex flex-col font-medium p-4 lg:p-0 mt-4 border border-gray-100 rounded-lg lg:flex-row lg:space-x-8 lg:mt-0 lg:border-0 z-20">
+              <div class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1 z-20 text-sm text-white" id="navbar-language">
+                  <ul class="flex flex-col font-medium p-4 lg:p-0 mt-4 border border-gray-100 rounded-lg lg:flex-row lg:space-x-4 lg:mt-0 lg:border-0 z-20">
                       <li>
-                          <a href="/#home" class="block py-2 pl-3 pr-4 text-black rounded hover:text-white hover:bg-indigo-500 z-20 hover:scale-105 transition-all duration-200 ease" aria-current="page">{{ $t('home') }}</a>
+                          <a href="/#home" class="block py-2 pl-3 pr-4 text-white rounded hover:text-white hover:bg-indigo-500 z-20 hover:scale-105 transition-all duration-200 ease" aria-current="page">01. {{ $t('home') }}</a>
                       </li>
                       <li>
-                          <a href="/#projects" class="block py-2 pl-3 pr-4 text-black rounded hover:text-white hover:bg-indigo-500 z-20 hover:scale-105 transition-all duration-200 ease" aria-current="page">{{ $t('projects') }}</a>
+                          <a href="/#projects" class="block py-2 pl-3 pr-4 text-white rounded hover:text-white hover:bg-indigo-500 z-20 hover:scale-105 transition-all duration-200 ease" aria-current="page">02. {{ $t('projects') }}</a>
                       </li>
                       <li>
-                          <a href="/#aboutme" class="block py-2 pl-3 pr-4 text-black rounded hover:text-white hover:bg-indigo-500 z-20 hover:scale-105 transition-all duration-200 ease" aria-current="page">{{ $t('whoami') }}</a>
+                          <a href="/#skills" class="block py-2 pl-3 pr-4 text-white rounded hover:text-white hover:bg-indigo-500 z-20 hover:scale-105 transition-all duration-200 ease" aria-current="page">03. {{ $t('skills') }}</a>
                       </li>
                       <li>
-                          <a href="/#skills" class="block py-2 pl-3 pr-4 text-black rounded hover:text-white hover:bg-indigo-500 z-20 hover:scale-105 transition-all duration-200 ease" aria-current="page">{{ $t('skills') }}</a>
-                      </li>
-                      <li>
-                          <a href="/#price" class="block py-2 pl-3 pr-4 text-black rounded hover:text-white hover:bg-indigo-500 z-20 hover:scale-105 transition-all duration-200 ease" aria-current="page">{{ $t('prices') }}</a>
-                      </li>
-                      <li>
-                          <a href="/#contact" class="block py-2 pl-3 pr-4 text-black rounded hover:text-white hover:bg-indigo-500 z-20 hover:scale-105 transition-all duration-200 ease" aria-current="page">Contact</a>
+                          <a href="/#contact" class="block py-2 pl-3 pr-4 text-white rounded hover:text-white hover:bg-indigo-500 z-20 hover:scale-105 transition-all duration-200 ease" aria-current="page">04. Contact</a>
                       </li>
                   </ul>
               </div>

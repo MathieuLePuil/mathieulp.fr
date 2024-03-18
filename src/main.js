@@ -10,10 +10,8 @@ const i18n = createI18n({
     messages: {
         en: {
             home: 'Home',
-            projects: 'My projects',
-            whoami: "Who am I ?",
-            skills: "My skills",
-            prices: "My prices",
+            projects: 'Projects',
+            skills: "Skills",
 
             homeh3: "Hi, I'm",
             homeh2: "Freelance Full-Stack Developer",
@@ -77,10 +75,8 @@ const i18n = createI18n({
         },
         fr: {
             home: 'Accueil',
-            projects: "Mes réalisations",
-            whoami: "Qui suis-je ?",
-            skills: "Mes compétences",
-            prices: "Mes tarifs",
+            projects: "Projets",
+            skills: "Compétences",
 
             homeh3: "Salut ! Moi c'est",
             homeh2: "Développeur Full-Stack Freelance",
