@@ -13,8 +13,9 @@ const i18n = createI18n({
             projects: 'Projects',
             skills: "Skills",
 
-            homeh3: "Hi, I'm",
-            homeh2: "Freelance Full-Stack Developer",
+            homeh3: "Web Developer",
+            homeh2: "Student and Freelance",
+            homep: "Available for freelance missions",
 
             portfolio: "Portfolio built to develop my image when looking for a work-study position as a Full-Stack web developer.",
             codeclipper: "CodeClipper is a website that allows you to share code snippets with other users. It is a project that I am developing in my spare time.",
@@ -78,8 +79,9 @@ const i18n = createI18n({
             projects: "Projets",
             skills: "Compétences",
 
-            homeh3: "Salut ! Moi c'est",
-            homeh2: "Développeur Full-Stack Freelance",
+            homeh3: "Développeur Web",
+            homeh2: "Étudiant et Freelance",
+            homep: "Disponible pour missions Freelance",
 
             portfolio: "Portfolio construit pour développer mon image lors de ma recherche d'alternance en tant que développeur web.",
             codeclipper: "CodeClipper est un site web permettant d'enregistrer et de partager des extraits de code avec d'autres utilisateurs. ",
