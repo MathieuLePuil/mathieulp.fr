@@ -42,6 +42,7 @@
     }
 
     .background {
+        opacity: 10%;
         position: fixed;
         width: 99vw;
         height: 100vh;
@@ -61,7 +62,7 @@
         color: transparent;
         transform-origin: top left;
         transform: scale(0) rotate(0deg) translate(-50%, -50%);
-        animation: cube 12s ease-in forwards infinite;
+        animation: cube 20s ease-in forwards infinite;
         z-index: 10;
     }
     .background li:nth-child(0) {
