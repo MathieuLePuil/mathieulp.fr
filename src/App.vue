@@ -4,7 +4,7 @@
 </script>
 
 <template>
-  <header class="z-30">
+  <header class="z-30" id="home">
       <nav class="border-gray-200 z-30 fira-code text-white">
           <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 z-30">
               <router-link to="/" class="flex items-center z-30">

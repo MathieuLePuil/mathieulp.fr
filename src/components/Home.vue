@@ -1,5 +1,5 @@
 <template>
-    <section id="home" class="h-full pt-[8vh] lg:!pt-0 lg:!h-[92vh]">
+    <section class="h-full pt-[8vh] lg:!pt-0 lg:!h-[92vh]">
         <div class="w-full h-full flex flex-col items-center justify-center space-y-3 z-30">
             <div class="z-30">
                 <img src="../assets/img/me.webp" alt="Photo de moi" class="w-36 rounded-full">
