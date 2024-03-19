@@ -16,6 +16,7 @@
                       <button @click="toggleDropdown" type="button" class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-gray-300 rounded-lg cursor-pointer hover:bg-gray-200 hover:text-gray-600 z-30 hover:scale-105 transition-all duration-200 ease">
                           <img :src="getLocaleFlagSrc()" aria-hidden="true" class="h-3.5 w-3.5 rounded-full mr-2" alt="Flag">
                           {{ getLocaleLabel() }}
+                          <i class="fa-solid fa-sort-down pb-1.5 ml-2"></i>
                       </button>
                       <div v-if="isDropdownOpen" class="z-50 mt-2 text-base list-none divide-gray-100 rounded-lg shadow bg-[#F6F6F6] absolute left-0 w-full">
                           <ul class="py-2 font-medium flex flex-col justify-around" role="none">

@@ -17,19 +17,19 @@
                 </div>
                 <div class="flex items-center space-x-4 z-30">
                     <a href="https://www.github.com/MathieuLePuil" target="_blank">
-                        <i class="fa-brands fa-github text-white text-2xl hover:scale-105 transition-all duration-200 ease"></i>
+                        <i class="fa-brands fa-github text-white text-3xl hover:scale-105 transition-all duration-200 ease"></i>
                     </a>
                     <a href="https://www.twitter.com/MathieuLePuil" target="_blank">
-                        <i class="fa-brands fa-x-twitter text-white text-2xl hover:scale-105 transition-all duration-200 ease"></i>
+                        <i class="fa-brands fa-x-twitter text-white text-3xl hover:scale-105 transition-all duration-200 ease"></i>
                     </a>
                     <a href="https://www.linkedin.com/in/mathieulepuil/" target="_blank">
-                        <i class="fa-brands fa-linkedin text-white text-2xl hover:scale-105 transition-all duration-200 ease"></i>
+                        <i class="fa-brands fa-linkedin text-white text-3xl hover:scale-105 transition-all duration-200 ease"></i>
                     </a>
                 </div>
             </div>
             <a href="mailto:contact@mathieulp.fr" class="z-30">
-                <div class="bg-my-purple text-white font-regular py-1 px-3 text-lg rounded hover:scale-105 transition-all duration-200 ease">
-                    <i class="fa-regular fa-envelope text-white font-thin"></i>
+                <div class="bg-purple-200 text-black font-regular py-1 px-3 text-lg rounded hover:scale-105 transition-all duration-200 ease">
+                    <i class="fa-regular fa-envelope text-black font-thin"></i>
                     {{ $t('contactme') }}
                 </div>
             </a>
