@@ -9,7 +9,7 @@
                     <div
                         class="absolute w-3 h-3 bg-gray-200 rounded-full -left-1.5 border border-white">
                     </div>
-                    <time class="mb-1 text-sm font-normal leading-none text-white">{{ $t('freelancedate') }}</time>
+                    <time class="mb-1 text-sm font-normal leading-none text-gray-400">{{ $t('freelancedate') }}</time>
                     <h3 class="text-lg font-semibold text-white">{{ $t('freelancename') }}</h3>
                     <p class="mb-4 text-base font-normal text-gray-300">{{ $t('freelancedesc') }}</p>
                 </li>
@@ -17,7 +17,7 @@
                     <div
                         class="absolute w-3 h-3 bg-gray-200 rounded-full -left-1.5 border border-white">
                     </div>
-                    <time class="mb-1 text-sm font-normal leading-none text-white">{{ $t('popeyedate') }}</time>
+                    <time class="mb-1 text-sm font-normal leading-none text-gray-400">{{ $t('popeyedate') }}</time>
                     <h3 class="text-lg font-semibold text-white">{{ $t('popeyename') }}</h3>
                     <p class="mb-4 text-base font-normal text-gray-300">{{ $t('popeyedesc') }}</p>
                 </li>
@@ -25,7 +25,7 @@
                     <div
                         class="absolute w-3 h-3 bg-gray-200 rounded-full -left-1.5 border border-white">
                     </div>
-                    <time class="mb-1 text-sm font-normal leading-none text-white">{{ $t('studydate') }}</time>
+                    <time class="mb-1 text-sm font-normal leading-none text-gray-400">{{ $t('studydate') }}</time>
                     <h3 class="text-lg font-semibold text-white">{{ $t('studyname') }}</h3>
                     <p class="mb-4 text-base font-normal text-gray-300">{{ $t('studydesc') }}</p>
                 </li>
