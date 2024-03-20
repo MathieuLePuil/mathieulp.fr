@@ -5,7 +5,7 @@
         </div>
         <div class="gallery-container grid grid-cols-1 md:grid-cols-3 gap-4 z-30">
             <div class="image-container relative hover:scale-105 transition-all duration-200 ease" @click="hideClickIndicator">
-                <img class="h-auto max-w-full rounded-lg" src="../assets/img/portfolio.webp" alt="">
+                <img class="h-auto max-w-full rounded-lg border-white border-2" src="../assets/img/portfolio.webp" alt="">
                 <div class="image-overlay absolute top-0 left-0 w-full h-full bg-white bg-opacity-60 flex flex-col justify-center opacity-0 transition-opacity duration-300 ease rounded-lg px-5 space-y-1 md:space-y-2" style="background: rgb(255, 255, 255, 0.95)">
                     <h3 class="font-bold text-xl fira-code">Portfolio</h3>
                     <p class="text-sm">{{ $t('portfolio') }}</p>
@@ -14,7 +14,7 @@
                 <i class="fa-solid fa-hand-pointer click-indicator" v-if="showClickIndicator"></i>
             </div>
             <div class="image-container relative hover:scale-105 transition-all duration-200 ease" @click="hideClickIndicator">
-                <img class="h-auto max-w-full rounded-lg" src="../assets/img/codeclipper.webp" alt="">
+                <img class="h-auto max-w-full rounded-lg border-white border-2" src="../assets/img/codeclipper.webp" alt="">
                 <div class="image-overlay absolute top-0 left-0 w-full h-full bg-white bg-opacity-60 flex flex-col justify-center opacity-0 transition-opacity duration-300 ease rounded-lg px-5 space-y-1 md:space-y-2" style="background: rgb(255, 255, 255, 0.95)">
                     <h3 class="font-bold text-xl fira-code">CodeClipper</h3>
                     <p class="text-sm">{{ $t('codeclipper') }}</p>
@@ -22,7 +22,7 @@
                 </div>
             </div>
             <div class="image-container relative hover:scale-105 transition-all duration-200 ease" @click="hideClickIndicator">
-                <img class="h-auto max-w-full rounded-lg" src="../assets/img/MySymfonyTemplate.webp" alt="">
+                <img class="h-auto max-w-full rounded-lg border-white border-2" src="../assets/img/MySymfonyTemplate.webp" alt="">
                 <div class="image-overlay absolute top-0 left-0 w-full h-full bg-white bg-opacity-60 flex flex-col justify-center opacity-0 transition-opacity duration-300 ease rounded-lg px-5 space-y-1 md:space-y-2" style="background: rgb(255, 255, 255, 0.95)">
                     <h3 class="font-bold text-xl fira-code">MySymfonyTemplate</h3>
                     <p class="text-sm">{{ $t('mysymfonytemplate') }}</p>
@@ -30,7 +30,7 @@
                 </div>
             </div>
             <div class="image-container relative hover:scale-105 transition-all duration-200 ease" @click="hideClickIndicator">
-                <img class="h-auto max-w-full rounded-lg" src="../assets/img/popeye.webp" alt="">
+                <img class="h-auto max-w-full rounded-lg border-white border-2" src="../assets/img/popeye.webp" alt="">
                 <div class="image-overlay absolute top-0 left-0 w-full h-full bg-white bg-opacity-60 flex flex-col justify-center opacity-0 transition-opacity duration-300 ease rounded-lg px-5 space-y-1 md:space-y-2" style="background: rgb(255, 255, 255, 0.95)">
                     <h3 class="font-bold text-xl fira-code">Popeye</h3>
                     <p class="text-sm">{{ $t('popeye') }}</p>
@@ -38,7 +38,7 @@
                 </div>
             </div>
             <div class="image-container relative hover:scale-105 transition-all duration-200 ease" @click="hideClickIndicator">
-                <img class="h-auto max-w-full rounded-lg" src="../assets/img/3event.webp" alt="">
+                <img class="h-auto max-w-full rounded-lg border-white border-2" src="../assets/img/3event.webp" alt="">
                 <div class="image-overlay absolute top-0 left-0 w-full h-full bg-white flex flex-col justify-center opacity-0 transition-opacity duration-300 ease rounded-lg px-5 space-y-1 md:space-y-2" style="background: rgb(255, 255, 255, 0.95)">
                     <h3 class="font-bold text-xl fira-code">3Event</h3>
                     <p class="text-sm">{{ $t('troyesevent') }}</p>
@@ -46,7 +46,7 @@
                 </div>
             </div>
             <div class="image-container relative hover:scale-105 transition-all duration-200 ease" @click="hideClickIndicator">
-                <img class="h-auto max-w-full rounded-lg" src="../assets/img/exerdevai.webp" alt="">
+                <img class="h-auto max-w-full rounded-lg border-white border-2" src="../assets/img/exerdevai.webp" alt="">
                 <div class="image-overlay absolute top-0 left-0 w-full h-full bg-white bg-opacity-60 flex flex-col justify-center opacity-0 transition-opacity duration-300 ease rounded-lg px-5 space-y-1 md:space-y-2" style="background: rgb(255, 255, 255, 0.95)">
                     <h3 class="font-bold text-xl fira-code">ExerDevAI</h3>
                     <p class="text-sm">{{ $t('exerdevai') }}</p>
