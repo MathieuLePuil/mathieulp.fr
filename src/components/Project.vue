@@ -100,6 +100,12 @@ h2::before {
     cursor: pointer;
 }
 
+@media (min-width: 1025px) {
+    .click-indicator {
+        display: none !important;
+    }
+}
+
 @media (max-width: 1024px) {
     .click-indicator {
         display: block !important;
@@ -107,7 +113,6 @@ h2::before {
 }
 
 .click-indicator {
-    display: none;
     position: absolute;
     top: 40%;
     left: 40%;
