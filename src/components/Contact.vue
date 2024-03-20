@@ -11,7 +11,6 @@ const contactForm = ref(null);
 const isSubmitting = ref(false);
 
 const submitForm = () => {
-    // Marquez le début de la soumission
     isSubmitting.value = true;
 
     const serviceID = 'service_tafcc6f';
@@ -20,13 +19,11 @@ const submitForm = () => {
     if (contactForm.value) {
         emailjs.sendForm(serviceID, templateID, contactForm.value)
             .then(() => {
-                // Marquez la fin de la soumission
                 isSubmitting.value = false;
 
                 alert('Le mail a bien été envoyé !');
             })
             .catch(err => {
-                // Marquez la fin de la soumission
                 isSubmitting.value = false;
 
                 alert(JSON.stringify(err));
