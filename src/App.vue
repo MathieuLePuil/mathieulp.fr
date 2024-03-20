@@ -19,7 +19,7 @@
                           <i class="fa-solid fa-sort-down pb-1.5 ml-2"></i>
                       </button>
                       <div v-if="isDropdownOpen" class="z-50 mt-2 text-base list-none divide-gray-100 rounded-lg shadow bg-[#F6F6F6] absolute left-0 w-full">
-                          <ul class="py-2 font-medium flex flex-col justify-around" role="none">
+                          <ul class="py-2 font-medium flex flex-col justify-around items-center" role="none">
                               <li>
                                   <button @click="changeLocale('fr'); closeDropdown()" type="button" class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-gray-900 rounded-lg cursor-pointer hover:bg-gray-200 z-30">
                                       <img src="./assets/img/fr.webp" aria-hidden="true" class="h-3.5 w-3.5 rounded-full mr-2" alt="Test">
