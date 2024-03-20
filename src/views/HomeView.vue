@@ -1,7 +1,7 @@
 <script setup>
     import Home from '../components/Home.vue'
     import Project from '../components/Project.vue'
-    import MySkills from '../components/MySkills.vue'
+    import Experience from '../components/Experience.vue'
     import Contact from '../components/Contact.vue'
 </script>
 
@@ -9,7 +9,7 @@
     <main>
         <Home />
         <Project />
-        <MySkills />
+        <Experience />
         <Contact />
     </main>
 </template>

@@ -45,16 +45,16 @@
               <div class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1 z-20 text-sm text-white" id="navbar-language">
                   <ul class="flex flex-col font-medium p-4 lg:p-0 mt-4 border border-gray-100 rounded-lg lg:flex-row lg:space-x-4 lg:mt-0 lg:border-0 z-20">
                       <li>
-                          <a href="/#home" class="block py-2 pl-3 pr-4 text-white rounded hover:text-white hover:bg-indigo-500 z-20 hover:scale-105 transition-all duration-200 ease" aria-current="page">01. {{ $t('home') }}</a>
+                          <a href="/#home" class="block py-2 pl-3 pr-4 text-white rounded hover:text-white hover:underline z-20 hover:scale-105 transition-all duration-200 ease" aria-current="page">01. {{ $t('home') }}</a>
                       </li>
                       <li>
-                          <a href="/#projects" class="block py-2 pl-3 pr-4 text-white rounded hover:text-white hover:bg-indigo-500 z-20 hover:scale-105 transition-all duration-200 ease" aria-current="page">02. {{ $t('projects') }}</a>
+                          <a href="/#projects" class="block py-2 pl-3 pr-4 text-white rounded hover:text-white hover:underline z-20 hover:scale-105 transition-all duration-200 ease" aria-current="page">02. {{ $t('projects') }}</a>
                       </li>
                       <li>
-                          <a href="/#skills" class="block py-2 pl-3 pr-4 text-white rounded hover:text-white hover:bg-indigo-500 z-20 hover:scale-105 transition-all duration-200 ease" aria-current="page">03. {{ $t('skills') }}</a>
+                          <a href="/#skills" class="block py-2 pl-3 pr-4 text-white rounded hover:text-white hover:underline z-20 hover:scale-105 transition-all duration-200 ease" aria-current="page">03. {{ $t('experience') }}</a>
                       </li>
                       <li>
-                          <a href="/#contact" class="block py-2 pl-3 pr-4 text-white rounded hover:text-white hover:bg-indigo-500 z-20 hover:scale-105 transition-all duration-200 ease" aria-current="page">04. Contact</a>
+                          <a href="/#contact" class="block py-2 pl-3 pr-4 text-white rounded hover:text-white hover:underline z-20 hover:scale-105 transition-all duration-200 ease" aria-current="page">04. Contact</a>
                       </li>
                   </ul>
               </div>

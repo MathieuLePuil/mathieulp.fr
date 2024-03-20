@@ -11,7 +11,7 @@ const i18n = createI18n({
         en: {
             home: 'Home',
             projects: 'Projects',
-            skills: "Skills",
+            experience: "Experiences",
 
             homeh3: "Web Developer",
             homeh2: "Student and Freelance",
@@ -78,7 +78,7 @@ const i18n = createI18n({
         fr: {
             home: 'Accueil',
             projects: "Projets",
-            skills: "Compétences",
+            experience: "Expériences",
 
             homeh3: "Développeur Web",
             homeh2: "Étudiant et Freelance",
