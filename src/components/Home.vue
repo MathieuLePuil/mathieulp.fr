@@ -6,7 +6,7 @@
             </div>
             <div class="flex flex-col justify-center items-center space-y-1 z-30">
                 <div>
-                    <h2 class="text-white fira-code text-2xl font-semibold">Mathieu Le Puil</h2>
+                    <h1 class="text-white fira-code text-2xl font-semibold">Mathieu Le Puil</h1>
                 </div>
                 <div>
                     <h3 class="text-my-purple text-xl"><span class="italic">{{ $t('homeh2') }}</span> / {{ $t('homeh3') }}</h3>
@@ -35,7 +35,7 @@
             </a>
         </div>
 
-        <div class="fixed bottom-0 -left-2 sm:!left-1 px-4 flex flex-col items-center z-30 space-y-1">
+        <div class="hidden sm:flex fixed bottom-0 -left-2 sm:!left-1 px-4 flex-col items-center z-30 space-y-1">
             <a href="mailto:contact@mathieulp.fr" target="_blank"><i class="fa-regular fa-envelope text-white text-3xl font-thin hover:scale-105 transition-all duration-200 ease"></i></a>
             <a href="https://www.linkedin.com/in/mathieulepuil/" target="_blank"><i class="fa-brands fa-linkedin text-white text-3xl font-thin hover:scale-105 transition-all duration-200 ease"></i></a>
             <a href="https://www.github.com/MathieuLePuil" target="_blank"><i class="fa-brands fa-github text-white text-3xl font-thin hover:scale-105 transition-all duration-200 ease"></i></a>

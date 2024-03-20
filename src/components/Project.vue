@@ -68,7 +68,7 @@
 }
 </style>
 
-<style scoped>
+<style>
 .gallery-container {
     margin: 0 100px;
 }
@@ -86,8 +86,8 @@ h2 {
 h2::before {
     content: "";
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 40%;
+    left: 47%;
     width: 100%;
     height: 60%;
     background: #6366F1;

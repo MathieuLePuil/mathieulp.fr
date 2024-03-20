@@ -51,7 +51,7 @@
                           <a href="/#projects" class="block py-2 pl-3 pr-4 text-white rounded hover:text-white hover:underline z-20 hover:scale-105 transition-all duration-200 ease" aria-current="page">02. {{ $t('projects') }}</a>
                       </li>
                       <li>
-                          <a href="/#skills" class="block py-2 pl-3 pr-4 text-white rounded hover:text-white hover:underline z-20 hover:scale-105 transition-all duration-200 ease" aria-current="page">03. {{ $t('experience') }}</a>
+                          <a href="/#experience" class="block py-2 pl-3 pr-4 text-white rounded hover:text-white hover:underline z-20 hover:scale-105 transition-all duration-200 ease" aria-current="page">03. {{ $t('experience') }}</a>
                       </li>
                       <li>
                           <a href="/#contact" class="block py-2 pl-3 pr-4 text-white rounded hover:text-white hover:underline z-20 hover:scale-105 transition-all duration-200 ease" aria-current="page">04. Contact</a>
