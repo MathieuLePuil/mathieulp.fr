@@ -1,110 +1,249 @@
 <template>
-    <section id="projects" class="min-h-screen pt-[8vh] lg:!pt-0 pb-20 flex flex-col justify-around z-20">
-        <h4 class="mt-10 text-2xl sm:!text-3xl lg:!text-6xl ml-[10%] text-my-purple font-medium z-20">{{ $t('projects') }}</h4>
-        <div class="flex flex-wrap mx-[10%] z-20">
-            <div class="w-80 mt-14 m-auto lg:mt-16 max-w-full">
-                <img src="../assets/img/portfolio.webp" alt="" class="rounded-t-2xl shadow-2xl lg:w-full 2xl:w-full 2xl:h-44 object-cover"/>
-                <div class="bg-white shadow-2xl rounded-b-3xl pb-8">
-                    <h2 class="text-center text-gray-800 text-2xl font-bold pt-6">Portfolio</h2>
-                    <div class="w-5/6 m-auto">
-                        <p class="text-sm sm:!text-base text-center text-gray-500 pt-5"><br>{{ $t('portfolio') }}<br><br></p>
-                    </div>
-                    <div class="flex justify-around text-2xl mt-5">
-                        <i class="fa-brands fa-html5"></i>
-                        <i class="fa-brands fa-css3-alt"></i>
-                        <i class="fa-brands fa-js"></i>
-                        <i class="fa-brands fa-php"></i>
-                    </div>
-                    <a href="https://portfolio.mathieulp.fr" target="_blank" class="cursor-pointer">
-                        <div class="bg-my-purple w-[80%] lg:w-5/6 m-auto mt-6 p-2 hover:bg-indigo-600 rounded-lg text-white text-center shadow-xl shadow-bg-blue-700 hover:scale-105 transition-all duration-200 ease">
-                            <button class="lg:text-sm text-lg font-medium">{{ $t('websitelink') }}</button>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="w-80 mt-14 m-auto lg:mt-16 max-w-full">
-                <img src="../assets/img/codeclipper.webp" alt="" class="rounded-t-2xl shadow-2xl lg:w-full 2xl:w-full 2xl:h-44 object-cover"/>
-                <div class="bg-white shadow-2xl rounded-b-3xl pb-8">
-                    <h2 class="text-center text-gray-800 text-2xl font-bold pt-6">CodeClipper</h2>
-                    <div class="w-5/6 m-auto">
-                        <p class="text-sm sm:!text-base text-center text-gray-500 pt-5"><br>{{ $t('codeclipper') }}<br><br></p>
-                    </div>
-                    <div class="flex justify-around text-2xl mt-5">
-                        <i class="fa-brands fa-symfony"></i>
-                        <img src="../assets/img/tailwind-icon.svg" class="w-6 p-0" alt="">
-                        <i class="fa-brands fa-js"></i>
-                        <i class="fa-solid fa-database"></i>
-                    </div>
-                    <a href="https://codeclipper.dev" target="_blank" class="cursor-pointer">
-                        <div class="bg-my-purple w-[80%] lg:w-5/6 m-auto mt-6 p-2 hover:bg-indigo-600 rounded-lg text-white text-center shadow-xl shadow-bg-blue-700 hover:scale-105 transition-all duration-200 ease">
-                            <button class="lg:text-sm text-lg font-medium">{{ $t('websitelink') }}</button>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="w-80 mt-14 m-auto lg:mt-16 max-w-full">
-                <img src="../assets/img/MySymfonyTemplate.webp" alt="" class="rounded-t-2xl shadow-2xl lg:w-full 2xl:w-full 2xl:h-44 object-cover"/>
-                <div class="bg-white shadow-2xl rounded-b-3xl pb-8">
-                    <h2 class="text-center text-gray-800 text-2xl font-bold pt-6">MySymfonyTemplate</h2>
-                    <div class="w-5/6 m-auto">
-                        <p class="text-sm sm:!text-base text-center text-gray-500 pt-5"><br>{{ $t('mysymfonytemplate') }}<br><br></p>
-                    </div>
-                    <div class="flex justify-around text-2xl mt-5">
-                        <i class="fa-brands fa-symfony"></i>
-                        <img src="../assets/img/tailwind-icon.svg" class="w-6 p-0" alt="">
-                        <i class="fa-solid fa-database"></i>
-                    </div>
-                    <a href="https://github.com/MathieuLePuil/MySymfonyTemplate" target="_blank" class="cursor-pointer">
-                        <div class="bg-my-purple w-[80%] lg:w-5/6 m-auto mt-6 p-2 hover:bg-indigo-600 rounded-lg text-white text-center shadow-xl shadow-bg-blue-700 hover:scale-105 transition-all duration-200 ease">
-                            <button class="lg:text-sm text-lg font-medium">{{ $t('websitelink') }}</button>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="w-80 mt-14 m-auto lg:mt-16 max-w-full">
-                <img src="../assets/img/3event.webp" alt="" class="rounded-t-2xl shadow-2xl lg:w-full 2xl:w-full 2xl:h-44 object-cover"/>
-                <div class="bg-white shadow-2xl rounded-b-3xl pb-8">
-                    <h2 class="text-center text-gray-800 text-2xl font-bold pt-6">3Event</h2>
-                    <div class="w-5/6 m-auto">
-                        <p class="text-sm sm:!text-base text-center text-gray-500 pt-5"><br>{{ $t('troyesevent') }}<br><br></p>
-                    </div>
-                    <div class="flex justify-around text-2xl mt-5">
-                        <i class="fa-brands fa-html5"></i>
-                        <i class="fa-brands fa-css3-alt"></i>
-                        <i class="fa-brands fa-js"></i>
-                        <i class="fa-brands fa-symfony"></i>
-                        <i class="fa-solid fa-database"></i>
-                    </div>
-                    <a href="https://mmi21b12.sae301dev.ovh/" target="_blank" class="cursor-pointer">
-                        <div class="bg-my-purple w-[80%] lg:w-5/6 m-auto mt-6 p-2 hover:bg-indigo-600 rounded-lg text-white text-center shadow-xl shadow-bg-blue-700 hover:scale-105 transition-all duration-200 ease">
-                            <button class="lg:text-sm text-lg font-medium">{{ $t('websitelink') }}</button>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="w-80 mt-14 m-auto lg:mt-16 max-w-full z-20">
-                <img src="../assets/img/popeye.webp" alt="" class="rounded-t-2xl shadow-2xl lg:w-full 2xl:w-full 2xl:h-44 object-cover"/>
-                <div class="bg-white shadow-2xl rounded-b-3xl pb-8">
-                    <h2 class="text-center text-gray-800 text-2xl font-bold pt-6">Popeye Troyes</h2>
-                    <div class="w-5/6 m-auto">
-                        <p class="text-sm sm:!text-base text-center text-gray-500 pt-5"><br>{{ $t('popeye') }}<br><br></p>
-                    </div>
-                    <div class="flex justify-around text-2xl mt-5">
-                        <i class="fa-brands fa-html5"></i>
-                        <i class="fa-brands fa-sass"></i>
-                        <i class="fa-brands fa-js"></i>
-                        <i class="fa-brands fa-php"></i>
-                        <i class="fa-solid fa-database"></i>
-                    </div>
-                    <a href="https://popeye-troyes.fr" target="_blank" class="cursor-pointer">
-                        <div class="bg-my-purple w-[80%] lg:w-5/6 m-auto mt-6 p-2 hover:bg-indigo-600 rounded-lg text-white text-center shadow-xl shadow-bg-blue-700 hover:scale-105 transition-all duration-200 ease">
-                            <button class="lg:text-sm text-lg font-medium">{{ $t('websitelink') }}</button>
-                        </div>
-                    </a>
-                </div>
-            </div>
+  <section
+    id="projects"
+    class="lg:!h-screen h-full pt-[8vh] lg:!pt-0 pb-20 flex flex-col justify-around z-30"
+  >
+    <div class="flex items-center pb-20 lg:pb-0">
+      <h2
+        class="text-xl sm:text-3xl mt-10 lg:!text-6xl ml-[10%] text-white font-bold text-center"
+      >
+        {{ $t("projects") }}
+      </h2>
+    </div>
+    <div class="gallery-container grid grid-cols-1 md:grid-cols-3 gap-4 z-30">
+      <div
+        class="image-container relative hover:scale-105 transition-all duration-200 ease"
+        @click="hideClickIndicator"
+      >
+        <img
+          class="h-auto max-w-full rounded-lg border-white border-2"
+          src="../assets/img/portfolio.webp"
+          alt=""
+        />
+        <div
+          class="image-overlay absolute top-0 left-0 w-full h-full bg-white bg-opacity-60 flex flex-col justify-around opacity-0 transition-opacity duration-300 ease rounded-lg px-5 space-y-1 md:space-y-2"
+          style="background: rgb(255, 255, 255, 0.95)"
+        >
+          <h3 class="font-bold text-xl fira-code">Portfolio</h3>
+          <p class="text-sm">{{ $t("portfolio") }}</p>
+          <a href="https://mathieulp.fr/" target="_blank" class=""
+            ><i class="fa-solid fa-caret-right mr-2"></i
+            >{{ $t("websitelink") }}</a
+          >
         </div>
-    </section>
+        <i
+          class="fa-solid fa-hand-pointer click-indicator"
+          v-if="showClickIndicator"
+        ></i>
+      </div>
+      <div
+        class="image-container relative hover:scale-105 transition-all duration-200 ease"
+        @click="hideClickIndicator"
+      >
+        <img
+          class="h-auto max-w-full rounded-lg border-white border-2"
+          src="../assets/img/codeclipper.webp"
+          alt=""
+        />
+        <div
+          class="image-overlay absolute top-0 left-0 w-full h-full bg-white bg-opacity-60 flex flex-col justify-around opacity-0 transition-opacity duration-300 ease rounded-lg px-5 space-y-1 md:space-y-2"
+          style="background: rgb(255, 255, 255, 0.95)"
+        >
+          <h3 class="font-bold text-xl fira-code">CodeClipper</h3>
+          <p class="text-sm">{{ $t("codeclipper") }}</p>
+          <a href="https://codeclipper.dev/" target="_blank" class="CodeClipper"
+            ><i class="fa-solid fa-caret-right mr-2"></i
+            >{{ $t("websitelink") }}</a
+          >
+        </div>
+      </div>
+      <div
+        class="image-container relative hover:scale-105 transition-all duration-200 ease"
+        @click="hideClickIndicator"
+      >
+        <img
+          class="h-auto max-w-full rounded-lg border-white border-2"
+          src="../assets/img/MySymfonyTemplate.webp"
+          alt=""
+        />
+        <div
+          class="image-overlay absolute top-0 left-0 w-full h-full bg-white bg-opacity-60 flex flex-col justify-around opacity-0 transition-opacity duration-300 ease rounded-lg px-5 space-y-1 md:space-y-2"
+          style="background: rgb(255, 255, 255, 0.95)"
+        >
+          <h3 class="font-bold text-xl fira-code">MySymfonyTemplate</h3>
+          <p class="text-sm">{{ $t("mysymfonytemplate") }}</p>
+          <a
+            href="https://github.com/MathieuLePuil/MySymfonyTemplate"
+            target="_blank"
+            class="MySymfonyTemplate"
+            ><i class="fa-solid fa-caret-right mr-2"></i
+            >{{ $t("websitelink") }}</a
+          >
+        </div>
+      </div>
+      <div
+        class="image-container relative hover:scale-105 transition-all duration-200 ease"
+        @click="hideClickIndicator"
+      >
+        <img
+          class="h-auto max-w-full rounded-lg border-white border-2"
+          src="../assets/img/popeye.webp"
+          alt=""
+        />
+        <div
+          class="image-overlay absolute top-0 left-0 w-full h-full bg-white bg-opacity-60 flex flex-col justify-around opacity-0 transition-opacity duration-300 ease rounded-lg px-5 space-y-1 md:space-y-2"
+          style="background: rgb(255, 255, 255, 0.95)"
+        >
+          <h3 class="font-bold text-xl fira-code">Popeye</h3>
+          <p class="text-sm">{{ $t("popeye") }}</p>
+          <a href="https://popeye-troyes.fr/" target="_blank" class="Popeye"
+            ><i class="fa-solid fa-caret-right mr-2"></i
+            >{{ $t("websitelink") }}</a
+          >
+        </div>
+      </div>
+      <div
+        class="image-container relative hover:scale-105 transition-all duration-200 ease"
+        @click="hideClickIndicator"
+      >
+        <img
+          class="h-auto max-w-full rounded-lg border-white border-2"
+          src="../assets/img/pocmagiline.webp"
+          alt=""
+        />
+        <div
+          class="image-overlay absolute top-0 left-0 w-full h-full bg-white flex flex-col justify-around opacity-0 transition-opacity duration-300 ease rounded-lg px-5 space-y-1 md:space-y-2"
+          style="background: rgb(255, 255, 255, 0.95)"
+        >
+          <h3 class="font-bold text-xl fira-code">POC Magiline</h3>
+          <p class="text-sm">{{ $t("pocmagiline") }}</p>
+          <a
+            href="https://poc-magiline.vercel.app/"
+            target="_blank"
+            class="POC Magiline"
+            ><i class="fa-solid fa-caret-right mr-2"></i
+            >{{ $t("websitelink") }}</a
+          >
+        </div>
+      </div>
+      <div
+        class="image-container relative hover:scale-105 transition-all duration-200 ease"
+        @click="hideClickIndicator"
+      >
+        <img
+          class="h-auto max-w-full rounded-lg border-white border-2"
+          src="../assets/img/exerdevai.webp"
+          alt=""
+        />
+        <div
+          class="image-overlay absolute top-0 left-0 w-full h-full bg-white bg-opacity-60 flex flex-col justify-around opacity-0 transition-opacity duration-300 ease rounded-lg px-5 space-y-1 md:space-y-2"
+          style="background: rgb(255, 255, 255, 0.95)"
+        >
+          <h3 class="font-bold text-xl fira-code">ExerDevAI</h3>
+          <p class="text-sm">{{ $t("exerdevai") }}</p>
+          <a href="https://exerdevai.dev/" target="_blank" class="ExerDevAI"
+            ><i class="fa-solid fa-caret-right mr-2"></i
+            >{{ $t("websitelink") }}</a
+          >
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
-<script setup>
+
+<style scoped>
+.image-container:hover .image-overlay {
+  opacity: 1;
+}
+
+.image-title,
+.image-description,
+.image-link {
+  margin: 10px;
+}
+</style>
+
+<style>
+.gallery-container {
+  margin: 0 100px;
+}
+
+@media (max-width: 500px) {
+  .gallery-container {
+    margin: 0 50px;
+  }
+}
+
+h2 {
+  position: relative;
+}
+
+h2::before {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: 47%;
+  width: 100%;
+  height: 60%;
+  background: #6366f1;
+  transform: translate(-43%, 5%);
+  z-index: -1;
+}
+
+.image-container {
+  position: relative;
+  cursor: pointer;
+}
+
+@media (min-width: 1025px) {
+  .click-indicator {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .click-indicator {
+    display: block !important;
+  }
+}
+
+.click-indicator {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  transform: translate(-100%, -100%);
+  font-size: 4rem;
+  color: #fff;
+  animation: clickAnimation 2s infinite;
+  z-index: 10;
+  pointer-events: none;
+  opacity: 1;
+}
+
+@keyframes clickAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+</style>
+
+<script>
+export default {
+  data() {
+    return {
+      showClickIndicator: true,
+    };
+  },
+  methods: {
+    hideClickIndicator() {
+      this.showClickIndicator = false;
+    },
+  },
+};
 </script>
