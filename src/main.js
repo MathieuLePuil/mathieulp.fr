@@ -30,6 +30,9 @@ const i18n = createI18n({
       exerdevai:
         "ExerDevAI is an exercise generator powered by AI. It integrates the OpenAI API for exercise generation.",
       websitelink: "Website Link",
+      personnal: "(Personal project)",
+      group: "(Group project)",
+      professional: "(Professional project)",
 
       freelancedate: "July 2023 - In progress",
       freelancename: "Freelance Developer",
@@ -91,6 +94,9 @@ const i18n = createI18n({
       exerdevai:
         "ExerDevAI est un générateur d'exercice de développement boosté à l'IA. Il intègre l'API OpenAI pour la génération d'exercice.",
       websitelink: "Lien du site",
+      personnal: "(Projet personnel)",
+      group: "(Projet de groupe)",
+      professional: "(Projet professionnel)",
 
       freelancedate: "Juillet 2023 - En cours",
       freelancename: "Développeur Freelance",
