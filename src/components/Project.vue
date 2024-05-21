@@ -24,7 +24,7 @@
                         </a>
                         <div class="flex flex-row space-x-1 items-center">
                             <i class="fa-brands fa-vuejs"></i>
-                            <img src="../assets/img/tailwind.webp" alt="TailwindCSS Logo" class="w-4">
+                            <img src="../assets/img/tailwind.webp" alt="TailwindCSS Logo" class="w-5">
                         </div>
                     </div>
                 </div>
@@ -45,28 +45,28 @@
                         </a>
                         <div class="flex flex-row space-x-1 items-center">
                             <i class="fa-brands fa-symfony"></i>
-                            <img src="../assets/img/tailwind.webp" alt="TailwindCSS Logo" class="w-4">
+                            <img src="../assets/img/tailwind.webp" alt="TailwindCSS Logo" class="w-5">
                         </div>
                     </div>
                 </div>
             </div>
             <div class="image-container relative hover:scale-105 transition-all duration-200 ease" @click="hideClickIndicator">
-                <img class="h-auto max-w-full rounded-lg border-white border-2" src="../assets/img/MySymfonyTemplate.webp" alt="" />
+                <img class="h-auto max-w-full rounded-lg border-white border-2" src="../assets/img/SymStartSaaS.webp" alt="" />
                 <div class="image-overlay absolute top-0 left-0 w-full h-full bg-white bg-opacity-60 flex flex-col justify-around opacity-0 transition-opacity duration-300 ease rounded-lg px-5 space-y-1 md:space-y-2" style="background: rgb(255, 255, 255, 0.95)">
                     <div class="flex flex-row justify-between items-center">
                         <h3 class="font-bold text-xl fira-code">SymStartSaaS</h3>
                         <p>{{ $t("personnal") }}</p>
                     </div>
-                    <p class="text-sm">{{ $t("mysymfonytemplate") }}</p>
+                    <p class="text-sm">{{ $t("symstartsaas") }}</p>
                     <div class="flex flex-row justify-between items-center">
-                        <a href="https://github.com/MathieuLePuil/MySymfonyTemplate" target="_blank" class="MySymfonyTemplate">
+                        <a href="https://symstartsaas.mathieulp.fr/" target="_blank" class="SymStartSaaS">
                             <i class="fa-solid fa-caret-right mr-2"></i>
                             {{ $t("websitelink") }}
                         </a>
                         <div class="flex flex-row space-x-1 items-center">
                             <i class="fa-brands fa-symfony"></i>
-                            <i class="fa-brands fa-vuejs"></i>
-                            <img src="../assets/img/tailwind.webp" alt="TailwindCSS Logo" class="w-4">
+                            <img src="../assets/img/nuxtjs.webp" alt="NuxtJS Logo" class="w-5">
+                            <img src="../assets/img/tailwind.webp" alt="TailwindCSS Logo" class="w-5">
                         </div>
                     </div>
                 </div>
@@ -87,7 +87,7 @@
                         <div class="flex flex-row space-x-1 items-center">
                             <i class="fa-brands fa-symfony"></i>
                             <i class="fa-brands fa-vuejs"></i>
-                            <img src="../assets/img/tailwind.webp" alt="TailwindCSS Logo" class="w-4">
+                            <img src="../assets/img/tailwind.webp" alt="TailwindCSS Logo" class="w-5">
                         </div>
                     </div>
                 </div>
@@ -107,7 +107,7 @@
                         </a>
                         <div class="flex flex-row space-x-1 items-center">
                             <i class="fa-brands fa-vuejs"></i>
-                            <img src="../assets/img/tailwind.webp" alt="TailwindCSS Logo" class="w-4">
+                            <img src="../assets/img/tailwind.webp" alt="TailwindCSS Logo" class="w-5">
                         </div>
                     </div>
                 </div>
@@ -128,7 +128,7 @@
                         <div class="flex flex-row space-x-1 items-center">
                             <i class="fa-brands fa-symfony"></i>
                             <img src="../assets/img/openai.svg" alt="OpenAI Logo" class="w-4">
-                            <img src="../assets/img/tailwind.webp" alt="TailwindCSS Logo" class="w-4">
+                            <img src="../assets/img/tailwind.webp" alt="TailwindCSS Logo" class="w-5">
                         </div>
                     </div>
                 </div>
