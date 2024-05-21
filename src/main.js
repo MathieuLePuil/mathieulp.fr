@@ -21,8 +21,8 @@ const i18n = createI18n({
         "Professional portfolio built to develop my image in order to find work.",
       codeclipper:
         "CodeClipper is a website that allows you to share code snippets with other users. It is a project that I am developing in my spare time.",
-      mysymfonytemplate:
-        "MySymfonyTemplate is a template for Symfony 5. It allows you to quickly start a project with the basic features already set up.",
+      symstartsaas:
+        "SymStartSaaS is a Symfony 7 template to quickly start a SaaS. It contains user management and TailwindCSS.",
       pocmagiline:
         "During my studies, we had to do a proof of concept in relation to a company. We therefore made a 3D pool configurator for Magiline.",
       popeye:
@@ -85,8 +85,8 @@ const i18n = createI18n({
         "Portfolio professionnel construit pour développer mon image afin de trouver du travail.",
       codeclipper:
         "CodeClipper est un site web permettant d'enregistrer et de partager des extraits de code avec d'autres utilisateurs. ",
-      mysymfonytemplate:
-        "MySymfonyTemplate est un template pour Symfony 5. Il permet de démarrer un projet avec les fonctionnalités de base en place.",
+      symstartsaas:
+        "SymStartSaaS est un template Symfony 7 pour démarrer rapidement un SaaS. Il contient la gestion des utilisateurs et TailwindCSS.",
       pocmagiline:
         "Lors de mes études, nous devions faire une preuve de concept en relation avec une entreprise. Nous avons donc fait un configurateur 3D de piscine pour Magiline.",
       popeye:
