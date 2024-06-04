@@ -1,9 +1,9 @@
 import { createApp } from "vue";
 import App from "./App.vue";
-import { createI18n } from "vue-i18n"; // Importez Vue-i18n ici
+import { createI18n } from "vue-i18n";
 import router from "./router";
 
-// Créez une instance de Vue-i18n
+
 const i18n = createI18n({
   legacy: false,
   locale: "fr",
@@ -20,15 +20,15 @@ const i18n = createI18n({
       portfolio:
         "Professional portfolio built to develop my image in order to find work.",
       codeclipper:
-        "CodeClipper is a website that allows you to share code snippets with other users. It is a project that I am developing in my spare time.",
+        "CodeClipper is a website to save and share code snippets.",
       symstartsaas:
-        "SymStartSaaS is a Symfony 7 template to quickly start a SaaS. It contains user management and TailwindCSS.",
+        "SymsStartSaaS is a Symfony 7 template to quickly launch a SaaS.",
       pocmagiline:
-        "During my studies, we had to do a proof of concept in relation to a company. We therefore made a 3D pool configurator for Magiline.",
+        "During my studies, we created a 3D pool configurator for Magiline.",
       popeye:
-        "Popeye is my work-study company. I'm in charge of redesigning the website and creating tools (admin, for example) around it.",
+        "At Popeye, my work-study company, I redesign the website and create associated tools.",
       exerdevai:
-        "ExerDevAI is an exercise generator powered by AI. It integrates the OpenAI API for exercise generation.",
+        "ExerDevAI is a development exercise generator using the OpenAI API.",
       websitelink: "Website Link",
       personnal: "(Personal project)",
       group: "(Group project)",
@@ -84,15 +84,15 @@ const i18n = createI18n({
       portfolio:
         "Portfolio professionnel construit pour développer mon image afin de trouver du travail.",
       codeclipper:
-        "CodeClipper est un site web permettant d'enregistrer et de partager des extraits de code avec d'autres utilisateurs. ",
+        "CodeClipper est un site web pour enregistrer et partager des extraits de code. ",
       symstartsaas:
-        "SymStartSaaS est un template Symfony 7 pour démarrer rapidement un SaaS. Il contient la gestion des utilisateurs et TailwindCSS.",
+        "SymStartSaaS est un template Symfony 7 pour lancer rapidement un SaaS.",
       pocmagiline:
-        "Lors de mes études, nous devions faire une preuve de concept en relation avec une entreprise. Nous avons donc fait un configurateur 3D de piscine pour Magiline.",
+        "Pendant mes études, nous avons réalisé un configurateur 3D de piscine pour Magiline.",
       popeye:
-        "Popeye est l'entreprise de mon alternance. Je m'occupe de la refonte du site web ainsi que la création d'outils autour de celui-ci.",
+        "Chez Popeye, mon entreprise en alternance, je refonds le site web et crée des outils associés.",
       exerdevai:
-        "ExerDevAI est un générateur d'exercice de développement boosté à l'IA. Il intègre l'API OpenAI pour la génération d'exercice.",
+        "ExerDevAI est un générateur d'exercices de développement utilisant l'API OpenAI.",
       websitelink: "Lien du site",
       personnal: "(Projet personnel)",
       group: "(Projet de groupe)",
