@@ -108,6 +108,7 @@
                         <div class="flex flex-row space-x-1 items-center">
                             <i class="fa-brands fa-vuejs"></i>
                             <img src="../assets/img/tailwind.webp" alt="TailwindCSS Logo" class="w-5">
+                            <img src="../assets/img/threejs.webp" alt="Three.JS Logo" class="w-4">
                         </div>
                     </div>
                 </div>

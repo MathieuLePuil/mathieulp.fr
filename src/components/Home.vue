@@ -1,16 +1,20 @@
+<script>
+import 'animate.css';
+</script>
+
 <template>
   <section class="h-full pt-[8vh] lg:!pt-0 lg:!h-[92vh]">
     <div
       class="w-full h-full flex flex-col items-center justify-center space-y-3 z-30"
     >
-      <div class="z-30">
+      <div class="z-30 animate__animated animate__fadeInDown img-photo">
         <img
           src="../assets/img/me.webp"
           alt="Photo de moi"
           class="w-36 rounded-full"
         />
       </div>
-      <div class="flex flex-col justify-center items-center space-y-1 z-30">
+      <div class="flex flex-col justify-center items-center space-y-1 z-30 animate__animated animate__fadeInDown presentation">
         <div>
           <h1 class="text-white fira-code text-2xl font-semibold">
             Mathieu Le Puil
@@ -43,7 +47,7 @@
           </a>
         </div>
       </div>
-      <a href="mailto:contact@mathieulp.fr" class="z-30">
+      <a href="mailto:contact@mathieulp.fr" class="z-30 animate__animated animate__fadeInDown mail">
         <div
           class="bg-purple-200 text-black font-regular py-1 px-3 text-lg rounded hover:scale-105 transition-all duration-200 ease"
         >
@@ -96,6 +100,22 @@
 </template>
 
 <style scoped>
+:root {
+    --animate-delay: 0.5s;
+}
+
+.img-photo {
+    --animate-delay: 1s;
+}
+
+.presentation {
+    --animate-delay: 1.5s;
+}
+
+.mail {
+    --animate-delay: 2s;
+}
+
 .green-circle {
   display: inline-block;
   width: 12px;
