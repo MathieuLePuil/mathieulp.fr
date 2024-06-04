@@ -21,7 +21,7 @@ import 'animate.css';
           </h1>
         </div>
         <div>
-          <h3 class="text-my-purple text-xl">
+          <h3 class="text-my-purple text-xl text-center mx-3">
             <span class="italic">{{ $t("homeh2") }}</span> / {{ $t("homeh3") }}
           </h3>
         </div>
