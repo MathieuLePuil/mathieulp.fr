@@ -13,9 +13,9 @@ const i18n = createI18n({
       projects: "Projects",
       experience: "Experiences",
 
-      homeh3: "Web Developer",
-      homeh2: "Student and Freelance",
-      homep: "Available for freelance missions",
+      homeh3: "PHP Web Developer",
+      homeh2: "Freelance",
+      homep: "Available for Freelance missions or Full-Time Job",
 
       portfolio:
         "Professional portfolio built to develop my image in order to find work.",
@@ -39,12 +39,12 @@ const i18n = createI18n({
       freelancedesc:
         "I started my own business to develop my micro-enterprise alongside my studies and my work-study programme.",
 
-      popeyedate: "December 2022 - In progress",
+      popeyedate: "December 2022 - August 2024",
       popeyename: "Web Developer Work-Study Popeye",
       popeyedesc:
         "Total redesign of the company's website. Creation of a management tool (prices, services...)",
 
-      studydate: "September 2021 - In progress",
+      studydate: "September 2021 - August 2024",
       studyname: "BUT Multimedia and Internet Professions",
       studydesc: "Higher education in web development.",
 
@@ -77,9 +77,9 @@ const i18n = createI18n({
       projects: "Projets",
       experience: "Expériences",
 
-      homeh3: "Développeur Web",
-      homeh2: "Étudiant et Freelance",
-      homep: "Disponible pour missions Freelance",
+      homeh3: "Développeur Web PHP",
+      homeh2: "Freelance",
+      homep: "Disponible pour missions Freelance ou CDI",
 
       portfolio:
         "Portfolio professionnel construit pour développer mon image afin de trouver du travail.",
@@ -103,12 +103,12 @@ const i18n = createI18n({
       freelancedesc:
         "Je me suis lancé à mon compte afin de développer ma micro-entreprise en parallèle de mes études et de mon alternance.",
 
-      popeyedate: "Décembre 2022 - En cours",
+      popeyedate: "Décembre 2022 - Août 2024",
       popeyename: "Alternance Développeur Web Popeye",
       popeyedesc:
         "Refonte totale du site web de l'entreprise. Création d'un outil de gestion (tarifs, prestations...)",
 
-      studydate: "Septembre 2021 - En cours",
+      studydate: "Septembre 2021 - Août 2024",
       studyname: "BUT Métiers du Multimédia et de l'Internet",
       studydesc: "Études supérieures dans le domaine de développement web.",
 
