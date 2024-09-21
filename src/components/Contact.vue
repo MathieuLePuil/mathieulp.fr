@@ -133,7 +133,7 @@ const submitForm = () => {
         </div>
       </form>
       <div class="w-full flex justify-center mt-16">
-        <p class="text-xs sm:text-sm text-white">
+        <p class="text-xs sm:text-sm text-white text-center mx-3">
           &copy; 2024 - {{ $t("footer") }} - Mathieu Le Puil |
           <router-link
             to="/mentions-legales"

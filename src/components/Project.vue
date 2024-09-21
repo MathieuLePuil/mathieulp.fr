@@ -5,18 +5,18 @@
                 {{ $t("projects") }}
             </h2>
         </div>
-        <div class="gallery-container grid grid-cols-1 md:grid-cols-3 gap-4 z-30">
+        <div class="gallery-container grid grid-cols-1 lg:grid-cols-3 gap-4 z-30">
             <div class="image-container relative hover:scale-105 transition-all duration-200 ease"
                  @click="hideClickIndicator">
                 <img class="h-auto max-w-full rounded-lg border-white border-2" src="../assets/img/portfolio.webp"
                      alt=""/>
-                <div class="image-overlay absolute top-0 left-0 w-full h-full bg-white bg-opacity-60 flex flex-col justify-around opacity-0 transition-opacity duration-300 ease rounded-lg px-5 space-y-1 md:space-y-2"
+                <div class="image-overlay absolute top-0 left-0 w-full h-full bg-white bg-opacity-60 flex flex-col justify-around opacity-0 transition-opacity duration-300 ease rounded-lg px-5 space-y-0.5 md:space-y-2"
                     style="background: rgb(255, 255, 255, 0.95)">
                     <div class="flex flex-row justify-between items-center">
-                        <h3 class="font-bold text-xl fira-code">Portfolio</h3>
-                        <p>{{ $t("personnal") }}</p>
+                        <h3 class="font-bold text-sm sm:text-xl fira-code">Portfolio</h3>
+                        <p class="hidden lg:block text-xs">{{ $t("personnal") }}</p>
                     </div>
-                    <p class="text-sm">{{ $t("portfolio") }}</p>
+                    <p class="text-xs sm:text-sm">{{ $t("portfolio") }}</p>
                     <div class="flex flex-row justify-between items-center">
                         <a href="https://mathieulp.fr/" target="_blank" class="MathieuLP">
                             <i class="fa-solid fa-caret-right mr-2"></i>
@@ -30,14 +30,17 @@
                 </div>
                 <i class="fa-solid fa-hand-pointer click-indicator" v-if="showClickIndicator"></i>
             </div>
-            <div class="image-container relative hover:scale-105 transition-all duration-200 ease" @click="hideClickIndicator">
-                <img class="h-auto max-w-full rounded-lg border-white border-2" src="../assets/img/codeclipper.webp" alt="" />
-                <div class="image-overlay absolute top-0 left-0 w-full h-full bg-white bg-opacity-60 flex flex-col justify-around opacity-0 transition-opacity duration-300 ease rounded-lg px-5 space-y-1 md:space-y-2" style="background: rgb(255, 255, 255, 0.95)">
+
+            <div class="image-container relative hover:scale-105 transition-all duration-200 ease">
+                <img class="h-auto max-w-full rounded-lg border-white border-2" src="../assets/img/codeclipper.webp"
+                     alt=""/>
+                <div class="image-overlay absolute top-0 left-0 w-full h-full bg-white bg-opacity-60 flex flex-col justify-around opacity-0 transition-opacity duration-300 ease rounded-lg px-5 space-y-0.5 md:space-y-2"
+                     style="background: rgb(255, 255, 255, 0.95)">
                     <div class="flex flex-row justify-between items-center">
-                        <h3 class="font-bold text-xl fira-code">CodeClipper</h3>
-                        <p>{{ $t("personnal") }}</p>
+                        <h3 class="font-bold text-sm sm:text-xl fira-code">CodeClipper</h3>
+                        <p class="hidden lg:block text-xs">{{ $t("personnal") }}</p>
                     </div>
-                    <p class="text-sm">{{ $t("codeclipper") }}</p>
+                    <p class="text-xs sm:text-sm">{{ $t("codeclipper") }}</p>
                     <div class="flex flex-row justify-between items-center">
                         <a href="https://codeclipper.dev/" target="_blank" class="CodeClipper">
                             <i class="fa-solid fa-caret-right mr-2"></i>
@@ -50,14 +53,17 @@
                     </div>
                 </div>
             </div>
-            <div class="image-container relative hover:scale-105 transition-all duration-200 ease" @click="hideClickIndicator">
-                <img class="h-auto max-w-full rounded-lg border-white border-2" src="../assets/img/SymStartSaaS.webp" alt="" />
-                <div class="image-overlay absolute top-0 left-0 w-full h-full bg-white bg-opacity-60 flex flex-col justify-around opacity-0 transition-opacity duration-300 ease rounded-lg px-5 space-y-1 md:space-y-2" style="background: rgb(255, 255, 255, 0.95)">
+
+            <div class="image-container relative hover:scale-105 transition-all duration-200 ease">
+                <img class="h-auto max-w-full rounded-lg border-white border-2" src="../assets/img/SymStartSaaS.webp"
+                     alt=""/>
+                <div class="image-overlay absolute top-0 left-0 w-full h-full bg-white bg-opacity-60 flex flex-col justify-around opacity-0 transition-opacity duration-300 ease rounded-lg px-5 space-y-0.5 md:space-y-2"
+                     style="background: rgb(255, 255, 255, 0.95)">
                     <div class="flex flex-row justify-between items-center">
-                        <h3 class="font-bold text-xl fira-code">SymStartSaaS</h3>
-                        <p>{{ $t("personnal") }}</p>
+                        <h3 class="font-bold text-sm sm:text-xl fira-code">SymStartSaaS</h3>
+                        <p class="hidden lg:block text-xs">{{ $t("personnal") }}</p>
                     </div>
-                    <p class="text-sm">{{ $t("symstartsaas") }}</p>
+                    <p class="text-xs sm:text-sm">{{ $t("symstartsaas") }}</p>
                     <div class="flex flex-row justify-between items-center">
                         <a href="https://symstartsaas.mathieulp.fr/" target="_blank" class="SymStartSaaS">
                             <i class="fa-solid fa-caret-right mr-2"></i>
@@ -71,14 +77,17 @@
                     </div>
                 </div>
             </div>
-            <div class="image-container relative hover:scale-105 transition-all duration-200 ease" @click="hideClickIndicator">
-                <img class="h-auto max-w-full rounded-lg border-white border-2" src="../assets/img/popeye.webp" alt="" />
-                <div class="image-overlay absolute top-0 left-0 w-full h-full bg-white bg-opacity-60 flex flex-col justify-around opacity-0 transition-opacity duration-300 ease rounded-lg px-5 space-y-1 md:space-y-2" style="background: rgb(255, 255, 255, 0.95)">
+
+            <div class="image-container relative hover:scale-105 transition-all duration-200 ease">
+                <img class="h-auto max-w-full rounded-lg border-white border-2" src="../assets/img/popeye.webp"
+                     alt=""/>
+                <div class="image-overlay absolute top-0 left-0 w-full h-full bg-white bg-opacity-60 flex flex-col justify-around opacity-0 transition-opacity duration-300 ease rounded-lg px-5 space-y-0.5 md:space-y-2"
+                     style="background: rgb(255, 255, 255, 0.95)">
                     <div class="flex flex-row justify-between items-center">
-                        <h3 class="font-bold text-xl fira-code">Popeye</h3>
-                        <p>{{ $t("professional") }}</p>
+                        <h3 class="font-bold text-sm sm:text-xl fira-code">Popeye</h3>
+                        <p class="hidden lg:block text-xs">{{ $t("professional") }}</p>
                     </div>
-                    <p class="text-sm">{{ $t("popeye") }}</p>
+                    <p class="text-xs sm:text-sm">{{ $t("popeye") }}</p>
                     <div class="flex flex-row justify-between items-center">
                         <a href="https://popeye-troyes.fr/" target="_blank" class="Popeye">
                             <i class="fa-solid fa-caret-right mr-2"></i>
@@ -92,14 +101,17 @@
                     </div>
                 </div>
             </div>
-            <div class="image-container relative hover:scale-105 transition-all duration-200 ease" @click="hideClickIndicator">
-                <img class="h-auto max-w-full rounded-lg border-white border-2" src="../assets/img/pocmagiline.webp" alt="" />
-                <div class="image-overlay absolute top-0 left-0 w-full h-full bg-white flex flex-col justify-around opacity-0 transition-opacity duration-300 ease rounded-lg px-5 space-y-1 md:space-y-2" style="background: rgb(255, 255, 255, 0.95)">
+
+            <div class="image-container relative hover:scale-105 transition-all duration-200 ease">
+                <img class="h-auto max-w-full rounded-lg border-white border-2" src="../assets/img/pocmagiline.webp"
+                     alt=""/>
+                <div class="image-overlay absolute top-0 left-0 w-full h-full bg-white bg-opacity-60 flex flex-col justify-around opacity-0 transition-opacity duration-300 ease rounded-lg px-5 space-y-0.5 md:space-y-2"
+                     style="background: rgb(255, 255, 255, 0.95)">
                     <div class="flex flex-row justify-between items-center">
-                        <h3 class="font-bold text-xl fira-code">POC Magiline</h3>
-                        <p>{{ $t("group") }}</p>
+                        <h3 class="font-bold text-sm sm:text-xl fira-code">POC Magiline</h3>
+                        <p class="hidden lg:block text-xs">{{ $t("group") }}</p>
                     </div>
-                    <p class="text-sm">{{ $t("pocmagiline") }}</p>
+                    <p class="text-xs sm:text-sm">{{ $t("pocmagiline") }}</p>
                     <div class="flex flex-row justify-between items-center">
                         <a href="https://poc-magiline.vercel.app/" target="_blank" class="POC Magiline">
                             <i class="fa-solid fa-caret-right mr-2"></i>
@@ -108,18 +120,22 @@
                         <div class="flex flex-row space-x-1 items-center">
                             <i class="fa-brands fa-vuejs"></i>
                             <img src="../assets/img/tailwind.webp" alt="TailwindCSS Logo" class="w-5">
+                            <img src="../assets/img/threejs.webp" alt="Three.JS Logo" class="w-4">
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="image-container relative hover:scale-105 transition-all duration-200 ease" @click="hideClickIndicator">
-                <img class="h-auto max-w-full rounded-lg border-white border-2" src="../assets/img/exerdevai.webp" alt="" />
-                <div class="image-overlay absolute top-0 left-0 w-full h-full bg-white bg-opacity-60 flex flex-col justify-around opacity-0 transition-opacity duration-300 ease rounded-lg px-5 space-y-1 md:space-y-2" style="background: rgb(255, 255, 255, 0.95)">
+
+            <div class="image-container relative hover:scale-105 transition-all duration-200 ease">
+                <img class="h-auto max-w-full rounded-lg border-white border-2" src="../assets/img/exerdevai.webp"
+                     alt=""/>
+                <div class="image-overlay absolute top-0 left-0 w-full h-full bg-white bg-opacity-60 flex flex-col justify-around opacity-0 transition-opacity duration-300 ease rounded-lg px-5 space-y-0.5 md:space-y-2"
+                     style="background: rgb(255, 255, 255, 0.95)">
                     <div class="flex flex-row justify-between items-center">
-                        <h3 class="font-bold text-xl fira-code">ExerDevAI</h3>
-                        <p>{{ $t("personnal") }}</p>
+                        <h3 class="font-bold text-sm sm:text-xl fira-code">ExerDevAI</h3>
+                        <p class="hidden lg:block text-xs">{{ $t("personnal") }}</p>
                     </div>
-                    <p class="text-sm">{{ $t("exerdevai") }}</p>
+                    <p class="text-xs sm:text-sm">{{ $t("exerdevai") }}</p>
                     <div class="flex flex-row justify-between items-center">
                         <a href="https://exerdevai.dev/" target="_blank" class="ExerDevAI">
                             <i class="fa-solid fa-caret-right mr-2"></i>
@@ -140,12 +156,6 @@
 <style scoped>
 .image-container:hover .image-overlay {
     opacity: 1;
-}
-
-.image-title,
-.image-description,
-.image-link {
-    margin: 10px;
 }
 </style>
 
@@ -195,7 +205,7 @@ h2::before {
 
 .click-indicator {
     position: absolute;
-    top: 40%;
+    top: 35%;
     left: 40%;
     transform: translate(-100%, -100%);
     font-size: 4rem;
