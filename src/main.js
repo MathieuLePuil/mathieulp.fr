@@ -1,9 +1,9 @@
 import { createApp } from "vue";
 import App from "./App.vue";
-import { createI18n } from "vue-i18n"; // Importez Vue-i18n ici
+import { createI18n } from "vue-i18n";
 import router from "./router";
 
-// Créez une instance de Vue-i18n
+
 const i18n = createI18n({
   legacy: false,
   locale: "fr",
@@ -13,22 +13,22 @@ const i18n = createI18n({
       projects: "Projects",
       experience: "Experiences",
 
-      homeh3: "Web Developer",
-      homeh2: "Student and Freelance",
-      homep: "Available for freelance missions",
+      homeh3: "PHP Web Developer",
+      homeh2: "Freelance",
+      homep: "Available for Freelance missions or Full-Time Job",
 
       portfolio:
         "Professional portfolio built to develop my image in order to find work.",
       codeclipper:
-        "CodeClipper is a website that allows you to share code snippets with other users. It is a project that I am developing in my spare time.",
+        "CodeClipper is a website to save and share code snippets.",
       symstartsaas:
-        "SymStartSaaS is a Symfony 7 template to quickly start a SaaS. It contains user management and TailwindCSS.",
+        "SymsStartSaaS is a Symfony 7 template to quickly launch a SaaS.",
       pocmagiline:
-        "During my studies, we had to do a proof of concept in relation to a company. We therefore made a 3D pool configurator for Magiline.",
+        "During my studies, we created a 3D pool configurator for Magiline.",
       popeye:
-        "Popeye is my work-study company. I'm in charge of redesigning the website and creating tools (admin, for example) around it.",
+        "At Popeye, my work-study company, I redesign the website and create associated tools.",
       exerdevai:
-        "ExerDevAI is an exercise generator powered by AI. It integrates the OpenAI API for exercise generation.",
+        "ExerDevAI is a development exercise generator using the OpenAI API.",
       websitelink: "Website Link",
       personnal: "(Personal project)",
       group: "(Group project)",
@@ -39,12 +39,12 @@ const i18n = createI18n({
       freelancedesc:
         "I started my own business to develop my micro-enterprise alongside my studies and my work-study programme.",
 
-      popeyedate: "December 2022 - In progress",
+      popeyedate: "December 2022 - August 2024",
       popeyename: "Web Developer Work-Study Popeye",
       popeyedesc:
         "Total redesign of the company's website. Creation of a management tool (prices, services...)",
 
-      studydate: "September 2021 - In progress",
+      studydate: "September 2021 - August 2024",
       studyname: "BUT Multimedia and Internet Professions",
       studydesc: "Higher education in web development.",
 
@@ -77,22 +77,22 @@ const i18n = createI18n({
       projects: "Projets",
       experience: "Expériences",
 
-      homeh3: "Développeur Web",
-      homeh2: "Étudiant et Freelance",
-      homep: "Disponible pour missions Freelance",
+      homeh3: "Développeur Web PHP",
+      homeh2: "Freelance",
+      homep: "Disponible pour missions Freelance ou CDI",
 
       portfolio:
         "Portfolio professionnel construit pour développer mon image afin de trouver du travail.",
       codeclipper:
-        "CodeClipper est un site web permettant d'enregistrer et de partager des extraits de code avec d'autres utilisateurs. ",
+        "CodeClipper est un site web pour enregistrer et partager des extraits de code. ",
       symstartsaas:
-        "SymStartSaaS est un template Symfony 7 pour démarrer rapidement un SaaS. Il contient la gestion des utilisateurs et TailwindCSS.",
+        "SymStartSaaS est un template Symfony 7 pour lancer rapidement un SaaS.",
       pocmagiline:
-        "Lors de mes études, nous devions faire une preuve de concept en relation avec une entreprise. Nous avons donc fait un configurateur 3D de piscine pour Magiline.",
+        "Pendant mes études, nous avons réalisé un configurateur 3D de piscine pour Magiline.",
       popeye:
-        "Popeye est l'entreprise de mon alternance. Je m'occupe de la refonte du site web ainsi que la création d'outils autour de celui-ci.",
+        "Chez Popeye, mon entreprise en alternance, je refonds le site web et crée des outils associés.",
       exerdevai:
-        "ExerDevAI est un générateur d'exercice de développement boosté à l'IA. Il intègre l'API OpenAI pour la génération d'exercice.",
+        "ExerDevAI est un générateur d'exercices de développement utilisant l'API OpenAI.",
       websitelink: "Lien du site",
       personnal: "(Projet personnel)",
       group: "(Projet de groupe)",
@@ -103,12 +103,12 @@ const i18n = createI18n({
       freelancedesc:
         "Je me suis lancé à mon compte afin de développer ma micro-entreprise en parallèle de mes études et de mon alternance.",
 
-      popeyedate: "Décembre 2022 - En cours",
+      popeyedate: "Décembre 2022 - Août 2024",
       popeyename: "Alternance Développeur Web Popeye",
       popeyedesc:
         "Refonte totale du site web de l'entreprise. Création d'un outil de gestion (tarifs, prestations...)",
 
-      studydate: "Septembre 2021 - En cours",
+      studydate: "Septembre 2021 - Août 2024",
       studyname: "BUT Métiers du Multimédia et de l'Internet",
       studydesc: "Études supérieures dans le domaine de développement web.",
 

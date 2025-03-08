@@ -28,7 +28,7 @@ import { useI18n } from "vue-i18n";
                 class="h-3.5 w-3.5 rounded-full mr-2"
                 alt="Flag"
               />
-              {{ getLocaleLabel() }}
+              <span class="hidden sm:block">{{ getLocaleLabel() }}</span>
               <i class="fa-solid fa-sort-down pb-1.5 ml-2"></i>
             </button>
             <div
@@ -54,7 +54,7 @@ import { useI18n } from "vue-i18n";
                       class="h-3.5 w-3.5 rounded-full mr-2"
                       alt="Test"
                     />
-                    Français
+                      <span class="hidden sm:block">Français</span>
                   </button>
                 </li>
                 <li>
@@ -72,7 +72,7 @@ import { useI18n } from "vue-i18n";
                       class="h-3.5 w-3.5 rounded-full mr-2"
                       alt="Test"
                     />
-                    English
+                      <span class="hidden sm:block">English</span>
                   </button>
                 </li>
               </ul>
