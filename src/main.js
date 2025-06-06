@@ -34,7 +34,12 @@ const i18n = createI18n({
       group: "(Group project)",
       professional: "(Professional project)",
 
-      freelancedate: "July 2023 - In progress",
+      scaledevdate: "January 2025 - Present",
+      scaledevname: "ScaleDEV Web Developer",
+      scaledevdesc:
+        "E-commerce Web Developer specializing in PrestaShop (store and modules)",
+
+      freelancedate: "July 2023 - January 2025",
       freelancename: "Freelance Developer",
       freelancedesc:
         "I started my own business to develop my micro-enterprise alongside my studies and my work-study programme.",
@@ -98,7 +103,12 @@ const i18n = createI18n({
       group: "(Projet de groupe)",
       professional: "(Projet professionnel)",
 
-      freelancedate: "Juillet 2023 - En cours",
+      scaledevdate: "Janvier 2025 - En cours",
+      scaledevname: "Développeur Web ScaleDEV",
+      scaledevdesc:
+        "Développeur Web E-commerce spécialisé PrestaShop (boutique et modules)",
+
+      freelancedate: "Juillet 2023 - Janvier 2025",
       freelancename: "Développeur Freelance",
       freelancedesc:
         "Je me suis lancé à mon compte afin de développer ma micro-entreprise en parallèle de mes études et de mon alternance.",
