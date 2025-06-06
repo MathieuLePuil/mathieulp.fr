@@ -31,7 +31,7 @@
 
   <div class="w-full flex justify-center mb-5">
     <p class="text-xs sm:text-sm text-white">
-      &copy; 2024 - {{ $t("footer") }} - Mathieu Le Puil |
+      &copy; {{ getCurrentYear() }} - {{ $t("footer") }} - Mathieu Le Puil |
       <router-link
         to="/mentions-legales"
         class="text-xs sm:text-sm hover:underline"
@@ -40,4 +40,6 @@
     </p>
   </div>
 </template>
-<script setup></script>
+<script setup>
+const getCurrentYear = () => new Date().getFullYear();
+</script>
