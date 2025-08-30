@@ -13,9 +13,9 @@ const i18n = createI18n({
       projects: "Projects",
       experience: "Experiences",
 
-      homeh3: "PHP Web Developer",
-      homeh2: "Freelance",
-      homep: "Available for Freelance missions or Full-Time Job",
+      homeh3: "Symfony Developer",
+      homeh2: "PrestaShop ",
+      homep: "Not available for Freelance missions or Full-Time Job",
 
       portfolio:
         "Professional portfolio built to develop my image in order to find work.",
@@ -82,9 +82,9 @@ const i18n = createI18n({
       projects: "Projets",
       experience: "Expériences",
 
-      homeh3: "Développeur Web PHP",
-      homeh2: "Freelance",
-      homep: "Disponible pour missions Freelance ou CDI",
+      homeh3: "Symfony",
+      homeh2: "Développeur PrestaShop",
+      homep: "Indisponible pour missions Freelance ou CDI",
 
       portfolio:
         "Portfolio professionnel construit pour développer mon image afin de trouver du travail.",
