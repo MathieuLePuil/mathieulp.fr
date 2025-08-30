@@ -14,7 +14,7 @@ const i18n = createI18n({
       experience: "Experiences",
 
       homeh3: "Symfony Developer",
-      homeh2: "PrestaShop ",
+      homeh2: "PrestaShop",
       homep: "Not available for Freelance missions or Full-Time Job",
 
       portfolio:
