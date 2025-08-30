@@ -22,12 +22,12 @@ import 'animate.css';
         </div>
         <div>
           <h3 class="text-my-purple text-xl text-center mx-3">
-            <span class="italic">{{ $t("homeh2") }}</span> / {{ $t("homeh3") }}
+            {{ $t("homeh2") }} / {{ $t("homeh3") }}
           </h3>
         </div>
         <div class="flex items-center space-x-2">
-          <span class="green-circle"></span>
-          <p class="flash-green">{{ $t("homep") }}</p>
+          <span class="red-circle"></span>
+          <p class="flash-red">{{ $t("homep") }}</p>
         </div>
         <div class="flex items-center space-x-4 z-30">
           <a href="https://www.github.com/MathieuLePuil" target="_blank">
@@ -126,6 +126,18 @@ import 'animate.css';
 
 .flash-green {
   color: #35f106;
+}
+
+.red-circle {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #FC1723;
+  border-radius: 50%;
+}
+
+.flash-red {
+  color: #FC1723;
 }
 
 @keyframes cube {
