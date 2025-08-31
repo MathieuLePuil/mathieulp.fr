@@ -29,7 +29,7 @@ import { useI18n } from "vue-i18n";
                 alt="Flag"
               />
               <span class="hidden sm:block">{{ getLocaleLabel() }}</span>
-              <i class="fa-solid fa-sort-down pb-1.5 ml-2"></i>
+              <font-awesome-icon icon="sort-down" class="pb-1.5 ml-2" />
             </button>
             <div
               v-if="isDropdownOpen"
@@ -166,8 +166,8 @@ export default {
     },
     getLocaleFlagSrc() {
       return this.$i18n.locale === "fr"
-        ? "https://img.freepik.com/vecteurs-libre/illustration-du-drapeau-france_53876-27099.jpg?size=626&ext=jpg&ga=GA1.1.600005458.1693078612&semt=ais"
-        : "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Flag_of_the_United_States_%28Pantone%29.svg/1280px-Flag_of_the_United_States_%28Pantone%29.svg.png";
+        ? new URL('./assets/img/fr.webp', import.meta.url).href
+        : new URL('./assets/img/en.webp', import.meta.url).href;
     },
     getLocaleLabel() {
       return this.$i18n.locale === "fr" ? "Français" : "English";

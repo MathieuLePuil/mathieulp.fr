@@ -19,16 +19,16 @@
                     <p class="text-xs sm:text-sm">{{ $t("portfolio") }}</p>
                     <div class="flex flex-row justify-between items-center">
                         <a href="https://mathieulp.fr/" target="_blank" class="MathieuLP">
-                            <i class="fa-solid fa-caret-right mr-2"></i>
+                            <font-awesome-icon icon="caret-right" class="mr-2" />
                             {{ $t("websitelink") }}
                         </a>
                         <div class="flex flex-row space-x-1 items-center">
-                            <i class="fa-brands fa-vuejs"></i>
+                            <font-awesome-icon :icon="['fab','vuejs']" />
                             <img src="../assets/img/tailwind.webp" alt="TailwindCSS Logo" class="w-5">
                         </div>
                     </div>
                 </div>
-                <i class="fa-solid fa-hand-pointer click-indicator" v-if="showClickIndicator"></i>
+                <font-awesome-icon icon="hand-pointer" class="click-indicator" v-if="showClickIndicator" />
             </div>
 
             <div class="image-container relative hover:scale-105 transition-all duration-200 ease">
@@ -43,11 +43,11 @@
                     <p class="text-xs sm:text-sm">{{ $t("codeclipper") }}</p>
                     <div class="flex flex-row justify-between items-center">
                         <a href="https://codeclipper.dev/" target="_blank" class="CodeClipper">
-                            <i class="fa-solid fa-caret-right mr-2"></i>
+                            <font-awesome-icon icon="caret-right" class="mr-2" />
                             {{ $t("websitelink") }}
                         </a>
                         <div class="flex flex-row space-x-1 items-center">
-                            <i class="fa-brands fa-symfony"></i>
+                            <font-awesome-icon :icon="['fab','symfony']" />
                             <img src="../assets/img/tailwind.webp" alt="TailwindCSS Logo" class="w-5">
                         </div>
                     </div>
@@ -66,11 +66,11 @@
                     <p class="text-xs sm:text-sm">{{ $t("symstartsaas") }}</p>
                     <div class="flex flex-row justify-between items-center">
                         <a href="https://symstartsaas.mathieulp.fr/" target="_blank" class="SymStartSaaS">
-                            <i class="fa-solid fa-caret-right mr-2"></i>
+                            <font-awesome-icon icon="caret-right" class="mr-2" />
                             {{ $t("websitelink") }}
                         </a>
                         <div class="flex flex-row space-x-1 items-center">
-                            <i class="fa-brands fa-symfony"></i>
+                            <font-awesome-icon :icon="['fab','symfony']" />
                             <img src="../assets/img/nuxtjs.webp" alt="NuxtJS Logo" class="w-5">
                             <img src="../assets/img/tailwind.webp" alt="TailwindCSS Logo" class="w-5">
                         </div>
@@ -90,12 +90,12 @@
                     <p class="text-xs sm:text-sm">{{ $t("popeye") }}</p>
                     <div class="flex flex-row justify-between items-center">
                         <a href="https://popeye-troyes.fr/" target="_blank" class="Popeye">
-                            <i class="fa-solid fa-caret-right mr-2"></i>
+                            <font-awesome-icon icon="caret-right" class="mr-2" />
                             {{ $t("websitelink") }}
                         </a>
                         <div class="flex flex-row space-x-1 items-center">
-                            <i class="fa-brands fa-symfony"></i>
-                            <i class="fa-brands fa-vuejs"></i>
+                            <font-awesome-icon :icon="['fab','symfony']" />
+                            <font-awesome-icon :icon="['fab','vuejs']" />
                             <img src="../assets/img/tailwind.webp" alt="TailwindCSS Logo" class="w-5">
                         </div>
                     </div>
@@ -114,11 +114,11 @@
                     <p class="text-xs sm:text-sm">{{ $t("pocmagiline") }}</p>
                     <div class="flex flex-row justify-between items-center">
                         <a href="https://poc-magiline.vercel.app/" target="_blank" class="POC Magiline">
-                            <i class="fa-solid fa-caret-right mr-2"></i>
+                            <font-awesome-icon icon="caret-right" class="mr-2" />
                             {{ $t("websitelink") }}
                         </a>
                         <div class="flex flex-row space-x-1 items-center">
-                            <i class="fa-brands fa-vuejs"></i>
+                            <font-awesome-icon :icon="['fab','vuejs']" />
                             <img src="../assets/img/tailwind.webp" alt="TailwindCSS Logo" class="w-5">
                             <img src="../assets/img/threejs.webp" alt="Three.JS Logo" class="w-4">
                         </div>
@@ -138,11 +138,11 @@
                     <p class="text-xs sm:text-sm">{{ $t("exerdevai") }}</p>
                     <div class="flex flex-row justify-between items-center">
                         <a href="https://exerdevai.dev/" target="_blank" class="ExerDevAI">
-                            <i class="fa-solid fa-caret-right mr-2"></i>
+                            <font-awesome-icon icon="caret-right" class="mr-2" />
                             {{ $t("websitelink") }}
                         </a>
                         <div class="flex flex-row space-x-1 items-center">
-                            <i class="fa-brands fa-symfony"></i>
+                            <font-awesome-icon :icon="['fab','symfony']" />
                             <img src="../assets/img/openai.svg" alt="OpenAI Logo" class="w-4">
                             <img src="../assets/img/tailwind.webp" alt="TailwindCSS Logo" class="w-5">
                         </div>

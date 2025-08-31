@@ -31,19 +31,13 @@ import 'animate.css';
         </div>
         <div class="flex items-center space-x-4 z-30">
           <a href="https://www.github.com/MathieuLePuil" target="_blank">
-            <i
-              class="fa-brands fa-github text-white text-3xl hover:scale-105 transition-all duration-200 ease"
-            ></i>
+            <font-awesome-icon :icon="['fab','github']" class="text-white text-3xl hover:scale-105 transition-all duration-200 ease" />
           </a>
           <a href="https://www.twitter.com/MathieuLePuil" target="_blank">
-            <i
-              class="fa-brands fa-x-twitter text-white text-3xl hover:scale-105 transition-all duration-200 ease"
-            ></i>
+            <font-awesome-icon :icon="['fab','x-twitter']" class="text-white text-3xl hover:scale-105 transition-all duration-200 ease" />
           </a>
           <a href="https://www.linkedin.com/in/mathieulepuil/" target="_blank">
-            <i
-              class="fa-brands fa-linkedin text-white text-3xl hover:scale-105 transition-all duration-200 ease"
-            ></i>
+            <font-awesome-icon :icon="['fab','linkedin']" class="text-white text-3xl hover:scale-105 transition-all duration-200 ease" />
           </a>
         </div>
       </div>
@@ -51,7 +45,7 @@ import 'animate.css';
         <div
           class="bg-purple-200 text-black font-regular py-1 px-3 text-lg rounded hover:scale-105 transition-all duration-200 ease"
         >
-          <i class="fa-regular fa-envelope text-black font-thin"></i>
+          <font-awesome-icon :icon="['far','envelope']" class="text-black font-thin" />
           {{ $t("contactme") }}
         </div>
       </a>
@@ -60,26 +54,10 @@ import 'animate.css';
     <div
       class="hidden sm:flex fixed bottom-0 -left-2 sm:!left-1 px-4 flex-col items-center z-30 space-y-1"
     >
-      <a href="mailto:contact@mathieulp.fr" target="_blank"
-        ><i
-          class="fa-regular fa-envelope text-white text-3xl font-thin hover:scale-105 transition-all duration-200 ease"
-        ></i
-      ></a>
-      <a href="https://www.linkedin.com/in/mathieulepuil/" target="_blank"
-        ><i
-          class="fa-brands fa-linkedin text-white text-3xl font-thin hover:scale-105 transition-all duration-200 ease"
-        ></i
-      ></a>
-      <a href="https://www.github.com/MathieuLePuil" target="_blank"
-        ><i
-          class="fa-brands fa-github text-white text-3xl font-thin hover:scale-105 transition-all duration-200 ease"
-        ></i
-      ></a>
-      <a href="https://www.twitter.com/MathieuLePuil" target="_blank"
-        ><i
-          class="fa-brands fa-x-twitter text-white text-3xl font-thin hover:scale-105 transition-all duration-200 ease"
-        ></i
-      ></a>
+      <a href="mailto:contact@mathieulp.fr" target="_blank"><font-awesome-icon :icon="['far','envelope']" class="text-white text-3xl font-thin hover:scale-105 transition-all duration-200 ease" /></a>
+      <a href="https://www.linkedin.com/in/mathieulepuil/" target="_blank"><font-awesome-icon :icon="['fab','linkedin']" class="text-white text-3xl font-thin hover:scale-105 transition-all duration-200 ease" /></a>
+      <a href="https://www.github.com/MathieuLePuil" target="_blank"><font-awesome-icon :icon="['fab','github']" class="text-white text-3xl font-thin hover:scale-105 transition-all duration-200 ease" /></a>
+      <a href="https://www.twitter.com/MathieuLePuil" target="_blank"><font-awesome-icon :icon="['fab','x-twitter']" class="text-white text-3xl font-thin hover:scale-105 transition-all duration-200 ease" /></a>
       <div class="h-14 w-1 bg-white"></div>
     </div>
     <ul class="background z-10 hidden lg:!block">

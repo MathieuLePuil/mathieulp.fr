@@ -11,8 +11,18 @@
         <meta property="og:description" content="Je suis Mathieu Le Puil, j'ai 20 ans et je suis actuellement en B.U.T Métiers du Multimédia et de l’Internet à l’I.U.T de Troyes. En parallèle, je suis alternant en tant que développeur web Full-Stack dans les auto-écoles Popeye.">
         <meta name="author" content="Mathieu Le Puil">
         <title>Portfolio | Mathieu Le Puil</title>
-        <link rel="stylesheet" href="/tailwind.css">
-        <link rel="stylesheet" href="/style.css">
+        <link rel="preload" href="/tailwind.css" as="style">
+        <link rel="stylesheet" href="/tailwind.css" media="print" onload="this.media='all'">
+        <link rel="preload" href="/style.css" as="style">
+        <link rel="stylesheet" href="/style.css" media="print" onload="this.media='all'">
+        <noscript>
+            <link rel="stylesheet" href="/tailwind.css">
+            <link rel="stylesheet" href="/style.css">
+        </noscript>
+        <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+        <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+        <link rel="preconnect" href="https://static.cloudflareinsights.com" crossorigin>
+        <link rel="dns-prefetch" href="https://static.cloudflareinsights.com">
         
         <link rel="preload" href="/fonts/fira-code/FiraCode-VF.woff2" as="font" type="font/woff2" crossorigin>
         <style>
@@ -38,9 +48,7 @@
     <body class="max-w-full">
         <div id="app"></div>
         <script type="module" src="/src/main.js"></script>
-        
-        <script src="https://kit.fontawesome.com/f89af89e77.js" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-        <script type="text/javascript">emailjs.init('DFr3zRvbCD78VyTjW')</script>
+        <script defer data-cfasync="false" type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script defer data-cfasync="false" type="text/javascript">emailjs.init('DFr3zRvbCD78VyTjW')</script>
     </body>
 </html>
