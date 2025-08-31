@@ -1,4 +1,6 @@
 import { createApp } from "vue";
+import 'flowbite/dist/flowbite.min.css';
+import 'flowbite';
 import App from "./App.vue";
 import { createI18n } from "vue-i18n";
 import router from "./router";
