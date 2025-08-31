@@ -10,6 +10,7 @@ import 'animate.css';
       <div class="z-30 animate__animated animate__fadeInDown img-photo">
         <img
           src="../assets/img/me.webp"
+          srcset="../assets/img/me.webp 1x, ../assets/img/me@2x.webp 2x"
           alt="Photo de moi"
           class="w-36 rounded-full"
         />

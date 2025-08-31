@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from "vue";
+import emailjs from "@emailjs/browser";
 
 const name = ref("");
 const email = ref("");
@@ -14,6 +15,8 @@ const getCurrentYear = () => {
 	return new Date().getFullYear();
 };
 
+emailjs.init('DFr3zRvbCD78VyTjW');
+
 const submitForm = () => {
 	isSubmitting.value = true;
 
@@ -21,8 +24,8 @@ const submitForm = () => {
 	const templateID = "template_obzu7bz";
 
 	if (contactForm.value) {
-		emailjs
-			.sendForm(serviceID, templateID, contactForm.value)
+			emailjs
+				.sendForm(serviceID, templateID, contactForm.value)
 			.then(() => {
 				isSubmitting.value = false;
 
