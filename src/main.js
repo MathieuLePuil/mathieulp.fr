@@ -1,7 +1,27 @@
 import { createApp } from "vue";
+import 'flowbite/dist/flowbite.min.css';
+import 'flowbite';
 import App from "./App.vue";
 import { createI18n } from "vue-i18n";
 import router from "./router";
+import "./styles.css";
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { faSortDown, faCaretRight, faHandPointer } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+import { faGithub, faXTwitter, faLinkedin, faVuejs, faSymfony } from '@fortawesome/free-brands-svg-icons';
+
+library.add(
+  faSortDown,
+  faCaretRight,
+  faHandPointer,
+  faEnvelope,
+  faGithub,
+  faXTwitter,
+  faLinkedin,
+  faVuejs,
+  faSymfony
+);
 
 
 const i18n = createI18n({
@@ -156,5 +176,7 @@ const app = createApp(App);
 app.use(i18n);
 
 app.use(router);
+
+app.component('font-awesome-icon', FontAwesomeIcon);
 
 app.mount("#app");

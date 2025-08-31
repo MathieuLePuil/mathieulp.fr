@@ -10,7 +10,7 @@ import { useI18n } from "vue-i18n";
         class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 z-30"
       >
         <router-link to="/" class="flex items-center z-30">
-          <img src="./assets/img/LOGO.webp" class="h-8 mr-3" alt="Logo" />
+          <img src="./assets/img/LOGO.webp" srcset="./assets/img/LOGO.webp 1x, ./assets/img/LOGO@2x.webp 2x" class="h-8 mr-3" alt="Logo" />
           <span class="self-center text-2xl font-semibold whitespace-nowrap"
             >MathieuLP</span
           >
@@ -20,19 +20,28 @@ import { useI18n } from "vue-i18n";
             <button
               @click="toggleDropdown"
               type="button"
+              :aria-label="getLocaleButtonAria()"
+              aria-haspopup="true"
+              :aria-expanded="isDropdownOpen ? 'true' : 'false'"
+              aria-controls="language-menu"
               class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-gray-300 rounded-lg cursor-pointer hover:bg-gray-200 hover:text-gray-600 z-30 hover:scale-105 transition-all duration-200 ease"
             >
-              <img
-                :src="getLocaleFlagSrc()"
-                aria-hidden="true"
-                class="h-3.5 w-3.5 rounded-full mr-2"
-                alt="Flag"
-              />
+              <span class="mr-2 inline-flex h-3.5 w-3.5 rounded-full overflow-hidden">
+                <img
+                  :src="getLocaleFlagSrc()"
+                  :srcset="getLocaleFlagSrc() + ' 1x, ' + getLocaleFlag2x() + ' 2x'"
+                  aria-hidden="true"
+                  class="h-full w-full object-cover"
+                  alt=""
+                />
+              </span>
               <span class="hidden sm:block">{{ getLocaleLabel() }}</span>
-              <i class="fa-solid fa-sort-down pb-1.5 ml-2"></i>
+              <font-awesome-icon icon="sort-down" class="pb-1.5 ml-2" />
             </button>
             <div
               v-if="isDropdownOpen"
+              id="language-menu"
+              role="menu"
               class="z-50 mt-2 text-base list-none divide-gray-100 rounded-lg shadow bg-[#F6F6F6] absolute left-0 w-full"
             >
               <ul
@@ -46,14 +55,18 @@ import { useI18n } from "vue-i18n";
                       closeDropdown();
                     "
                     type="button"
+                    aria-label="Changer la langue en Français"
                     class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-gray-900 rounded-lg cursor-pointer hover:bg-gray-200 z-30"
                   >
-                    <img
-                      src="./assets/img/fr.webp"
-                      aria-hidden="true"
-                      class="h-3.5 w-3.5 rounded-full mr-2"
-                      alt="Test"
-                    />
+                    <span class="mr-2 inline-flex h-3.5 w-3.5 rounded-full overflow-hidden">
+                      <img
+                        src="./assets/img/fr.webp"
+                        srcset="./assets/img/fr.webp 1x, ./assets/img/fr@2x.webp 2x"
+                        aria-hidden="true"
+                        class="h-full w-full object-cover"
+                        alt=""
+                      />
+                    </span>
                       <span class="hidden sm:block">Français</span>
                   </button>
                 </li>
@@ -64,14 +77,18 @@ import { useI18n } from "vue-i18n";
                       closeDropdown();
                     "
                     type="button"
+                    aria-label="Change language to English"
                     class="inline-flex w-full items-center font-medium justify-center px-4 p-2 text-sm text-gray-900 rounded-lg cursor-pointer hover:bg-gray-200 z-30"
                   >
-                    <img
-                      src="./assets/img/en.webp"
-                      aria-hidden="true"
-                      class="h-3.5 w-3.5 rounded-full mr-2"
-                      alt="Test"
-                    />
+                    <span class="mr-2 inline-flex h-3.5 w-3.5 rounded-full overflow-hidden">
+                      <img
+                        src="./assets/img/en.webp"
+                        srcset="./assets/img/en.webp 1x, ./assets/img/en@2x.webp 2x"
+                        aria-hidden="true"
+                        class="h-full w-full object-cover"
+                        alt=""
+                      />
+                    </span>
                       <span class="hidden sm:block">English</span>
                   </button>
                 </li>
@@ -166,11 +183,21 @@ export default {
     },
     getLocaleFlagSrc() {
       return this.$i18n.locale === "fr"
-        ? "https://img.freepik.com/vecteurs-libre/illustration-du-drapeau-france_53876-27099.jpg?size=626&ext=jpg&ga=GA1.1.600005458.1693078612&semt=ais"
-        : "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Flag_of_the_United_States_%28Pantone%29.svg/1280px-Flag_of_the_United_States_%28Pantone%29.svg.png";
+        ? new URL('./assets/img/fr.webp', import.meta.url).href
+        : new URL('./assets/img/en.webp', import.meta.url).href;
     },
     getLocaleLabel() {
       return this.$i18n.locale === "fr" ? "Français" : "English";
+    },
+    getLocaleFlag2x() {
+      return this.$i18n.locale === "fr"
+        ? new URL('./assets/img/fr@2x.webp', import.meta.url).href
+        : new URL('./assets/img/en@2x.webp', import.meta.url).href;
+    },
+    getLocaleButtonAria() {
+      return this.$i18n.locale === "fr"
+        ? "Changer de langue, langue actuelle Français"
+        : "Change language, current language English";
     },
     toggleDropdown() {
       this.isDropdownOpen = !this.isDropdownOpen;

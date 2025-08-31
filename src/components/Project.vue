@@ -1,7 +1,7 @@
 <template>
     <section id="projects" class="lg:!h-screen h-full pt-[8vh] lg:!pt-0 pb-20 flex flex-col justify-around z-30">
         <div class="flex items-center pb-20 lg:pb-0">
-            <h2 class="text-xl sm:text-3xl mt-10 lg:!text-6xl ml-[10%] text-white font-bold text-center">
+            <h2 class="h2 text-xl sm:text-3xl mt-10 lg:!text-6xl ml-[10%] text-white font-bold text-center">
                 {{ $t("projects") }}
             </h2>
         </div>
@@ -9,7 +9,8 @@
             <div class="image-container relative hover:scale-105 transition-all duration-200 ease"
                  @click="hideClickIndicator">
                 <img class="h-auto w-full rounded-lg border-white border-2" src="../assets/img/portfolio.webp"
-                     alt=""/>
+                     srcset="../assets/img/portfolio.webp 1x, ../assets/img/portfolio@2x.webp 2x"
+                     loading="lazy" decoding="async" alt=""/>
                 <div class="image-overlay absolute top-0 left-0 w-full h-full bg-white bg-opacity-60 flex flex-col justify-around opacity-0 transition-opacity duration-300 ease rounded-lg px-5 space-y-0.5 md:space-y-2"
                     style="background: rgb(255, 255, 255, 0.95)">
                     <div class="flex flex-row justify-between items-center">
@@ -18,22 +19,23 @@
                     </div>
                     <p class="text-xs sm:text-sm">{{ $t("portfolio") }}</p>
                     <div class="flex flex-row justify-between items-center">
-                        <a href="https://mathieulp.fr/" target="_blank" class="MathieuLP">
-                            <i class="fa-solid fa-caret-right mr-2"></i>
+                        <a href="https://mathieulp.fr/" target="_blank" rel="noopener noreferrer" class="MathieuLP">
+                            <font-awesome-icon icon="caret-right" class="mr-2" />
                             {{ $t("websitelink") }}
                         </a>
                         <div class="flex flex-row space-x-1 items-center">
-                            <i class="fa-brands fa-vuejs"></i>
-                            <img src="../assets/img/tailwind.webp" alt="TailwindCSS Logo" class="w-5">
+                            <font-awesome-icon :icon="['fab','vuejs']" />
+                            <img src="../assets/img/tailwind.webp" srcset="../assets/img/tailwind.webp 1x, ../assets/img/tailwind@2x.webp 2x" alt="TailwindCSS Logo" class="w-5">
                         </div>
                     </div>
                 </div>
-                <i class="fa-solid fa-hand-pointer click-indicator" v-if="showClickIndicator"></i>
+                <font-awesome-icon icon="hand-pointer" class="click-indicator" v-if="showClickIndicator" />
             </div>
 
             <div class="image-container relative hover:scale-105 transition-all duration-200 ease">
                 <img class="h-auto w-full rounded-lg border-white border-2" src="../assets/img/codeclipper.webp"
-                     alt=""/>
+                     srcset="../assets/img/codeclipper.webp 1x, ../assets/img/codeclipper@2x.webp 2x"
+                     loading="lazy" decoding="async" alt=""/>
                 <div class="image-overlay absolute top-0 left-0 w-full h-full bg-white bg-opacity-60 flex flex-col justify-around opacity-0 transition-opacity duration-300 ease rounded-lg px-5 space-y-0.5 md:space-y-2"
                      style="background: rgb(255, 255, 255, 0.95)">
                     <div class="flex flex-row justify-between items-center">
@@ -42,13 +44,13 @@
                     </div>
                     <p class="text-xs sm:text-sm">{{ $t("codeclipper") }}</p>
                     <div class="flex flex-row justify-between items-center">
-                        <a href="https://codeclipper.dev/" target="_blank" class="CodeClipper">
-                            <i class="fa-solid fa-caret-right mr-2"></i>
+                        <a href="https://codeclipper.dev/" target="_blank" rel="noopener noreferrer" class="CodeClipper">
+                            <font-awesome-icon icon="caret-right" class="mr-2" />
                             {{ $t("websitelink") }}
                         </a>
                         <div class="flex flex-row space-x-1 items-center">
-                            <i class="fa-brands fa-symfony"></i>
-                            <img src="../assets/img/tailwind.webp" alt="TailwindCSS Logo" class="w-5">
+                            <font-awesome-icon :icon="['fab','symfony']" />
+                            <img src="../assets/img/tailwind.webp" srcset="../assets/img/tailwind.webp 1x, ../assets/img/tailwind@2x.webp 2x" alt="TailwindCSS Logo" class="w-5">
                         </div>
                     </div>
                 </div>
@@ -56,7 +58,8 @@
 
             <div class="image-container relative hover:scale-105 transition-all duration-200 ease">
                 <img class="h-auto w-full rounded-lg border-white border-2" src="../assets/img/SymStartSaaS.webp"
-                     alt=""/>
+                     srcset="../assets/img/SymStartSaaS.webp 1x, ../assets/img/SymStartSaaS@2x.webp 2x"
+                     loading="lazy" decoding="async" alt=""/>
                 <div class="image-overlay absolute top-0 left-0 w-full h-full bg-white bg-opacity-60 flex flex-col justify-around opacity-0 transition-opacity duration-300 ease rounded-lg px-5 space-y-0.5 md:space-y-2"
                      style="background: rgb(255, 255, 255, 0.95)">
                     <div class="flex flex-row justify-between items-center">
@@ -65,12 +68,12 @@
                     </div>
                     <p class="text-xs sm:text-sm">{{ $t("symstartsaas") }}</p>
                     <div class="flex flex-row justify-between items-center">
-                        <a href="https://symstartsaas.mathieulp.fr/" target="_blank" class="SymStartSaaS">
-                            <i class="fa-solid fa-caret-right mr-2"></i>
+                        <a href="https://symstartsaas.mathieulp.fr/" target="_blank" rel="noopener noreferrer" class="SymStartSaaS">
+                            <font-awesome-icon icon="caret-right" class="mr-2" />
                             {{ $t("websitelink") }}
                         </a>
                         <div class="flex flex-row space-x-1 items-center">
-                            <i class="fa-brands fa-symfony"></i>
+                            <font-awesome-icon :icon="['fab','symfony']" />
                             <img src="../assets/img/nuxtjs.webp" alt="NuxtJS Logo" class="w-5">
                             <img src="../assets/img/tailwind.webp" alt="TailwindCSS Logo" class="w-5">
                         </div>
@@ -80,7 +83,8 @@
 
             <div class="image-container relative hover:scale-105 transition-all duration-200 ease">
                 <img class="h-auto w-full rounded-lg border-white border-2" src="../assets/img/popeye.webp"
-                     alt=""/>
+                     srcset="../assets/img/popeye.webp 1x, ../assets/img/popeye@2x.webp 2x"
+                     loading="lazy" decoding="async" alt=""/>
                 <div class="image-overlay absolute top-0 left-0 w-full h-full bg-white bg-opacity-60 flex flex-col justify-around opacity-0 transition-opacity duration-300 ease rounded-lg px-5 space-y-0.5 md:space-y-2"
                      style="background: rgb(255, 255, 255, 0.95)">
                     <div class="flex flex-row justify-between items-center">
@@ -89,13 +93,13 @@
                     </div>
                     <p class="text-xs sm:text-sm">{{ $t("popeye") }}</p>
                     <div class="flex flex-row justify-between items-center">
-                        <a href="https://popeye-troyes.fr/" target="_blank" class="Popeye">
-                            <i class="fa-solid fa-caret-right mr-2"></i>
+                        <a href="https://popeye-troyes.fr/" target="_blank" rel="noopener noreferrer" class="Popeye">
+                            <font-awesome-icon icon="caret-right" class="mr-2" />
                             {{ $t("websitelink") }}
                         </a>
                         <div class="flex flex-row space-x-1 items-center">
-                            <i class="fa-brands fa-symfony"></i>
-                            <i class="fa-brands fa-vuejs"></i>
+                            <font-awesome-icon :icon="['fab','symfony']" />
+                            <font-awesome-icon :icon="['fab','vuejs']" />
                             <img src="../assets/img/tailwind.webp" alt="TailwindCSS Logo" class="w-5">
                         </div>
                     </div>
@@ -104,7 +108,8 @@
 
             <div class="image-container relative hover:scale-105 transition-all duration-200 ease">
                 <img class="h-auto w-full rounded-lg border-white border-2" src="../assets/img/pocmagiline.webp"
-                     alt=""/>
+                     srcset="../assets/img/pocmagiline.webp 1x, ../assets/img/pocmagiline@2x.webp 2x"
+                     loading="lazy" decoding="async" alt=""/>
                 <div class="image-overlay absolute top-0 left-0 w-full h-full bg-white bg-opacity-60 flex flex-col justify-around opacity-0 transition-opacity duration-300 ease rounded-lg px-5 space-y-0.5 md:space-y-2"
                      style="background: rgb(255, 255, 255, 0.95)">
                     <div class="flex flex-row justify-between items-center">
@@ -113,12 +118,12 @@
                     </div>
                     <p class="text-xs sm:text-sm">{{ $t("pocmagiline") }}</p>
                     <div class="flex flex-row justify-between items-center">
-                        <a href="https://poc-magiline.vercel.app/" target="_blank" class="POC Magiline">
-                            <i class="fa-solid fa-caret-right mr-2"></i>
+                        <a href="https://poc-magiline.vercel.app/" target="_blank" rel="noopener noreferrer" class="POC Magiline">
+                            <font-awesome-icon icon="caret-right" class="mr-2" />
                             {{ $t("websitelink") }}
                         </a>
                         <div class="flex flex-row space-x-1 items-center">
-                            <i class="fa-brands fa-vuejs"></i>
+                            <font-awesome-icon :icon="['fab','vuejs']" />
                             <img src="../assets/img/tailwind.webp" alt="TailwindCSS Logo" class="w-5">
                             <img src="../assets/img/threejs.webp" alt="Three.JS Logo" class="w-4">
                         </div>
@@ -128,7 +133,8 @@
 
             <div class="image-container relative hover:scale-105 transition-all duration-200 ease">
                 <img class="h-auto w-full rounded-lg border-white border-2" src="../assets/img/exerdevai.webp"
-                     alt=""/>
+                     srcset="../assets/img/exerdevai.webp 1x, ../assets/img/exerdevai@2x.webp 2x"
+                     loading="lazy" decoding="async" alt=""/>
                 <div class="image-overlay absolute top-0 left-0 w-full h-full bg-white bg-opacity-60 flex flex-col justify-around opacity-0 transition-opacity duration-300 ease rounded-lg px-5 space-y-0.5 md:space-y-2"
                      style="background: rgb(255, 255, 255, 0.95)">
                     <div class="flex flex-row justify-between items-center">
@@ -137,12 +143,12 @@
                     </div>
                     <p class="text-xs sm:text-sm">{{ $t("exerdevai") }}</p>
                     <div class="flex flex-row justify-between items-center">
-                        <a href="https://exerdevai.dev/" target="_blank" class="ExerDevAI">
-                            <i class="fa-solid fa-caret-right mr-2"></i>
+                        <a href="https://exerdevai.dev/" target="_blank" rel="noopener noreferrer" class="ExerDevAI">
+                            <font-awesome-icon icon="caret-right" class="mr-2" />
                             {{ $t("websitelink") }}
                         </a>
                         <div class="flex flex-row space-x-1 items-center">
-                            <i class="fa-brands fa-symfony"></i>
+                            <font-awesome-icon :icon="['fab','symfony']" />
                             <img src="../assets/img/openai.svg" alt="OpenAI Logo" class="w-4">
                             <img src="../assets/img/tailwind.webp" alt="TailwindCSS Logo" class="w-5">
                         </div>
@@ -170,11 +176,11 @@
     }
 }
 
-h2 {
+.h2 {
     position: relative;
 }
 
-h2::before {
+.h2::before {
     content: "";
     position: absolute;
     top: 40%;
