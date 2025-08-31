@@ -21,22 +21,22 @@ import 'animate.css';
           </h1>
         </div>
         <div>
-          <h3 class="text-my-purple text-xl text-center mx-3">
+          <h2 class="text-my-purple text-xl text-center mx-3">
             {{ $t("homeh2") }} / {{ $t("homeh3") }}
-          </h3>
+          </h2>
         </div>
         <div class="flex items-center space-x-2">
           <span class="red-circle"></span>
           <p class="flash-red">{{ $t("homep") }}</p>
         </div>
         <div class="flex items-center space-x-4 z-30">
-          <a href="https://www.github.com/MathieuLePuil" target="_blank">
+          <a href="https://www.github.com/MathieuLePuil" target="_blank" rel="noopener noreferrer" aria-label="Ouvrir le profil GitHub de Mathieu Le Puil">
             <font-awesome-icon :icon="['fab','github']" class="text-white text-3xl hover:scale-105 transition-all duration-200 ease" />
           </a>
-          <a href="https://www.twitter.com/MathieuLePuil" target="_blank">
+          <a href="https://www.twitter.com/MathieuLePuil" target="_blank" rel="noopener noreferrer" aria-label="Ouvrir le profil X (Twitter) de Mathieu Le Puil">
             <font-awesome-icon :icon="['fab','x-twitter']" class="text-white text-3xl hover:scale-105 transition-all duration-200 ease" />
           </a>
-          <a href="https://www.linkedin.com/in/mathieulepuil/" target="_blank">
+          <a href="https://www.linkedin.com/in/mathieulepuil/" target="_blank" rel="noopener noreferrer" aria-label="Ouvrir le profil LinkedIn de Mathieu Le Puil">
             <font-awesome-icon :icon="['fab','linkedin']" class="text-white text-3xl hover:scale-105 transition-all duration-200 ease" />
           </a>
         </div>
@@ -54,10 +54,10 @@ import 'animate.css';
     <div
       class="hidden sm:flex fixed bottom-0 -left-2 sm:!left-1 px-4 flex-col items-center z-30 space-y-1"
     >
-      <a href="mailto:contact@mathieulp.fr" target="_blank"><font-awesome-icon :icon="['far','envelope']" class="text-white text-3xl font-thin hover:scale-105 transition-all duration-200 ease" /></a>
-      <a href="https://www.linkedin.com/in/mathieulepuil/" target="_blank"><font-awesome-icon :icon="['fab','linkedin']" class="text-white text-3xl font-thin hover:scale-105 transition-all duration-200 ease" /></a>
-      <a href="https://www.github.com/MathieuLePuil" target="_blank"><font-awesome-icon :icon="['fab','github']" class="text-white text-3xl font-thin hover:scale-105 transition-all duration-200 ease" /></a>
-      <a href="https://www.twitter.com/MathieuLePuil" target="_blank"><font-awesome-icon :icon="['fab','x-twitter']" class="text-white text-3xl font-thin hover:scale-105 transition-all duration-200 ease" /></a>
+      <a href="mailto:contact@mathieulp.fr" target="_blank" aria-label="Envoyer un e‑mail à contact@mathieulp.fr"><font-awesome-icon :icon="['far','envelope']" class="text-white text-3xl font-thin hover:scale-105 transition-all duration-200 ease" /></a>
+      <a href="https://www.linkedin.com/in/mathieulepuil/" target="_blank" rel="noopener noreferrer" aria-label="Ouvrir le profil LinkedIn de Mathieu Le Puil"><font-awesome-icon :icon="['fab','linkedin']" class="text-white text-3xl font-thin hover:scale-105 transition-all duration-200 ease" /></a>
+      <a href="https://www.github.com/MathieuLePuil" target="_blank" rel="noopener noreferrer" aria-label="Ouvrir le profil GitHub de Mathieu Le Puil"><font-awesome-icon :icon="['fab','github']" class="text-white text-3xl font-thin hover:scale-105 transition-all duration-200 ease" /></a>
+      <a href="https://www.twitter.com/MathieuLePuil" target="_blank" rel="noopener noreferrer" aria-label="Ouvrir le profil X (Twitter) de Mathieu Le Puil"><font-awesome-icon :icon="['fab','x-twitter']" class="text-white text-3xl font-thin hover:scale-105 transition-all duration-200 ease" /></a>
       <div class="h-14 w-1 bg-white"></div>
     </div>
     <ul class="background z-10 hidden lg:!block">

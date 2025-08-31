@@ -1,7 +1,7 @@
 <template>
     <section id="experience" class="h-m-screen lg:!h-screen pt-[8vh] lg:!pt-0 pb-20 flex flex-col justify-around z-20 lg:!w-full">
         <div class="flex items-center pb-20 lg:pb-0">
-            <h2 class="text-xl sm:text-3xl mt-10 lg:!text-6xl ml-[10%] text-white font-bold text-center">
+            <h2 class="h2 text-xl sm:text-3xl mt-10 lg:!text-6xl ml-[10%] text-white font-bold text-center">
                 {{ $t("experience") }}
             </h2>
         </div>

@@ -44,7 +44,7 @@ const submitForm = () => {
 	>
 		<div class="flex items-center pb-20 lg:pb-0">
 			<h2
-				class="text-xl sm:text-3xl mt-10 lg:!text-6xl ml-[10%] text-white font-bold text-center"
+				class="h2 text-xl sm:text-3xl mt-10 lg:!text-6xl ml-[10%] text-white font-bold text-center"
 			>
 				Contact
 			</h2>

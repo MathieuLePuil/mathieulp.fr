@@ -1,7 +1,7 @@
 <template>
     <section id="projects" class="lg:!h-screen h-full pt-[8vh] lg:!pt-0 pb-20 flex flex-col justify-around z-30">
         <div class="flex items-center pb-20 lg:pb-0">
-            <h2 class="text-xl sm:text-3xl mt-10 lg:!text-6xl ml-[10%] text-white font-bold text-center">
+            <h2 class="h2 text-xl sm:text-3xl mt-10 lg:!text-6xl ml-[10%] text-white font-bold text-center">
                 {{ $t("projects") }}
             </h2>
         </div>
@@ -170,11 +170,11 @@
     }
 }
 
-h2 {
+.h2 {
     position: relative;
 }
 
-h2::before {
+.h2::before {
     content: "";
     position: absolute;
     top: 40%;

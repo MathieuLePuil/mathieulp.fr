@@ -20,19 +20,25 @@ import { useI18n } from "vue-i18n";
             <button
               @click="toggleDropdown"
               type="button"
+              :aria-label="getLocaleButtonAria()"
+              aria-haspopup="true"
+              :aria-expanded="isDropdownOpen ? 'true' : 'false'"
+              aria-controls="language-menu"
               class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-gray-300 rounded-lg cursor-pointer hover:bg-gray-200 hover:text-gray-600 z-30 hover:scale-105 transition-all duration-200 ease"
             >
               <img
                 :src="getLocaleFlagSrc()"
                 aria-hidden="true"
                 class="h-3.5 w-3.5 rounded-full mr-2"
-                alt="Flag"
+                alt="Local Flag"
               />
               <span class="hidden sm:block">{{ getLocaleLabel() }}</span>
               <font-awesome-icon icon="sort-down" class="pb-1.5 ml-2" />
             </button>
             <div
               v-if="isDropdownOpen"
+              id="language-menu"
+              role="menu"
               class="z-50 mt-2 text-base list-none divide-gray-100 rounded-lg shadow bg-[#F6F6F6] absolute left-0 w-full"
             >
               <ul
@@ -46,13 +52,14 @@ import { useI18n } from "vue-i18n";
                       closeDropdown();
                     "
                     type="button"
+                    aria-label="Changer la langue en Français"
                     class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-gray-900 rounded-lg cursor-pointer hover:bg-gray-200 z-30"
                   >
                     <img
                       src="./assets/img/fr.webp"
                       aria-hidden="true"
                       class="h-3.5 w-3.5 rounded-full mr-2"
-                      alt="Test"
+                      alt="Français"
                     />
                       <span class="hidden sm:block">Français</span>
                   </button>
@@ -64,13 +71,14 @@ import { useI18n } from "vue-i18n";
                       closeDropdown();
                     "
                     type="button"
+                    aria-label="Change language to English"
                     class="inline-flex w-full items-center font-medium justify-center px-4 p-2 text-sm text-gray-900 rounded-lg cursor-pointer hover:bg-gray-200 z-30"
                   >
                     <img
                       src="./assets/img/en.webp"
                       aria-hidden="true"
                       class="h-3.5 w-3.5 rounded-full mr-2"
-                      alt="Test"
+                      alt="English"
                     />
                       <span class="hidden sm:block">English</span>
                   </button>
@@ -171,6 +179,11 @@ export default {
     },
     getLocaleLabel() {
       return this.$i18n.locale === "fr" ? "Français" : "English";
+    },
+    getLocaleButtonAria() {
+      return this.$i18n.locale === "fr"
+        ? "Changer de langue, langue actuelle Français"
+        : "Change language, current language English";
     },
     toggleDropdown() {
       this.isDropdownOpen = !this.isDropdownOpen;
