@@ -8,7 +8,7 @@
         <div class="gallery-container grid grid-cols-1 lg:grid-cols-3 gap-4 z-30">
             <div class="image-container relative hover:scale-105 transition-all duration-200 ease"
                  @click="hideClickIndicator">
-                <img class="h-auto max-w-full rounded-lg border-white border-2" src="../assets/img/portfolio.webp"
+                <img class="h-auto w-full rounded-lg border-white border-2" src="../assets/img/portfolio.webp"
                      alt=""/>
                 <div class="image-overlay absolute top-0 left-0 w-full h-full bg-white bg-opacity-60 flex flex-col justify-around opacity-0 transition-opacity duration-300 ease rounded-lg px-5 space-y-0.5 md:space-y-2"
                     style="background: rgb(255, 255, 255, 0.95)">
@@ -32,7 +32,7 @@
             </div>
 
             <div class="image-container relative hover:scale-105 transition-all duration-200 ease">
-                <img class="h-auto max-w-full rounded-lg border-white border-2" src="../assets/img/codeclipper.webp"
+                <img class="h-auto w-full rounded-lg border-white border-2" src="../assets/img/codeclipper.webp"
                      alt=""/>
                 <div class="image-overlay absolute top-0 left-0 w-full h-full bg-white bg-opacity-60 flex flex-col justify-around opacity-0 transition-opacity duration-300 ease rounded-lg px-5 space-y-0.5 md:space-y-2"
                      style="background: rgb(255, 255, 255, 0.95)">
@@ -55,7 +55,7 @@
             </div>
 
             <div class="image-container relative hover:scale-105 transition-all duration-200 ease">
-                <img class="h-auto max-w-full rounded-lg border-white border-2" src="../assets/img/SymStartSaaS.webp"
+                <img class="h-auto w-full rounded-lg border-white border-2" src="../assets/img/SymStartSaaS.webp"
                      alt=""/>
                 <div class="image-overlay absolute top-0 left-0 w-full h-full bg-white bg-opacity-60 flex flex-col justify-around opacity-0 transition-opacity duration-300 ease rounded-lg px-5 space-y-0.5 md:space-y-2"
                      style="background: rgb(255, 255, 255, 0.95)">
@@ -79,7 +79,7 @@
             </div>
 
             <div class="image-container relative hover:scale-105 transition-all duration-200 ease">
-                <img class="h-auto max-w-full rounded-lg border-white border-2" src="../assets/img/popeye.webp"
+                <img class="h-auto w-full rounded-lg border-white border-2" src="../assets/img/popeye.webp"
                      alt=""/>
                 <div class="image-overlay absolute top-0 left-0 w-full h-full bg-white bg-opacity-60 flex flex-col justify-around opacity-0 transition-opacity duration-300 ease rounded-lg px-5 space-y-0.5 md:space-y-2"
                      style="background: rgb(255, 255, 255, 0.95)">
@@ -103,7 +103,7 @@
             </div>
 
             <div class="image-container relative hover:scale-105 transition-all duration-200 ease">
-                <img class="h-auto max-w-full rounded-lg border-white border-2" src="../assets/img/pocmagiline.webp"
+                <img class="h-auto w-full rounded-lg border-white border-2" src="../assets/img/pocmagiline.webp"
                      alt=""/>
                 <div class="image-overlay absolute top-0 left-0 w-full h-full bg-white bg-opacity-60 flex flex-col justify-around opacity-0 transition-opacity duration-300 ease rounded-lg px-5 space-y-0.5 md:space-y-2"
                      style="background: rgb(255, 255, 255, 0.95)">
@@ -127,7 +127,7 @@
             </div>
 
             <div class="image-container relative hover:scale-105 transition-all duration-200 ease">
-                <img class="h-auto max-w-full rounded-lg border-white border-2" src="../assets/img/exerdevai.webp"
+                <img class="h-auto w-full rounded-lg border-white border-2" src="../assets/img/exerdevai.webp"
                      alt=""/>
                 <div class="image-overlay absolute top-0 left-0 w-full h-full bg-white bg-opacity-60 flex flex-col justify-around opacity-0 transition-opacity duration-300 ease rounded-lg px-5 space-y-0.5 md:space-y-2"
                      style="background: rgb(255, 255, 255, 0.95)">
