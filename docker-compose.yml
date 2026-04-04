@@ -1,0 +1,12 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: mathieulp-web
+    restart: unless-stopped
+    ports:
+      - "${APP_PORT:-8080}:80"
+    volumes:
+      - ${APP_PATH:-/Users/mathieulp/Desktop/SITES/mathieulp.fr}/dist:/usr/share/nginx/html:ro
+      - ${APP_PATH:-/Users/mathieulp/Desktop/SITES/mathieulp.fr}/nginx.conf:/etc/nginx/conf.d/default.conf:ro
