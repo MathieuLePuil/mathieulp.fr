@@ -1,251 +1,140 @@
 <template>
-    <section id="projects" class="lg:!h-screen h-full pt-[8vh] lg:!pt-0 pb-20 flex flex-col justify-around z-30">
-        <div class="flex items-center pb-20 lg:pb-0">
-            <h2 class="h2 text-xl sm:text-3xl mt-10 lg:!text-6xl ml-[10%] text-white font-bold text-center">
-                {{ $t("projects") }}
-            </h2>
-        </div>
-        <div class="gallery-container grid grid-cols-1 lg:grid-cols-3 gap-4 z-30">
-            <div class="image-container relative hover:scale-105 transition-all duration-200 ease"
-                 @click="hideClickIndicator">
-                <img class="h-auto w-full rounded-lg border-white border-2" src="../assets/img/portfolio.webp"
-                     srcset="../assets/img/portfolio.webp 1x, ../assets/img/portfolio@2x.webp 2x"
-                     loading="lazy" decoding="async" alt=""/>
-                <div class="image-overlay absolute top-0 left-0 w-full h-full bg-white bg-opacity-60 flex flex-col justify-around opacity-0 transition-opacity duration-300 ease rounded-lg px-5 space-y-0.5 md:space-y-2"
-                    style="background: rgb(255, 255, 255, 0.95)">
-                    <div class="flex flex-row justify-between items-center">
-                        <h3 class="font-bold text-sm sm:text-xl fira-code">Portfolio</h3>
-                        <p class="hidden lg:block text-xs">{{ $t("personnal") }}</p>
-                    </div>
-                    <p class="text-xs sm:text-sm">{{ $t("portfolio") }}</p>
-                    <div class="flex flex-row justify-between items-center">
-                        <a href="https://mathieulp.fr/" target="_blank" rel="noopener noreferrer" class="MathieuLP">
-                            <font-awesome-icon icon="caret-right" class="mr-2" />
-                            {{ $t("websitelink") }}
-                        </a>
-                        <div class="flex flex-row space-x-1 items-center">
-                            <font-awesome-icon :icon="['fab','vuejs']" />
-                            <img src="../assets/img/tailwind.webp" srcset="../assets/img/tailwind.webp 1x, ../assets/img/tailwind@2x.webp 2x" alt="TailwindCSS Logo" class="w-5">
-                        </div>
-                    </div>
-                </div>
-                <font-awesome-icon icon="hand-pointer" class="click-indicator" v-if="showClickIndicator" />
-            </div>
+  <section id="projects" class="py-24 bg-zinc-50 dark:bg-zinc-950 dots">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50 mb-16">
+        {{ $t('projects') }}
+      </h2>
 
-            <div class="image-container relative hover:scale-105 transition-all duration-200 ease">
-                <img class="h-auto w-full rounded-lg border-white border-2" src="../assets/img/codeclipper.webp"
-                     srcset="../assets/img/codeclipper.webp 1x, ../assets/img/codeclipper@2x.webp 2x"
-                     loading="lazy" decoding="async" alt=""/>
-                <div class="image-overlay absolute top-0 left-0 w-full h-full bg-white bg-opacity-60 flex flex-col justify-around opacity-0 transition-opacity duration-300 ease rounded-lg px-5 space-y-0.5 md:space-y-2"
-                     style="background: rgb(255, 255, 255, 0.95)">
-                    <div class="flex flex-row justify-between items-center">
-                        <h3 class="font-bold text-sm sm:text-xl fira-code">CodeClipper</h3>
-                        <p class="hidden lg:block text-xs">{{ $t("personnal") }}</p>
-                    </div>
-                    <p class="text-xs sm:text-sm">{{ $t("codeclipper") }}</p>
-                    <div class="flex flex-row justify-between items-center">
-                        <a href="https://codeclipper.dev/" target="_blank" rel="noopener noreferrer" class="CodeClipper">
-                            <font-awesome-icon icon="caret-right" class="mr-2" />
-                            {{ $t("websitelink") }}
-                        </a>
-                        <div class="flex flex-row space-x-1 items-center">
-                            <font-awesome-icon :icon="['fab','symfony']" />
-                            <img src="../assets/img/tailwind.webp" srcset="../assets/img/tailwind.webp 1x, ../assets/img/tailwind@2x.webp 2x" alt="TailwindCSS Logo" class="w-5">
-                        </div>
-                    </div>
-                </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <a
+          v-for="project in projects"
+          :key="project.name"
+          :href="project.url"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="group flex flex-col bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-2xl overflow-hidden hover:-translate-y-1 hover:shadow-lg hover:border-zinc-300 dark:hover:border-zinc-700 transition-all duration-200"
+        >
+          <div class="aspect-video overflow-hidden bg-zinc-100 dark:bg-zinc-800">
+            <img
+              :src="project.img"
+              :srcset="project.imgSrcset"
+              :alt="project.name"
+              class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-300"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <div class="flex flex-col flex-1 p-5">
+            <div class="flex items-start justify-between gap-2 mb-2">
+              <h3 class="font-semibold text-zinc-900 dark:text-zinc-100 leading-tight">{{ project.name }}</h3>
+              <span class="text-xs text-zinc-400 dark:text-zinc-500 whitespace-nowrap mt-0.5 flex-shrink-0">{{ $t(project.type) }}</span>
             </div>
-
-            <div class="image-container relative hover:scale-105 transition-all duration-200 ease">
-                <img class="h-auto w-full rounded-lg border-white border-2" src="../assets/img/SymStartSaaS.webp"
-                     srcset="../assets/img/SymStartSaaS.webp 1x, ../assets/img/SymStartSaaS@2x.webp 2x"
-                     loading="lazy" decoding="async" alt=""/>
-                <div class="image-overlay absolute top-0 left-0 w-full h-full bg-white bg-opacity-60 flex flex-col justify-around opacity-0 transition-opacity duration-300 ease rounded-lg px-5 space-y-0.5 md:space-y-2"
-                     style="background: rgb(255, 255, 255, 0.95)">
-                    <div class="flex flex-row justify-between items-center">
-                        <h3 class="font-bold text-sm sm:text-xl fira-code">SymStartSaaS</h3>
-                        <p class="hidden lg:block text-xs">{{ $t("personnal") }}</p>
-                    </div>
-                    <p class="text-xs sm:text-sm">{{ $t("symstartsaas") }}</p>
-                    <div class="flex flex-row justify-between items-center">
-                        <a href="https://symstartsaas.mathieulp.fr/" target="_blank" rel="noopener noreferrer" class="SymStartSaaS">
-                            <font-awesome-icon icon="caret-right" class="mr-2" />
-                            {{ $t("websitelink") }}
-                        </a>
-                        <div class="flex flex-row space-x-1 items-center">
-                            <font-awesome-icon :icon="['fab','symfony']" />
-                            <img src="../assets/img/nuxtjs.webp" alt="NuxtJS Logo" class="w-5">
-                            <img src="../assets/img/tailwind.webp" alt="TailwindCSS Logo" class="w-5">
-                        </div>
-                    </div>
-                </div>
+            <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed flex-1 mb-4">{{ $t(project.desc) }}</p>
+            <div class="flex items-center gap-2">
+              <template v-for="icon in project.icons" :key="icon.key">
+                <font-awesome-icon
+                  v-if="icon.fa"
+                  :icon="icon.fa"
+                  :class="icon.class"
+                  class="text-base"
+                />
+                <img
+                  v-else
+                  :src="icon.src"
+                  :alt="icon.alt"
+                  class="w-4 h-4"
+                />
+              </template>
             </div>
-
-            <div class="image-container relative hover:scale-105 transition-all duration-200 ease">
-                <img class="h-auto w-full rounded-lg border-white border-2" src="../assets/img/popeye.webp"
-                     srcset="../assets/img/popeye.webp 1x, ../assets/img/popeye@2x.webp 2x"
-                     loading="lazy" decoding="async" alt=""/>
-                <div class="image-overlay absolute top-0 left-0 w-full h-full bg-white bg-opacity-60 flex flex-col justify-around opacity-0 transition-opacity duration-300 ease rounded-lg px-5 space-y-0.5 md:space-y-2"
-                     style="background: rgb(255, 255, 255, 0.95)">
-                    <div class="flex flex-row justify-between items-center">
-                        <h3 class="font-bold text-sm sm:text-xl fira-code">Popeye</h3>
-                        <p class="hidden lg:block text-xs">{{ $t("professional") }}</p>
-                    </div>
-                    <p class="text-xs sm:text-sm">{{ $t("popeye") }}</p>
-                    <div class="flex flex-row justify-between items-center">
-                        <a href="https://popeye-troyes.fr/" target="_blank" rel="noopener noreferrer" class="Popeye">
-                            <font-awesome-icon icon="caret-right" class="mr-2" />
-                            {{ $t("websitelink") }}
-                        </a>
-                        <div class="flex flex-row space-x-1 items-center">
-                            <font-awesome-icon :icon="['fab','symfony']" />
-                            <font-awesome-icon :icon="['fab','vuejs']" />
-                            <img src="../assets/img/tailwind.webp" alt="TailwindCSS Logo" class="w-5">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="image-container relative hover:scale-105 transition-all duration-200 ease">
-                <img class="h-auto w-full rounded-lg border-white border-2" src="../assets/img/pocmagiline.webp"
-                     srcset="../assets/img/pocmagiline.webp 1x, ../assets/img/pocmagiline@2x.webp 2x"
-                     loading="lazy" decoding="async" alt=""/>
-                <div class="image-overlay absolute top-0 left-0 w-full h-full bg-white bg-opacity-60 flex flex-col justify-around opacity-0 transition-opacity duration-300 ease rounded-lg px-5 space-y-0.5 md:space-y-2"
-                     style="background: rgb(255, 255, 255, 0.95)">
-                    <div class="flex flex-row justify-between items-center">
-                        <h3 class="font-bold text-sm sm:text-xl fira-code">POC Magiline</h3>
-                        <p class="hidden lg:block text-xs">{{ $t("group") }}</p>
-                    </div>
-                    <p class="text-xs sm:text-sm">{{ $t("pocmagiline") }}</p>
-                    <div class="flex flex-row justify-between items-center">
-                        <a href="https://poc-magiline.vercel.app/" target="_blank" rel="noopener noreferrer" class="POC Magiline">
-                            <font-awesome-icon icon="caret-right" class="mr-2" />
-                            {{ $t("websitelink") }}
-                        </a>
-                        <div class="flex flex-row space-x-1 items-center">
-                            <font-awesome-icon :icon="['fab','vuejs']" />
-                            <img src="../assets/img/tailwind.webp" alt="TailwindCSS Logo" class="w-5">
-                            <img src="../assets/img/threejs.webp" alt="Three.JS Logo" class="w-4">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="image-container relative hover:scale-105 transition-all duration-200 ease">
-                <img class="h-auto w-full rounded-lg border-white border-2" src="../assets/img/exerdevai.webp"
-                     srcset="../assets/img/exerdevai.webp 1x, ../assets/img/exerdevai@2x.webp 2x"
-                     loading="lazy" decoding="async" alt=""/>
-                <div class="image-overlay absolute top-0 left-0 w-full h-full bg-white bg-opacity-60 flex flex-col justify-around opacity-0 transition-opacity duration-300 ease rounded-lg px-5 space-y-0.5 md:space-y-2"
-                     style="background: rgb(255, 255, 255, 0.95)">
-                    <div class="flex flex-row justify-between items-center">
-                        <h3 class="font-bold text-sm sm:text-xl fira-code">ExerDevAI</h3>
-                        <p class="hidden lg:block text-xs">{{ $t("personnal") }}</p>
-                    </div>
-                    <p class="text-xs sm:text-sm">{{ $t("exerdevai") }}</p>
-                    <div class="flex flex-row justify-between items-center">
-                        <a href="https://exerdevai.dev/" target="_blank" rel="noopener noreferrer" class="ExerDevAI">
-                            <font-awesome-icon icon="caret-right" class="mr-2" />
-                            {{ $t("websitelink") }}
-                        </a>
-                        <div class="flex flex-row space-x-1 items-center">
-                            <font-awesome-icon :icon="['fab','symfony']" />
-                            <img src="../assets/img/openai.svg" alt="OpenAI Logo" class="w-4">
-                            <img src="../assets/img/tailwind.webp" alt="TailwindCSS Logo" class="w-5">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
 </template>
 
-<style scoped>
-.image-container:hover .image-overlay {
-    opacity: 1;
-}
-</style>
+<script setup>
+import tailwindImg from '../assets/img/tailwind.webp'
+import nuxtImg from '../assets/img/nuxtjs.webp'
+import threejsImg from '../assets/img/threejs.webp'
+import openaiImg from '../assets/img/openai.svg'
 
-<style>
-.gallery-container {
-    margin: 0 100px;
-}
-
-@media (max-width: 500px) {
-    .gallery-container {
-        margin: 0 50px;
-    }
-}
-
-.h2 {
-    position: relative;
-}
-
-.h2::before {
-    content: "";
-    position: absolute;
-    top: 40%;
-    left: 47%;
-    width: 100%;
-    height: 60%;
-    background: #6366f1;
-    transform: translate(-43%, 5%);
-    z-index: -1;
-}
-
-.image-container {
-    position: relative;
-    cursor: pointer;
-}
-
-@media (min-width: 1025px) {
-    .click-indicator {
-        display: none !important;
-    }
-}
-
-@media (max-width: 1024px) {
-    .click-indicator {
-        display: block !important;
-    }
-}
-
-.click-indicator {
-    position: absolute;
-    top: 35%;
-    left: 40%;
-    transform: translate(-100%, -100%);
-    font-size: 4rem;
-    color: #fff;
-    animation: clickAnimation 2s infinite;
-    z-index: 10;
-    pointer-events: none;
-    opacity: 1;
-}
-
-@keyframes clickAnimation {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(0.9);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-</style>
-
-<script>
-export default {
-    data() {
-        return {
-            showClickIndicator: true,
-        };
-    },
-    methods: {
-        hideClickIndicator() {
-            this.showClickIndicator = false;
-        },
-    },
-};
+const projects = [
+  {
+    name: 'Portfolio',
+    url: 'https://mathieulp.fr/',
+    img: new URL('../assets/img/portfolio.webp', import.meta.url).href,
+    imgSrcset: new URL('../assets/img/portfolio.webp', import.meta.url).href + ' 1x, ' + new URL('../assets/img/portfolio@2x.webp', import.meta.url).href + ' 2x',
+    type: 'personnal',
+    desc: 'portfolio',
+    icons: [
+      { key: 'vue', fa: ['fab', 'vuejs'], class: 'text-[#41B883]' },
+      { key: 'tw', src: tailwindImg, alt: 'TailwindCSS' },
+    ],
+  },
+  {
+    name: 'CodeClipper',
+    url: 'https://codeclipper.dev/',
+    img: new URL('../assets/img/codeclipper.webp', import.meta.url).href,
+    imgSrcset: new URL('../assets/img/codeclipper.webp', import.meta.url).href + ' 1x, ' + new URL('../assets/img/codeclipper@2x.webp', import.meta.url).href + ' 2x',
+    type: 'personnal',
+    desc: 'codeclipper',
+    icons: [
+      { key: 'sym', fa: ['fab', 'symfony'], class: 'text-zinc-600 dark:text-zinc-400' },
+      { key: 'tw', src: tailwindImg, alt: 'TailwindCSS' },
+    ],
+  },
+  {
+    name: 'SymStartSaaS',
+    url: 'https://symstartsaas.mathieulp.fr/',
+    img: new URL('../assets/img/SymStartSaaS.webp', import.meta.url).href,
+    imgSrcset: new URL('../assets/img/SymStartSaaS.webp', import.meta.url).href + ' 1x, ' + new URL('../assets/img/SymStartSaaS@2x.webp', import.meta.url).href + ' 2x',
+    type: 'personnal',
+    desc: 'symstartsaas',
+    icons: [
+      { key: 'sym', fa: ['fab', 'symfony'], class: 'text-zinc-600 dark:text-zinc-400' },
+      { key: 'nuxt', src: nuxtImg, alt: 'NuxtJS' },
+      { key: 'tw', src: tailwindImg, alt: 'TailwindCSS' },
+    ],
+  },
+  {
+    name: 'Popeye',
+    url: 'https://popeye-troyes.fr/',
+    img: new URL('../assets/img/popeye.webp', import.meta.url).href,
+    imgSrcset: new URL('../assets/img/popeye.webp', import.meta.url).href + ' 1x, ' + new URL('../assets/img/popeye@2x.webp', import.meta.url).href + ' 2x',
+    type: 'professional',
+    desc: 'popeye',
+    icons: [
+      { key: 'sym', fa: ['fab', 'symfony'], class: 'text-zinc-600 dark:text-zinc-400' },
+      { key: 'vue', fa: ['fab', 'vuejs'], class: 'text-[#41B883]' },
+      { key: 'tw', src: tailwindImg, alt: 'TailwindCSS' },
+    ],
+  },
+  {
+    name: 'POC Magiline',
+    url: 'https://poc-magiline.vercel.app/',
+    img: new URL('../assets/img/pocmagiline.webp', import.meta.url).href,
+    imgSrcset: new URL('../assets/img/pocmagiline.webp', import.meta.url).href + ' 1x, ' + new URL('../assets/img/pocmagiline@2x.webp', import.meta.url).href + ' 2x',
+    type: 'group',
+    desc: 'pocmagiline',
+    icons: [
+      { key: 'vue', fa: ['fab', 'vuejs'], class: 'text-[#41B883]' },
+      { key: 'tw', src: tailwindImg, alt: 'TailwindCSS' },
+      { key: 'three', src: threejsImg, alt: 'Three.JS' },
+    ],
+  },
+  {
+    name: 'ExerDevAI',
+    url: 'https://exerdevai.dev/',
+    img: new URL('../assets/img/exerdevai.webp', import.meta.url).href,
+    imgSrcset: new URL('../assets/img/exerdevai.webp', import.meta.url).href + ' 1x, ' + new URL('../assets/img/exerdevai@2x.webp', import.meta.url).href + ' 2x',
+    type: 'personnal',
+    desc: 'exerdevai',
+    icons: [
+      { key: 'sym', fa: ['fab', 'symfony'], class: 'text-zinc-600 dark:text-zinc-400' },
+      { key: 'openai', src: openaiImg, alt: 'OpenAI' },
+      { key: 'tw', src: tailwindImg, alt: 'TailwindCSS' },
+    ],
+  },
+]
 </script>

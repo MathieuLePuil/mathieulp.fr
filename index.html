@@ -4,48 +4,34 @@
         <meta charset="UTF-8">
         <link rel="icon" href="/favicon.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Je suis Mathieu Le Puil, j'ai 20 ans et je suis actuellement en B.U.T Métiers du Multimédia et de l’Internet à l’I.U.T de Troyes. En parallèle, je suis alternant en tant que développeur web Full-Stack dans les auto-écoles Popeye.">
+        <meta name="description" content="Mathieu Le Puil, développeur web spécialisé PrestaShop & Symfony. Portfolio de mes projets et expériences.">
         <meta property="og:image" content="https://mathieulp.fr/ogimage.png">
-        <meta name="keywords" content="mathieu, le puil, portfolio, web, developer, developpeur">
+        <meta name="keywords" content="mathieu, le puil, portfolio, web, developer, developpeur, prestashop, symfony">
         <meta property="og:title" content="Portfolio | Mathieu Le Puil">
-        <meta property="og:description" content="Je suis Mathieu Le Puil, j'ai 20 ans et je suis actuellement en B.U.T Métiers du Multimédia et de l’Internet à l’I.U.T de Troyes. En parallèle, je suis alternant en tant que développeur web Full-Stack dans les auto-écoles Popeye.">
+        <meta property="og:description" content="Mathieu Le Puil, développeur web spécialisé PrestaShop & Symfony. Portfolio de mes projets et expériences.">
         <meta name="author" content="Mathieu Le Puil">
         <title>Portfolio | Mathieu Le Puil</title>
-        <link rel="preload" href="/tailwind.css" as="style">
-        <link rel="stylesheet" href="/tailwind.css" media="print" onload="this.media='all'">
-        <link rel="preload" href="/style.css" as="style">
-        <link rel="stylesheet" href="/style.css" media="print" onload="this.media='all'">
-        <noscript>
-            <link rel="stylesheet" href="/tailwind.css">
-            <link rel="stylesheet" href="/style.css">
-        </noscript>
+
+        <script>
+            (function () {
+                const stored = localStorage.getItem('theme');
+                const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                if (stored === 'dark' || (!stored && prefersDark)) {
+                    document.documentElement.classList.add('dark');
+                }
+            })();
+        </script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
         <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
         <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
         <link rel="preconnect" href="https://static.cloudflareinsights.com" crossorigin>
         <link rel="dns-prefetch" href="https://static.cloudflareinsights.com">
-        
-        <link rel="preload" href="/fonts/fira-code/FiraCode-VF.woff2" as="font" type="font/woff2" crossorigin>
-        <style>
-            @font-face {
-                font-family: 'Fira Code';
-                font-style: normal;
-                font-weight: 300 700;
-                font-display: swap;
-                src: url('/fonts/fira-code/FiraCode-VF.woff2') format('woff2');
-            }
-            body {
-                background-image: radial-gradient(rgba(0, 0, 0, 0.15) 2px, transparent 2px);
-                background-size: 30px 30px;
-                background-color: #272037 !important;
-            }
-
-            .fira-code {
-                font-family: 'Fira Code', monospace;
-            }
-        </style>
-
     </head>
-    <body class="max-w-full">
+    <body>
         <div id="app"></div>
         <script type="module" src="/src/main.js"></script>
     </body>
