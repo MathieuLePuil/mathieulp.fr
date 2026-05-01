@@ -61,20 +61,20 @@ import openaiImg from '../assets/img/openai.svg'
 
 const projects = [
   {
-    name: 'Portfolio',
-    url: 'https://mathieulp.fr/',
-    img: new URL('../assets/img/portfolio.webp', import.meta.url).href,
-    imgSrcset: new URL('../assets/img/portfolio.webp', import.meta.url).href + ' 1x, ' + new URL('../assets/img/portfolio@2x.webp', import.meta.url).href + ' 2x',
+    name: 'YoutubeFetch',
+    url: 'https://youtubefetch.com/',
+    img: new URL('../assets/img/youtubefetch.webp', import.meta.url).href,
+    imgSrcset: new URL('../assets/img/youtubefetch.webp', import.meta.url).href + ' 1x, ' + new URL('../assets/img/youtubefetch@2x.webp', import.meta.url).href + ' 2x',
     type: 'personnal',
-    desc: 'portfolio',
+    desc: 'youtubefetch',
     icons: [
-      { key: 'vue', fa: ['fab', 'vuejs'], class: 'text-[#41B883]' },
+      { key: 'vue', fa: ['fab', 'symfony'], class: 'text-zinc-600 dark:text-zinc-400' },
       { key: 'tw', src: tailwindImg, alt: 'TailwindCSS' },
     ],
   },
   {
     name: 'CodeClipper',
-    url: 'https://codeclipper.dev/',
+    url: '#',
     img: new URL('../assets/img/codeclipper.webp', import.meta.url).href,
     imgSrcset: new URL('../assets/img/codeclipper.webp', import.meta.url).href + ' 1x, ' + new URL('../assets/img/codeclipper@2x.webp', import.meta.url).href + ' 2x',
     type: 'personnal',
@@ -125,7 +125,7 @@ const projects = [
   },
   {
     name: 'ExerDevAI',
-    url: 'https://exerdevai.dev/',
+    url: '#',
     img: new URL('../assets/img/exerdevai.webp', import.meta.url).href,
     imgSrcset: new URL('../assets/img/exerdevai.webp', import.meta.url).href + ' 1x, ' + new URL('../assets/img/exerdevai@2x.webp', import.meta.url).href + ' 2x',
     type: 'personnal',

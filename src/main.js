@@ -30,8 +30,8 @@ const i18n = createI18n({
       homeh2: "PrestaShop",
       homep: "Not available for Freelance or Full-Time",
 
-      portfolio:
-        "Professional portfolio built to develop my image in order to find work.",
+      youtubefetch:
+        "YoutubeFetch is a tool to download complete YouTube videos or just some extracts.",
       codeclipper:
         "CodeClipper is a website to save and share code snippets.",
       symstartsaas:
@@ -99,8 +99,8 @@ const i18n = createI18n({
       homeh2: "Développeur PrestaShop",
       homep: "Indisponible — Freelance ou CDI",
 
-      portfolio:
-        "Portfolio professionnel construit pour développer mon image afin de trouver du travail.",
+      youtubefetch:
+        "YoutubeFetch est un outil permettant de télécharger des vidéos YouTube complètes ou seulement certains passages.",
       codeclipper:
         "CodeClipper est un site web pour enregistrer et partager des extraits de code.",
       symstartsaas:
