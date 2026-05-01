@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --dot: rgba(0, 0, 0, 0.055);
+}
+
+.dark {
+  --dot: rgba(255, 255, 255, 0.035);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-white dark:bg-black text-zinc-900 dark:text-zinc-100 font-sans;
+  }
+}
+
+@layer utilities {
+  .dots {
+    background-image: radial-gradient(circle, var(--dot) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+}

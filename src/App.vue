@@ -1,183 +1,137 @@
 <script setup>
-import { RouterView, RouterLink } from "vue-router";
-import { useI18n } from "vue-i18n";
+import { ref, onMounted } from 'vue'
+import { RouterView } from 'vue-router'
+import { useI18n } from 'vue-i18n'
+
+const { locale } = useI18n()
+const isDark = ref(false)
+const isMobileMenuOpen = ref(false)
+
+const applyTheme = (dark) => {
+  if (dark) {
+    document.documentElement.classList.add('dark')
+  } else {
+    document.documentElement.classList.remove('dark')
+  }
+  isDark.value = dark
+}
+
+const toggleTheme = () => {
+  const newDark = !isDark.value
+  localStorage.setItem('theme', newDark ? 'dark' : 'light')
+  applyTheme(newDark)
+}
+
+const toggleLocale = () => {
+  locale.value = locale.value === 'fr' ? 'en' : 'fr'
+}
+
+const toggleMobileMenu = () => {
+  isMobileMenuOpen.value = !isMobileMenuOpen.value
+}
+
+const closeMobileMenu = () => {
+  isMobileMenuOpen.value = false
+}
+
+onMounted(() => {
+  isDark.value = document.documentElement.classList.contains('dark')
+
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+    if (!localStorage.getItem('theme')) {
+      applyTheme(e.matches)
+    }
+  })
+})
 </script>
 
 <template>
-  <header class="z-30" id="home">
-    <nav class="border-gray-200 z-30 fira-code text-white">
-      <div
-        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 z-30"
-      >
-        <router-link to="/" class="flex items-center z-30">
-          <img src="./assets/img/LOGO.webp" class="h-8 mr-3" alt="Logo" />
-          <span class="self-center text-2xl font-semibold whitespace-nowrap"
-            >MathieuLP</span
-          >
-        </router-link>
-        <div class="flex items-center lg:order-2 z-30">
-          <div class="relative">
-            <button
-              @click="toggleDropdown"
-              type="button"
-              class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-gray-300 rounded-lg cursor-pointer hover:bg-gray-200 hover:text-gray-600 z-30 hover:scale-105 transition-all duration-200 ease"
-            >
-              <img
-                :src="getLocaleFlagSrc()"
-                aria-hidden="true"
-                class="h-3.5 w-3.5 rounded-full mr-2"
-                alt="Flag"
-              />
-              <span class="hidden sm:block">{{ getLocaleLabel() }}</span>
-              <i class="fa-solid fa-sort-down pb-1.5 ml-2"></i>
-            </button>
-            <div
-              v-if="isDropdownOpen"
-              class="z-50 mt-2 text-base list-none divide-gray-100 rounded-lg shadow bg-[#F6F6F6] absolute left-0 w-full"
-            >
-              <ul
-                class="py-2 font-medium flex flex-col justify-around items-center"
-                role="none"
-              >
-                <li>
-                  <button
-                    @click="
-                      changeLocale('fr');
-                      closeDropdown();
-                    "
-                    type="button"
-                    class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-gray-900 rounded-lg cursor-pointer hover:bg-gray-200 z-30"
-                  >
-                    <img
-                      src="./assets/img/fr.webp"
-                      aria-hidden="true"
-                      class="h-3.5 w-3.5 rounded-full mr-2"
-                      alt="Test"
-                    />
-                      <span class="hidden sm:block">Français</span>
-                  </button>
-                </li>
-                <li>
-                  <button
-                    @click="
-                      changeLocale('en');
-                      closeDropdown();
-                    "
-                    type="button"
-                    class="inline-flex w-full items-center font-medium justify-center px-4 p-2 text-sm text-gray-900 rounded-lg cursor-pointer hover:bg-gray-200 z-30"
-                  >
-                    <img
-                      src="./assets/img/en.webp"
-                      aria-hidden="true"
-                      class="h-3.5 w-3.5 rounded-full mr-2"
-                      alt="Test"
-                    />
-                      <span class="hidden sm:block">English</span>
-                  </button>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <button
-            data-collapse-toggle="navbar-language"
-            type="button"
-            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-300 rounded-lg lg:hidden hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-200"
-            aria-controls="navbar-language"
-            aria-expanded="false"
-          >
-            <span class="sr-only">Menu principal</span>
-            <svg
-              class="w-5 h-5"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 17 14"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M1 1h15M1 7h15M1 13h15"
-              />
-            </svg>
-          </button>
-        </div>
-        <div
-          class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1 z-20 text-sm text-white"
-          id="navbar-language"
+  <header class="sticky top-0 z-50 w-full border-b border-zinc-200 dark:border-zinc-800 bg-white/80 dark:bg-black/80 backdrop-blur-md">
+    <nav class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <router-link to="/" class="text-base font-semibold tracking-tight text-zinc-900 dark:text-zinc-100 hover:opacity-70 transition-opacity duration-150">
+        MathieuLP
+      </router-link>
+
+      <ul class="hidden md:flex items-center gap-8 text-sm font-medium text-zinc-500 dark:text-zinc-400">
+        <li>
+          <a href="/#home" class="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors duration-150">
+            {{ $t('home') }}
+          </a>
+        </li>
+        <li>
+          <a href="/#projects" class="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors duration-150">
+            {{ $t('projects') }}
+          </a>
+        </li>
+        <li>
+          <a href="/#experience" class="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors duration-150">
+            {{ $t('experience') }}
+          </a>
+        </li>
+        <li>
+          <a href="/#contact" class="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors duration-150">
+            Contact
+          </a>
+        </li>
+      </ul>
+
+      <div class="flex items-center gap-1">
+        <button
+          @click="toggleTheme"
+          :aria-label="isDark ? 'Activer le mode clair' : 'Activer le mode sombre'"
+          class="w-9 h-9 flex items-center justify-center rounded-lg text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 hover:bg-zinc-100 dark:hover:bg-zinc-900 transition-all duration-150"
         >
-          <ul
-            class="flex flex-col font-medium p-4 lg:p-0 mt-4 border border-gray-100 rounded-lg lg:flex-row lg:space-x-4 lg:mt-0 lg:border-0 z-20"
-          >
-            <li>
-              <a
-                href="/#home"
-                class="block py-2 pl-3 pr-4 text-white rounded hover:text-white hover:underline z-20 hover:scale-105 transition-all duration-200 ease"
-                aria-current="page"
-                >01. {{ $t("home") }}</a
-              >
-            </li>
-            <li>
-              <a
-                href="/#projects"
-                class="block py-2 pl-3 pr-4 text-white rounded hover:text-white hover:underline z-20 hover:scale-105 transition-all duration-200 ease"
-                aria-current="page"
-                >02. {{ $t("projects") }}</a
-              >
-            </li>
-            <li>
-              <a
-                href="/#experience"
-                class="block py-2 pl-3 pr-4 text-white rounded hover:text-white hover:underline z-20 hover:scale-105 transition-all duration-200 ease"
-                aria-current="page"
-                >03. {{ $t("experience") }}</a
-              >
-            </li>
-            <li>
-              <a
-                href="/#contact"
-                class="block py-2 pl-3 pr-4 text-white rounded hover:text-white hover:underline z-20 hover:scale-105 transition-all duration-200 ease"
-                aria-current="page"
-                >04. Contact</a
-              >
-            </li>
-          </ul>
-        </div>
+          <svg v-if="isDark" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <svg v-else xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+
+        <button
+          @click="toggleLocale"
+          :aria-label="locale === 'fr' ? 'Switch to English' : 'Passer en Français'"
+          class="h-9 px-3 flex items-center justify-center rounded-lg text-sm font-medium text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 hover:bg-zinc-100 dark:hover:bg-zinc-900 transition-all duration-150"
+        >
+          {{ locale === 'fr' ? 'EN' : 'FR' }}
+        </button>
+
+        <button
+          @click="toggleMobileMenu"
+          :aria-label="isMobileMenuOpen ? 'Fermer le menu' : 'Ouvrir le menu'"
+          class="md:hidden w-9 h-9 flex items-center justify-center rounded-lg text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 hover:bg-zinc-100 dark:hover:bg-zinc-900 transition-all duration-150"
+        >
+          <svg v-if="!isMobileMenuOpen" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+          <svg v-else xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
       </div>
     </nav>
+
+    <div
+      v-if="isMobileMenuOpen"
+      class="md:hidden border-t border-zinc-200 dark:border-zinc-800 bg-white dark:bg-black"
+    >
+      <ul class="px-6 py-5 flex flex-col gap-4 text-sm font-medium text-zinc-500 dark:text-zinc-400">
+        <li>
+          <a href="/#home" @click="closeMobileMenu" class="block hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">{{ $t('home') }}</a>
+        </li>
+        <li>
+          <a href="/#projects" @click="closeMobileMenu" class="block hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">{{ $t('projects') }}</a>
+        </li>
+        <li>
+          <a href="/#experience" @click="closeMobileMenu" class="block hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">{{ $t('experience') }}</a>
+        </li>
+        <li>
+          <a href="/#contact" @click="closeMobileMenu" class="block hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">Contact</a>
+        </li>
+      </ul>
+    </div>
   </header>
 
   <RouterView />
 </template>
-
-<script>
-import { useI18n } from "vue-i18n";
-
-export default {
-  data() {
-    return {
-      isDropdownOpen: false,
-    };
-  },
-  methods: {
-    changeLocale(locale) {
-      this.$i18n.locale = locale;
-    },
-    getLocaleFlagSrc() {
-      return this.$i18n.locale === "fr"
-        ? "https://img.freepik.com/vecteurs-libre/illustration-du-drapeau-france_53876-27099.jpg?size=626&ext=jpg&ga=GA1.1.600005458.1693078612&semt=ais"
-        : "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Flag_of_the_United_States_%28Pantone%29.svg/1280px-Flag_of_the_United_States_%28Pantone%29.svg.png";
-    },
-    getLocaleLabel() {
-      return this.$i18n.locale === "fr" ? "Français" : "English";
-    },
-    toggleDropdown() {
-      this.isDropdownOpen = !this.isDropdownOpen;
-    },
-    closeDropdown() {
-      this.isDropdownOpen = false;
-    },
-  },
-};
-</script>
